@@ -1,0 +1,26 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{III}{chapter*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{IV}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Webframeworks}{2}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Beispiel Webframeworks}{3}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}AngularJS}{3}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}ReactJS}{3}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}OpenUI5}{3}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Vergleich der Webframeworks}{4}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Bezug zum Projekt}{5}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Fazit}{6}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Anhang}{7}{appendix.A}
