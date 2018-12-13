@@ -55,40 +55,19 @@ Komponenten sind Direktiven mit einer eigenen View. \autocites[vgl.][265]{Steyer
 
 %% Komponenten sind Direktiven 
 %% Template und Komponente beschreiben
-Komponenten sind Klassen, die Daten und Logik für die zugehörigen Templates bereitstellen. Diese ermöglichen die Aufteilung einer Angular Anwendung in logisch getrennte Teile. \autocite[vgl.][401]{Freeman.2018} 
+Komponenten sind Klassen, die Daten und Logik für die zugehörigen Templates bereitstellen. Diese ermöglichen eine Angular Anwendung in verschiedene logisch getrennte Teile aufzuteilen. \autocite[vgl.][401]{Freeman.2018} 
 
-Eine Komponente wird durch den Dekorator \textit{@Component} gekennzeichnet und kann über verschiedene Dekorator-Eigenschaften (auch: Metadaten) konfiguriert werden. Die Eigenschaft \textit{selector} identifiziert das HTML-Element, dass durch diese Komponente repräsentiert wird. Zur Anzeige der bereitgestellten Daten kann entweder ein Inline-Template \textit{template} definiert oder auf ein externes Template \textit{templateUrl} verwiesen werden. \autocites[vgl.][]{Google.b}[vgl.][405]{Freeman.2018}[vgl.][47\psqq]{Steyer.2017} 
+Eine Komponente wird durch den Dekorator \textit{@Component} gekennzeichnet und kann über verschiedene Dekorator-Eigenschaften (auch: Metadaten) konfiguriert werden. Die Eigenschaft \textit{selector} identifiziert das HTML-Element, dass durch diese Komponente repräsentiert wird. Zur Anzeige der bereitgestellten Daten kann entweder ein Inline-Template \textit{template} definiert oder auf ein externes Template \textit{templateUrl} verwiesen werden. \autocites[vgl.]{Google.b}[vgl.][405]{Freeman.2018}[vgl.][47\psqq]{Steyer.2017} Für weitere Dekorator-Eigenschaften wird auf \textcite[405]{Freeman.2018} verwiesen.
 
-Für weitere Dekorator-Eigenschaften wird auf \textcite[405]{Freeman.2018} verwiesen. Ein Beispiel für die Implementierung einer Komponente findet sich in \autoref{Angular-Komponente}.
 
-\begin{lstlisting}[caption=Implementierung einer Komponente, label=Angular-Komponente, language=Java]
-import {Component} from '@angular/core';
 
+\begin{lstlisting}[caption=Implementierung einer Komponente, label=Angular-Komponente, title=Implementierung einer Komponente,language=JavaScript]
 @Component({
-	selector: hello,
-	template: `<h1>Hello World</h1>`
+	selector: 
 })
-export class HelloWorldComponent {
+export class ExampleComponent {
 }
 \end{lstlisting}
-
-
-Zur Darstellung von Komponenten nutzt Angular Templates. Ein Template besteht aus HTML Code erweitert um Angular Ausdrücke. Das Template kann Pipes, weitere Komponenten, Data-Binding-Ausdrücke oder Direktiven enthalten. \autocites[vgl.][]{Google.b}[vgl.][52]{Steyer.2017} 
-
-Data-Bindings stellen eine Beziehung zwischen den Daten der Komponente und einem HTML-Element her. Hierdurch kann das Aussehen, der Inhalt oder das Verhalten dieses Elements dynamisch verändert werden. \autocites[vgl.][237\psqq]{Freeman.2018}[vgl.][52\psq]{Steyer.2017}
-
-Es können drei Arten von Bindings unterschieden werden. Die Unterscheidung erfolgt mittels der Fließrichtung der Daten.
-\begin{description}
-	\item [Two-Way-Binding \lbrack ()\rbrack{} ] 
-	\item [Property-Binding \lbrack \rbrack{} ] 
-	\item [Event-Binding ()] 
-\end{description}
-
-\begin{tabular}{lcl}
-	Two-Way-Binding&\lbrack (target)\rbrack{}&aaa\\ 
-	Property-Binding&\lbrack target\rbrack{}&aaaa\\ 
-	Event-Binding&(target)&aaaa\\ 
-\end{tabular} 
 
 
 
@@ -97,7 +76,7 @@ Es können drei Arten von Bindings unterschieden werden. Die Unterscheidung erfo
 %% Was bringen Services? Wie funktionieren diese?
 %% Kommunkikation mit dem DB-Server über Services
 
-%%\subsubsection{Pipes} 
+\subsubsection{Pipes} 
 %% ???
 
 

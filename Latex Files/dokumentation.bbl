@@ -102,6 +102,26 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
+  \entry{Google.b}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Introduction to components}
+    \verb{url}
+    \verb \url{https://angular.io/guide/architecture-components}
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{Steyer.2017}{book}{}
     \name{author}{2}{}{%
       {{hash=SM}{%
