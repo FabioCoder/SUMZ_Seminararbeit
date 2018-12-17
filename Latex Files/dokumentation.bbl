@@ -142,6 +142,26 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
+  \entry{Google.d}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Template Syntax}
+    \verb{url}
+    \verb \url{https://angular.io/guide/template-syntax}
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{Steyer.2017}{book}{}
     \name{author}{2}{}{%
       {{hash=SM}{%

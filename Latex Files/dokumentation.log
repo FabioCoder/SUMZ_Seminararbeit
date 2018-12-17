@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  15 DEC 2018 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  17 DEC 2018 15:33
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1395,6 +1395,11 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Google.c':
 (biblatex)                - Invalid format of field 'urldate'.
 
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Google.d':
+(biblatex)                - Invalid format of field 'urldate'.
+
 )
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
@@ -1549,11 +1554,34 @@ chapter 2.
 
 ]
 chapter 3.
+
+Package nag Warning: \label in float, but not after \caption on input line 22.
+
+
+Package nag Warning: \label in float, but not after \caption on input line 22.
+
+<images/angular-anwendung.png, id=125, 168.02776pt x 97.5645pt>
+File: images/angular-anwendung.png Graphic file (type png)
+<use images/angular-anwendung.png>
+Package pdftex.def Info: images/angular-anwendung.png  used on input line 23.
+(pdftex.def)             Requested size: 168.02734pt x 97.56424pt.
+
+Package caption Warning: \label without proper reference on input line 22.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:AngularAnwendung' on page 3 undefined on input li
+ne 28.
+
 [3
 
-]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 52.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+ <./images/angular-anwendung.png>]
+
+LaTeX Warning: Reference `lst_RootModule' on page 4 undefined on input line 55.
+
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 61.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1561,34 +1589,54 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 116.
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+)
+Overfull \hbox (1.22168pt too wide) in paragraph at lines 136--136
+[]|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
+ []
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+Overfull \hbox (7.61911pt too wide) in paragraph at lines 138--138
+[]|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
+ []
+
+
+Overfull \hbox (10.38483pt too wide) in paragraph at lines 130--141
+[][] 
+ []
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 162.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 116.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 162.
+ [7]
 
+LaTeX Warning: Reference `Gackenheimer.2015' on page 8 undefined on input line 
+215.
 
-LaTeX Warning: Reference `Gackenheimer.2015' on page 6 undefined on input line 
-171.
-
-[6]) (content/04kapitel.tex [7]
+) (content/04kapitel.tex [8]
 chapter 4.
-) (content/05kapitel.tex [8
+) (content/05kapitel.tex [9
 
 ]
 chapter 5.
-) (content/06kapitel.tex [9
+) (content/06kapitel.tex [10
 
 ]
 chapter 6.
-) [10
+) [11
 
 ] (ads/appendix.tex
 chapter A.
-) [11
+) [12
 
 
 
@@ -1604,8 +1652,10 @@ u-les\T1/lmr/m/n/12 (-20) . \T1/lmr/m/sc/12 (-20) url\T1/lmr/m/n/12 (-20) : [][
 ]$\T1/lmtt/m/n/12 \url{https : / / angular . io / guide / architecture -[]
  []
 
-No complaints by nag.
-[12
+
+Package nag Warning: 2 complaints in total.
+
+[13
 
 
 
@@ -1624,13 +1674,13 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34994 strings out of 492970
- 670899 string characters out of 3135828
- 1324997 words of memory out of 3000000
- 37991 multiletter control sequences out of 15000+200000
- 70835 words of font info for 80 fonts, out of 3000000 for 9000
+ 35290 strings out of 492970
+ 674639 string characters out of 3135828
+ 1354997 words of memory out of 3000000
+ 38231 multiletter control sequences out of 15000+200000
+ 72094 words of font info for 93 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,2436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,3806s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -1642,9 +1692,9 @@ ic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb>
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on dokumentation.pdf (18 pages, 358934 bytes).
+Output written on dokumentation.pdf (19 pages, 378358 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
- 25367 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 25372 words of extra memory for PDF output out of 29859 (max. 10000000)
 
