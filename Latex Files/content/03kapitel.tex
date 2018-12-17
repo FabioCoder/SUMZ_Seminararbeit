@@ -17,41 +17,56 @@
 %% Beschreibung der Konzepte die in Angular verwendet werden
 %% Hier kurz beschreiben wie die einzelnen Komponenten zusammenhängen
 
+Beispiel Angular-Anwendung.
 
-\subsubsection{Direktiven}
+\begin{tabbing}
+	mm \= mm \= mmmmmmmmmmmmmmmm \= \kill
+	$\vdash$ \textbf{example/} \\ 
+	| \> $\vdash$ \textbf{src/}\\ 
+	| \> \> $\vdash$  \textbf{app/}\\
+	| \> \>  --app.component.css\\
+	| \> \>  --app.component.html\\
+	| \> \>  --app.component.ts\\
+	| \> \>  --app.module.ts\\
+	| \> \> $\vdash$ \textbf{assets/} \\
+	| \> \> $\vdash$ \textbf{environments/} \\
+	| \> --index.html \\
+	| \> --main.ts \\
+	| \> --styles.css \\
+	| \> --... \\
+	| \> $\vdash$ \textbf{node\_modules/}\\ 
+	| \> $\vdash$ \textbf{e2e/}\\   
+	| --...\\
+\end{tabbing}
 
-%% Attribut und Struktur Direktive Beschreiben
+%% Erklärug am Beispiel des Initialen Projekts --> Mit Hinweis darauf, dass dies Projekt beliebig erweitert werden kann.
+\subsubsection{Module}
 
-Mit Direktiven kann einem Element zusätzliches Verhalten hinzugefügt werden. \autocite[vgl.][265]{Steyer.2017} In Angular werden folgende drei Arten von Direktiven unterschieden. \autocite[vgl.]{Google.}
 
-\begin{itemize}
-	\item Komponenten
-	\item Attribut-Direktiven
-	\item strukturelle Direktiven 
-\end{itemize}
+Eine Angular Anwendung ist modular aufgebaut und kann demnach aus mehreren Modulen bestehen. Ein Modul fasst eine zusammengehörige Codeeinheit zusammen. Ein Modul kann eine gewisse Funktionalität bereitstellen, die wiederum von anderen Modulen verwendet werden kann. \autocites[vgl.][103\psqq]{Steyer.2017} 
 
-Angular stellt Direktiven zur Verfügung (engl. Built-In Directives). Diese können durch eigene Direktiven erweitert werden. \autocite[vgl.][261]{Freeman.2018}
+Die Module einer Angular-Anwendung können in Root-Module, Feature-Module und Shared-Module unterteilt werden. Das Root-Modul ist einmalig in einer Angular-Anwendung vorhanden und wird beim Starten der Anwendung aufgerufen. Die Anwendung wird durch dieses Modul konfiguriert. Mithilfe von Feature Modulen kann eine Anwendung nach Anwendungsfällen gruppiert werden. Shared-Module fassen die Teile zusammen, die unabhängig vom Anwendungsfall verwendet werden können. \autocites[vgl.][528\psqq]{Freeman.2018}[vgl.][]{Google.c}[vgl.][105\psqq]{Steyer.2017}
 
-Mit strukturellen Direktiven kann der Inhalt des HTML-Dokuments angepasst werden, indem Elemente dem diesem hinzugefügt oder entnommen werden. Hierfür verwenden die strukturellen Direktiven Templates, die beliebig oft gerendert werden. \autocites[vgl.][269\psqq]{Steyer.2017}[vgl.][365]{Freeman.2018}
+In der Beispielanwendung stellt die Klasse \textit{AppModule} siehe \autoref{lst_RootModule} das Root-Modul dar. Ein Modul wird durch den Derokator \textit{@NgModule} gekennzeichnet. Ein Modul kann verschiedene weitere Module über die Eigenschaft \textit{import} importieren und damit die bereitgestellten Funktionalitäten verwenden. Die Eigenschaft \textit{declarations} 
 
-Beispiele für strukturellen Direktiven aus AngularJS \autocite[vgl.][261\psqq]{Freeman.2018}:
-\begin{description}
-	\item [ngIf] Fügt dem HTML-Dokument Inhalt hinzu, wenn die Bedingung wahr ist. 
-	\item [ngfor] Fügt für jedes Item einer Datenquelle den gleichen Inhalt dem HTML-Dokument hinzu.
-	\item [ngSwitch] Fügt dem HTML-Dokument, abhängig vom Wert eines Ausdrucks, Inhalt hinzu.
-\end{description} 
+\begin{lstlisting}[caption=Das Root-Module in der Datei app.module.ts, label=lst_RootModule, language=Java]
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-Mit Attribut-Direktiven kann das Verhalten und Aussehen des zugehörigen Elementes angepasst werden, indem Attribute hinzugefügt oder entfernt werden. \autocite[vgl.][339]{Freeman.2018} 
+@NgModule({
+	imports: [ BrowserModule],
+	declarations: [AppComponent],
+	bootstrap: [AppComponent]
+})
+export class AppModule { }
+\end{lstlisting}
 
-Beispiele für Attribut-Direktiven aus Angular-JS \autocite[vgl.][249\psqq]{Freeman.2018}:
-\begin{description}
-	\item [ngStyle] Mit dieser Direktive können unterschiedliche Style-Eigenschaften dem Element hinzugefügt werden.
-	\item [ngClass] Weißt dem Element mehrere Klassen hinzu. 
-\end{description}
 
-Komponenten sind Direktiven mit einer eigenen View. \autocites[vgl.][265]{Steyer.2017}[vgl.][401]{Freeman.2018} Aufgrund der hohen Bedeutung der Komponente in AngularJS, wird auf diese im nächsten Gliederungspunkt näher eingegangen.
+
 
 \subsubsection{Komponenten und Templates}
+
+%Beschreibung des Starts einer Angular Anwedung 
 
 %% Komponenten sind Direktiven 
 %% Template und Komponente beschreiben
@@ -91,6 +106,38 @@ Es können drei Arten von Bindings unterschieden werden. Die Unterscheidung erfo
 \end{tabular} 
 
 
+\subsubsection{Direktiven}
+
+%% Attribut und Struktur Direktive Beschreiben
+
+Mit Direktiven kann einem Element zusätzliches Verhalten hinzugefügt werden. \autocite[vgl.][265]{Steyer.2017} In Angular werden folgende drei Arten von Direktiven unterschieden. \autocite[vgl.]{Google.}
+
+\begin{itemize}
+	\item Komponenten
+	\item Attribut-Direktiven
+	\item strukturelle Direktiven 
+\end{itemize}
+
+Angular stellt Direktiven zur Verfügung (engl. Built-In Directives). Diese können durch eigene Direktiven erweitert werden. \autocite[vgl.][261]{Freeman.2018}
+
+Mit strukturellen Direktiven kann der Inhalt des HTML-Dokuments angepasst werden, indem Elemente dem diesem hinzugefügt oder entnommen werden. Hierfür verwenden die strukturellen Direktiven Templates, die beliebig oft gerendert werden. \autocites[vgl.][269\psqq]{Steyer.2017}[vgl.][365]{Freeman.2018}
+
+Beispiele für strukturellen Direktiven aus AngularJS \autocite[vgl.][261\psqq]{Freeman.2018}:
+\begin{description}
+	\item [ngIf] Fügt dem HTML-Dokument Inhalt hinzu, wenn die Bedingung wahr ist. 
+	\item [ngfor] Fügt für jedes Item einer Datenquelle den gleichen Inhalt dem HTML-Dokument hinzu.
+	\item [ngSwitch] Fügt dem HTML-Dokument, abhängig vom Wert eines Ausdrucks, Inhalt hinzu.
+\end{description} 
+
+Mit Attribut-Direktiven kann das Verhalten und Aussehen des zugehörigen Elementes angepasst werden, indem Attribute hinzugefügt oder entfernt werden. \autocite[vgl.][339]{Freeman.2018} 
+
+Beispiele für Attribut-Direktiven aus Angular-JS \autocite[vgl.][249\psqq]{Freeman.2018}:
+\begin{description}
+	\item [ngStyle] Mit dieser Direktive können unterschiedliche Style-Eigenschaften dem Element hinzugefügt werden.
+	\item [ngClass] Weißt dem Element mehrere Klassen hinzu. 
+\end{description}
+
+Komponenten sind Direktiven mit einer eigenen View. \autocites[vgl.][265]{Steyer.2017}[vgl.][401]{Freeman.2018} Aufgrund der hohen Bedeutung der Komponente in AngularJS, wird auf diese im nächsten Gliederungspunkt näher eingegangen.
 
 \subsubsection{Services}
 
