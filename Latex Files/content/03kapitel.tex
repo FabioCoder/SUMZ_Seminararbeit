@@ -1,19 +1,24 @@
 %!TEX root = ../dokumentation.tex
 
-\chapter{Beispiel Webframeworks}
+\chapter{AngularJS}
 
-\section{AngularJS}
+\section{Allgemein}
 
-\subsection{Allgemein}
-
-\subsubsection{}
-
-
-\subsubsection{Entwicklungsumgebung}
+\subsection{Entstehung des Frameworks}
+Das Framework 
+\subsection{Vorbereitung der Entwicklungsumgebung}
 %% Hier besonders Angular Cli beschreiben
 
 
-\subsection{Konzepte}
+%%Node JS
+%%NPM
+%%Angular Cli
+%%Git
+%%Editor
+%%Browser
+
+
+\section{Konzepte}
 %% Beschreibung der Konzepte die in Angular verwendet werden
 %% Hier kurz beschreiben wie die einzelnen Komponenten zusammenhängen
 
@@ -50,7 +55,7 @@ Im Folgenden werden die in AngularJS verwendeten Konzepte näher erläutert. Die
 \comment{Allgemeine Beschreibung von Metadaten und Klassen Dekorator.}
 
 %% Erklärug am Beispiel des Initialen Projekts --> Mit Hinweis darauf, dass dies Projekt beliebig erweitert werden kann.
-\subsubsection{Module}
+\subsection{Module}
 
 %%Funktion von Modulen
 Eine Angular-Anwendung ist modular aufgebaut und kann demnach aus mehreren Modulen bestehen. Module fassen zusammengehörige Codeeinheiten zusammen und können bestimmte Funktionalitäten bereitstellen, die wiederum von anderen Modulen verwendet werden können. \autocites[vgl.][103\psqq]{Steyer.2017} Die Module einer Angular-Anwendung können in Root-Module, Feature-Module und Shared-Module unterteilt werden. 
@@ -85,7 +90,7 @@ export class AppModule { }
 %%Feature-Module und Shared-Module
 Feature Modulen ermöglichen die Gruppierung einer Anwendung in Anwendungsfällen. Mithilfe von Shared-Module können die Teile einer Anwendung zusammengefasst werden, die unabhängig vom Anwendungsfall verwendet werden können. \autocites[vgl.][528\psqq]{Freeman.2018}[vgl.][]{Google.c}[vgl.][105\psqq]{Steyer.2017}
 
-\subsubsection{Komponenten}
+\subsection{Komponenten}
 
 %%Beschreibung von Komponenten
 Komponenten sind Klassen, die Daten und Logik zur Anzeige in den zugehörigen Templates bereitstellen. Diese ermöglichen die Aufteilung einer Angular-Anwendung in logisch getrennte Teile. \autocite[vgl.][401]{Freeman.2018} 
@@ -124,7 +129,7 @@ export class HelloComponent  {
 }
 \end{lstlisting}
 
-\subsubsection{Templates}
+\subsection{Templates}
 %%Beschreibung von Templates
 Zur Darstellung von Komponenten nutzt Angular Templates. Ein Template besteht aus HTML Code, der um Angular spezifische Konzepte wie Direktiven, Datenbindungsausdrücke und Pipes erweitert wird. \autocites[vgl.][]{Google.b}[vgl.][52]{Steyer.2017} 
 
@@ -185,12 +190,12 @@ Mit Pipes können die  Daten vor der Ausgabe sortiert, formatiert oder gefiltert
 <input name="name" [(ngModel)]="name">
 \end{lstlisting}
 
-\subsubsection{Services}
+\subsection{Services}
 Laut \textcite[vgl.][474]{Freeman.2018} kann jedes Objekt, dass durch Dependency Injection verwaltet und verteilt wird, als Service bezeichnet werden. Services stellen wiederverwendbare Routinen oder Daten zur Verfügung, die von Direktiven, Komponenten, weiteren Services und Pipes verwendeten werden können. \autocites[vgl.][467\psqq]{Freeman.2018}[vgl.][89]{Steyer.2017}
 
-%%Was sind die Vorteile eines Services?
 
-Kind und Eltern Komponenten können Daten zwar auch durch Input und Output Eigenschaften austauschen. Allerdings führt dieses Konstrukt zu einer starken Bindung und erhöht die Komplexität der Anwendung.\autocite[vgl.][469]{Freeman.2018}
+Services verringern die Abhängigkeiten zwischen den Klassen, durch Dependency Injection. Hierdurch können Beispiel Unit-Tests einfacher durchgeführt werden. \autocite[vgl.][469]{Freeman.2018} 
+
 
 %%Wie kann ein Service verwendet werden? 
 %%Registrierung
@@ -200,66 +205,7 @@ Um einen Service zu verwenden, muss dieser entweder global in einem Modul oder l
 Sobald ein Service global registrierte wurde, steht dieser auch in weiteren Modulen zur Verfügung. Ein lokal registrierter Service kann dahingegen nur von der jeweiligen Komponente und den direkten und indirekten Kindkomponenten verwendet werden. 
 
 %%Nutzung
-Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert AngularJS den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][495\psqq]{Freeman.2018}    
+Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert AngularJS den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}    
 
 
 
-
-
-
-
-
-
-Ein Service kann entweder an eine Klasse, eine Funktion oder an ein Objekt gebunden werden.\autocite[vgl.][90]{Steyer.2017} Um ein
-
-
-
-%%Für was wird ein Service typischerweise verwendet?
-
-%%In diesem Zusammenhang den Begriff Dependency Injection erklären.
-
-
-
-\subsection{Verwendung}
-
-\subsubsection{Einordnung in den Kontext}
-
-
-\section{ReactJS}
-
-\subsection{Allgemein}
-%Entwicklung
-%Kompatibilität
-%Lizenz
-
-%ReactJs ist kein MVC Framework! Welches Problem löst ReactJS?
-% Kurz auf Flux eingehen????
-
-ReactJS ist ein von Entwicklern des Unternehmens Facebook Inc. entwickeltes JavaScript Framework. \autoref{Gackenheimer.2015} 
-
-
-%Löst bestimmte Probleme
-%
-
-
-
-\subsection{Konzepte}
-
-\subsubsection{Components}
-
-%Klasse und Methode
-%Lifecycle einer Klasse
-%Vorteile einer Klasse (State versus Props)
-
-%Kurz auf JSX eingehen
-
-\subsubsection{Lifecycle}
-
-\subsubsection{Virtual DOM}
-
-\subsection{Verwendung}
-
-
-
-
-\section{OpenUI5}
