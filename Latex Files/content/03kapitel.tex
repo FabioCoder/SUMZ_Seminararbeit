@@ -1,35 +1,37 @@
 %!TEX root = ../dokumentation.tex
 
-\chapter{AngularJS}
+\chapter{Angular}
 
 \section{Allgemein}
 
-\subsection{Entstehung des Frameworks}
-Das Framework 
+\subsection{Einführung in das Framework}
+%%Umsetzung von MVC bzw. M*
+Angular ist ein von Google verwaltetes Open Source Framework für die Entwicklung von Single-Page-Applikationen. Die erste Version des Angular-Frameworks hat den Namen AngularJS. Alle nachfolgenden Versionen tragen den Namen Angular, da es wischen der ersten und zweiten Version des Frameworks grundlegende Änderungen gab. Das Framework wird kontinuierlich weiterentwickelt. Monatlich soll eine Minor-Version und alle sechs Monate eine Major-Version erscheinen. Die aktuellste stabilste Version von Angular hat die Versionsnummer 7.1.4. \autocites[vgl.][vii\psqq]{Woiwode.2018}[vgl.][3\psqq]{Freeman.2018}
+
+Das Framework selbst ist in der Sprache TypeScript geschrieben. Angular kann mit TypeScript, JavaScript oder Dart genutzt werden. \autocites[vgl.][vii\psq]{Woiwode.2018}[vgl.][13]{Steyer.2017}
+
+Das in \autoref{} beschriebene MVC Entwurfsmuster kann in einer Angular-Anwendung umgesetzt werden. Die \autoref{ } zeigt die einzelnen Bestandteile der Anwendung. Dabei implementiert das Template die View, die Komponente den Controller und das Modell das Model. \autocite[vgl.][34\psqq]{Freeman.2018} Im weiteren Verlauf werden die Bestandteile näher beschrieben. 
+
+\comment{Abbildung von \textcite[][35]{Freeman.2018}}
+
+
 \subsection{Vorbereitung der Entwicklungsumgebung}
 %% Hier besonders Angular Cli beschreiben
+Für die Entwicklung einer Angular-Anwendung wird unter anderem NodeJS, AngularCLI, ein Editor und ein Browser benötigt.  
 
+Die JavaScript Laufzeitumgebung \textit{NodeJS} ermöglicht das Ausführen von JavaScript Code auf dem Server, stellt einen Applikationsserver zur Verfügung und beinhaltet den Paketmanager \textit{npm}. Die aktuellste Version kann von \url{https://nodejs.org/} heruntergeladen und installiert werden. \autocites[vgl.][2\psqq]{Steyer.2017}[vgl.][7\psq]{Freeman.2018}    
 
-%%Node JS
-%%NPM
-%%Angular Cli
-%%Git
-%%Editor
-%%Browser
+Das Angular Commandline Interface (kurz: AngularCLI) unterstützt den Entwickler beim Erzeugen und Verwalten einer Angular-Anwendung. AngularCLI erzeugt unter anderem  das Grundgerüst einer Angular-Anwendung und richtet den TypeScript Compiler, Werkzeuge zur Testautomatisierung und den Build-Prozess ein. Die aktuelle Version von AngularCLI kann über den Paketmanager \textit{npm} siehe \autoref{lst:InstallAngularCLI} installiert werden. \autocites[vgl.][1\psqq]{Steyer.2017}[vgl.][8\psq]{Freeman.2018}
 
+\comment{Evtl. Beschreibung eines Editors.} 
 
-\section{Konzepte}
-%% Beschreibung der Konzepte die in Angular verwendet werden
-%% Hier kurz beschreiben wie die einzelnen Komponenten zusammenhängen
+%Teilweise ist das von AngularCLI generierte Projekt für den Anwendungsfall nicht ausreichend. Für diesen Fall gibt es weitere Möglichkeiten. \textcite[vgl.][8\psq]{Steyer.2017} beschreibt diese Möglichkeiten in seinem Buch. 
 
-\begin{figure}
-	\centering
-	\includegraphics{angular-anwendung.png}
-	\caption{Screenshot Angular-Beispielanwendung} 
-	\label{fig:AngularAnwendung}
-\end{figure}
+\begin{lstlisting}[caption=Installation von AngularCLI, label=lst:InstallAngularCLI, language=bash]
+npm install -g @angular/cli
+\end{lstlisting}
 
-Im Folgenden werden die in AngularJS verwendeten Konzepte näher erläutert. Die Beispielanwendung in \autoref{fig:AngularAnwendung} wird zur Erklärung der Konzepte verwendet. Bei Änderung des Namens im Input-Feld wird dieser in der obigen Überschrift auch verändert. Die Beispielanwendung weißt folgende Ordnerstruktur auf:
+Eine durch AngularCLI erzeugte Angular-Anwendung weist folgende Grundstruktur auf:
 
 \begin{tabbing}
 	mm \= mm \= mmmmmmmmmmmmmmmm \= \kill
@@ -40,7 +42,7 @@ Im Folgenden werden die in AngularJS verwendeten Konzepte näher erläutert. Die
 	| \> \>  --app.component.html  $\Rightarrow$ \textit{Template von AppComponent}\\
 	| \> \>  --app.component.ts	 $\Rightarrow$ \textit{Komponente AppComponent}\\
 	| \> \>  --app.module.ts  $\Rightarrow$ \textit{Root-Modul AppModule}\\
-	| \> \>  --hello.component.ts  $\Rightarrow$ \textit{Komponente HelloComponent}\\
+	%| \> \>  --hello.component.ts  $\Rightarrow$ \textit{Komponente HelloComponent}\\
 	| \> \> $\vdash$ \textbf{assets/} \\
 	| \> \> $\vdash$ \textbf{environments/} \\
 	| \> --index.html\\
@@ -52,9 +54,25 @@ Im Folgenden werden die in AngularJS verwendeten Konzepte näher erläutert. Die
 	| --...\\
 \end{tabbing}
 
-\comment{Allgemeine Beschreibung von Metadaten und Klassen Dekorator.}
 
-%% Erklärug am Beispiel des Initialen Projekts --> Mit Hinweis darauf, dass dies Projekt beliebig erweitert werden kann.
+\comment{Kurz auf das Entwurfsmuster Decorator eingehen. Wird bei Komponenten, Services, Modulen, etc. verwendet}
+\section{Konzepte}
+
+
+\comment{Wie setzt Angular das MVC Pattern um? Abbildung S.35 Freeman - kurze Beschreibung und dann lange Beschreibung durch Unterkapitel} 
+
+Im Folgenden werden die in Angular verwendeten Konzepte näher erläutert. Die Beispielanwendung in \autoref{fig:AngularAnwendung} wird zur Erklärung der Konzepte verwendet. Bei Änderung des Namens im Input-Feld wird dieser in der obigen Überschrift auch verändert.
+
+\begin{figure}
+	\centering
+	\includegraphics{angular-anwendung.png}
+	\caption{Screenshot Angular-Beispielanwendung} 
+	\label{fig:AngularAnwendung}
+\end{figure}
+
+
+
+%% Erklärung am Beispiel des Initialen Projekts --> Mit Hinweis darauf, dass dies Projekt beliebig erweitert werden kann.
 \subsection{Module}
 
 %%Funktion von Modulen
@@ -62,7 +80,7 @@ Eine Angular-Anwendung ist modular aufgebaut und kann demnach aus mehreren Modul
 
 \comment{Den Begriff Bootstrapping erwähnen!}
 %%Bootstrapping
-Wenn ein Client eine auf AngularJS basierte Seite anfordert, dann schickt der Server den Inhalt der \textit{index.html} als Antwort an den Client zurück. Der Client führt daraufhin die im HTML-Dokument enthaltenen Skript-Elemente aus. Dabei wird die Angular-Plattform initialisiert und das Root-Modul übergeben. Dieses Root-Modul konfiguriert die Angular-Anwendung.\autocites[vgl.][60]{Steyer.2017}[vgl.][226\psqq]{Freeman.2018}  Das Root-Modul der Beispielanwendung ist das Modul \textit{AppModule} siehe \autoref{lst:AppModule}. 
+Wenn ein Client eine auf Angular basierte Seite anfordert, dann schickt der Server den Inhalt der \textit{index.html} als Antwort an den Client zurück. Der Client führt daraufhin die im HTML-Dokument enthaltenen Skript-Elemente aus. Dabei wird die Angular-Plattform initialisiert und das Root-Modul übergeben. Dieses Root-Modul konfiguriert die Angular-Anwendung.\autocites[vgl.][60]{Steyer.2017}[vgl.][226\psqq]{Freeman.2018}  Das Root-Modul der Beispielanwendung ist das Modul \textit{AppModule} siehe \autoref{lst:AppModule}. 
 
 %Dekorator und Eigenschaften
 Module werden im Allgemeinen durch den Dekorator \textit{@NgModule} gekennzeichnet und durch Eigenschaften konfiguriert. Ein Modul kann verschiedene weitere Module über die Eigenschaft \textit{import} importieren und damit die bereitgestellten Funktionalitäten verwenden. Die vom Modul verwendeten Direktiven, Komponenten und Pipes werden in der Eigenschaft \textit{declarations} angegeben. Jedes Root-Modul besitzt die Eigenschaft \textit{bootstrap}. Diese Eigenschaft spezifiziert die Komponente, die beim Starten der Anwendung geladen werden soll. 
@@ -143,7 +161,7 @@ Mit Direktiven kann einem Element zusätzliches Verhalten hinzugefügt werden. \
 \end{itemize}
 
 %%Strukturelle Direktive
-Die strukturellen Direktiven ändern die Struktur des zugehörigen HTML-Elements, indem sie HTML-Elemente hinzufügen oder entfernen. Hierfür verwenden die strukturellen Direktiven Templates, die beliebig oft gerendert werden. \autocites[vgl.][269\psqq]{Steyer.2017}[vgl.][365]{Freeman.2018} Beispiele für strukturellen Direktiven aus AngularJS sind \autocite[vgl.][261\psqq]{Freeman.2018}:
+Die strukturellen Direktiven ändern die Struktur des zugehörigen HTML-Elements, indem sie HTML-Elemente hinzufügen oder entfernen. Hierfür verwenden die strukturellen Direktiven Templates, die beliebig oft gerendert werden. \autocites[vgl.][269\psqq]{Steyer.2017}[vgl.][365]{Freeman.2018} Beispiele für strukturellen Direktiven aus Angular sind \autocite[vgl.][261\psqq]{Freeman.2018}:
 \begin{description}
 	\item [ngIf] Fügt dem HTML-Dokument Inhalt hinzu, wenn die Bedingung wahr ist. 
 	\item [ngfor] Fügt für jedes Item einer Datenquelle den gleichen Inhalt dem HTML-Dokument hinzu.
@@ -193,9 +211,7 @@ Mit Pipes können die  Daten vor der Ausgabe sortiert, formatiert oder gefiltert
 \subsection{Services}
 Laut \textcite[vgl.][474]{Freeman.2018} kann jedes Objekt, dass durch Dependency Injection verwaltet und verteilt wird, als Service bezeichnet werden. Services stellen wiederverwendbare Routinen oder Daten zur Verfügung, die von Direktiven, Komponenten, weiteren Services und Pipes verwendeten werden können. \autocites[vgl.][467\psqq]{Freeman.2018}[vgl.][89]{Steyer.2017}
 
-
 Services verringern die Abhängigkeiten zwischen den Klassen, durch Dependency Injection. Hierdurch können Beispiel Unit-Tests einfacher durchgeführt werden. \autocite[vgl.][469]{Freeman.2018} 
-
 
 %%Wie kann ein Service verwendet werden? 
 %%Registrierung
@@ -205,7 +221,4 @@ Um einen Service zu verwenden, muss dieser entweder global in einem Modul oder l
 Sobald ein Service global registrierte wurde, steht dieser auch in weiteren Modulen zur Verfügung. Ein lokal registrierter Service kann dahingegen nur von der jeweiligen Komponente und den direkten und indirekten Kindkomponenten verwendet werden. 
 
 %%Nutzung
-Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert AngularJS den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}    
-
-
-
+Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert Angular den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}    

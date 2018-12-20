@@ -196,5 +196,54 @@
     }
     \field{year}{2017}
   \endentry
+
+  \entry{Woiwode.2018}{book}{}
+    \name{author}{4}{}{%
+      {{hash=WG}{%
+         family={Woiwode},
+         familyi={W\bibinitperiod},
+         given={Gregor},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Malcher},
+         familyi={M\bibinitperiod},
+         given={Ferdinand},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Koppenhagen},
+         familyi={K\bibinitperiod},
+         given={Danny},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hoppe},
+         familyi={H\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {dpunkt.verlag}%
+    }
+    \strng{namehash}{WG+1}
+    \strng{fullhash}{WGMFKDHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{edition}{1., korrigierter Nachdruck}
+    \field{isbn}{9783864903571}
+    \field{series}{ix edition}
+    \field{title}{Angular: Grundlagen, fortgeschrittene Techniken und Best
+  Practices mit TypeScript - ab Angular 4, inklusive NativeScript und Redux}
+    \list{location}{1}{%
+      {Heidelberg}%
+    }
+    \field{year}{2018}
+  \endentry
 \enddatalist
 \endinput
