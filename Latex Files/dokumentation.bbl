@@ -82,7 +82,41 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Google.}{misc}{}
+  \entry{Gackenheimer.2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GC}{%
+         family={Gackenheimer},
+         familyi={G\bibinitperiod},
+         given={Cory},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Apress}%
+    }
+    \keyw{JavaScript (Computer program language);Web applications;Web site
+  development;Web-based user interfaces}
+    \strng{namehash}{GC1}
+    \strng{fullhash}{GC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{isbn}{9781484212462}
+    \field{series}{The expert's voice in web development}
+    \field{title}{Introduction to React}
+    \verb{url}
+    \verb \url{http://proquest.tech.safaribooksonline.de/9781484212455}
+    \endverb
+    \list{location}{1}{%
+      {New York, New York}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Google.d}{misc}{}
     \name{editor}{1}{}{%
       {{hash=G}{%
          family={Google},
@@ -99,10 +133,12 @@
     \verb{url}
     \verb \url{https://angular.io/guide/attribute-directives}
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{12}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
   \endentry
 
-  \entry{Google.b}{misc}{}
+  \entry{Google.c}{misc}{}
     \name{editor}{1}{}{%
       {{hash=G}{%
          family={Google},
@@ -119,10 +155,12 @@
     \verb{url}
     \verb \url{https://angular.io/guide/architecture-components}
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{13}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
   \endentry
 
-  \entry{Google.c}{misc}{}
+  \entry{Google.b}{misc}{}
     \name{editor}{1}{}{%
       {{hash=G}{%
          family={Google},
@@ -139,10 +177,12 @@
     \verb{url}
     \verb \url{https://angular.io/guide/architecture-modules}
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{15}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
   \endentry
 
-  \entry{Google.d}{misc}{}
+  \entry{Google.}{misc}{}
     \name{editor}{1}{}{%
       {{hash=G}{%
          family={Google},
@@ -159,7 +199,39 @@
     \verb{url}
     \verb \url{https://angular.io/guide/template-syntax}
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{17}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Stefanov.2017}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SS}{%
+         family={Stefanov},
+         familyi={S\bibinitperiod},
+         given={Stoyan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {dpunkt.verlag}%
+    }
+    \strng{namehash}{SS1}
+    \strng{fullhash}{SS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{edition}{1. Auflage}
+    \field{isbn}{978-3-96009-042-7}
+    \field{title}{Durchstarten mit React: Web-Apps einfach und modular
+  entwickeln}
+    \list{location}{1}{%
+      {Heidelberg}%
+    }
+    \field{year}{2017}
   \endentry
 
   \entry{Steyer.2017}{book}{}
@@ -180,7 +252,7 @@
     \list{publisher}{1}{%
       {O'Reilly}%
     }
-    \strng{namehash}{SM+1}
+    \strng{namehash}{SMSD1}
     \strng{fullhash}{SMSD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -195,6 +267,33 @@
       {Heidelberg}%
     }
     \field{year}{2017}
+  \endentry
+
+  \entry{Terlson.2018}{misc}{}
+    \name{editor}{1}{}{%
+      {{hash=TB}{%
+         family={Terlson},
+         familyi={T\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TB1}
+    \strng{fullhash}{TB1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{ECMAScript{\circledR}: 2018 Language Specification}
+    \verb{url}
+    \verb \url{https://www.ecma-international.org/ecma-262/9.0/#sec-intro}
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{26}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Woiwode.2018}{book}{}
@@ -244,6 +343,71 @@
       {Heidelberg}%
     }
     \field{year}{2018}
+  \endentry
+
+  \entry{Zeigermann.2016}{book}{}
+    \name{author}{2}{}{%
+      {{hash=ZO}{%
+         family={Zeigermann},
+         familyi={Z\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Hartmann},
+         familyi={H\bibinitperiod},
+         given={Nils},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {dpunkt}%
+    }
+    \strng{namehash}{ZOHN1}
+    \strng{fullhash}{ZOHN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    React ist ein JavaScript-Framework zur Entwicklung von
+  Benutzeroberfl{\"a}chen sowohl im Browser als auch auf Mobilger{\"a}ten.
+  Entwickelt und eingesetzt von Facebook ist es mittlerweile als
+  Open-Source-Projekt verf{\"u}gbar und hat sich bereits im Einsatz bei
+  diversen namhaften Websites, wie z. B. Airbnb und Netflix, bew{\"a}hrt.
+  Dieses Buch stellt Ihnen die Konzepte von React, React Router und Redux
+  anhand eines durchgehenden Beispiels vor. Sie lernen, wie Sie mit React
+  wiederverwendbare UI-Komponenten entwickeln und wie Sie auf Basis der
+  einzelnen Komponenten ganze Anwendungen zusammenbauen. Unter anderem werden
+  folgende Themen behandelt: - Entwickeln und Testen eigener React-Komponenten
+  auf Basis des JavaScript-Standards ECMAScript 2015 (ES6) - Routing mit dem
+  React Router - Das Architektur-Modell Flux und wie damit komplette
+  Anwendungen umgesetzt werden (am Beispiel des Redux-Frameworks) -
+  Serverseitiges Rendern von React-Komponenten und -Anwendungen - Anbindung
+  eines REST-Backends Die im Buch eingesetzten Sprachfeatures aus ES6 werden in
+  einem eigenen Kapitel vorgestellt, sodass zum Verst{\"a}ndnis des Buches
+  Kenntnisse von ES5 ausreichen. Nach der Lekt{\"u}re des Buches werden Sie in
+  der Lage sein, eigene Projekte mit React umzusetzen. Oliver Zeigermann ist
+  Entwickler, Architekt, Berater und Coach. Oliver wendet seine Erfahrungen aus
+  dem Java-Umfeld auch auf die Softwareentwicklung und Architektur mit
+  JavaScript an. Nils Hartmann ist Software-Enwickler und -Architekt aus
+  Hamburg. Nils hat langj{\"a}hrige Erfahrung mit der Entwicklung von
+  gro{\ss}en Java-Anwendungen. Dar{\"u}ber hinaus besch{\"a}ftigt er sich mit
+  dem server- und clientseitigen Einsatz von JavaScript.%
+    }
+    \field{edition}{1. Aufl.}
+    \field{isbn}{9783864903274}
+    \field{title}{React: Die praktische Einf{\"u}hrung in React, React Router
+  und Redux}
+    \verb{url}
+    \verb \url{http://proquestcombo.safaribooksonline.com/9781492019459}
+    \endverb
+    \list{location}{1}{%
+      {s.l.}%
+    }
+    \field{year}{2016}
   \endentry
 \enddatalist
 \endinput

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  20 DEC 2018 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  26 DEC 2018 19:44
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1379,28 +1379,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dokumentation.bbl' found.
 
-(dokumentation.bbl
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Google.':
-(biblatex)                - Invalid format of field 'urldate'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Google.b':
-(biblatex)                - Invalid format of field 'urldate'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Google.c':
-(biblatex)                - Invalid format of field 'urldate'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Google.d':
-(biblatex)                - Invalid format of field 'urldate'.
-
-)
+(dokumentation.bbl)
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1410,27 +1389,17 @@ line 21.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 21.
  (ads/deckblatt.tex
-<images/firma-deckblatt.png, id=30, 718.685pt x 190.7125pt>
-File: images/firma-deckblatt.png Graphic file (type png)
-<use images/firma-deckblatt.png>
-Package pdftex.def Info: images/firma-deckblatt.png  used on input line 5.
-(pdftex.def)             Requested size: 214.44473pt x 56.9055pt.
-<images/dhbw.png, id=32, 710.655pt x 299.1175pt>
+<images/dhbw.png, id=30, 710.655pt x 299.1175pt>
 File: images/dhbw.png Graphic file (type png)
 <use images/dhbw.png>
 Package pdftex.def Info: images/dhbw.png  used on input line 6.
 (pdftex.def)             Requested size: 135.19934pt x 56.9055pt.
-
-Overfull \hbox (0.16579pt too wide) in alignment at lines 4--7
- [] [] 
- []
-
-[1
+ [1
 
 
 
 {C:/Users/Fabio Kraemer/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./i
-mages/firma-deckblatt.png> <./images/dhbw.png>]) (ads/erklaerung.tex
+mages/dhbw.png>]) (ads/erklaerung.tex
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
@@ -1444,34 +1413,34 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package tocbasic Info: character protrusion at toc deactivated on input line 67
 .
  (dokumentation.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 16.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 16.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 14.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 16.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 14.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 16.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 14.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 16.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <6> on input line 14.
 )
 \tf@toc=\write6
 \openout6 = `dokumentation.toc'.
@@ -1544,23 +1513,31 @@ fier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.3 \chapter
-            {Webframeworks} [1
+            {Grundlagen} [1
 
 
 
 ]
 chapter 2.
-) (content/03kapitel.tex [2
+<images/JavaScript.png, id=151, 401.5pt x 401.5pt>
+File: images/JavaScript.png Graphic file (type png)
+<use images/JavaScript.png>
+Package pdftex.def Info: images/JavaScript.png  used on input line 21.
+(pdftex.def)             Requested size: 213.3957pt x 213.40048pt.
 
-]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2
+
+] [3 <./images/JavaScript.png>]) (content/03kapitel.tex [4]
 chapter 3.
 
-LaTeX Warning: Reference `' on page 3 undefined on input line 13.
+LaTeX Warning: Reference `' on page 5 undefined on input line 12.
 
 
-LaTeX Warning: Reference ` ' on page 3 undefined on input line 13.
+LaTeX Warning: Reference ` ' on page 5 undefined on input line 12.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 22.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 21.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1568,38 +1545,38 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [3
+ [5
 
 ]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-) [4]
-<images/angular-anwendung.png, id=168, 168.02776pt x 97.5645pt>
+) [6]
+<images/angular-anwendung.png, id=210, 168.02776pt x 97.5645pt>
 File: images/angular-anwendung.png Graphic file (type png)
 <use images/angular-anwendung.png>
-Package pdftex.def Info: images/angular-anwendung.png  used on input line 68.
+Package pdftex.def Info: images/angular-anwendung.png  used on input line 66.
 (pdftex.def)             Requested size: 168.02734pt x 97.56424pt.
- [5 <./images/angular-anwendung.png>] [6] [7]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 158.
+ [7 <./images/angular-anwendung.png>] [8] [9]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 156.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 158.
- [8]
-Overfull \hbox (1.22168pt too wide) in paragraph at lines 193--193
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 156.
+ [10]
+Overfull \hbox (1.22168pt too wide) in paragraph at lines 191--191
 []|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
  []
 
 
-Overfull \hbox (7.61911pt too wide) in paragraph at lines 195--195
+Overfull \hbox (7.61911pt too wide) in paragraph at lines 193--193
 []|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
  []
 
 
-Overfull \hbox (10.38483pt too wide) in paragraph at lines 187--198
+Overfull \hbox (10.38483pt too wide) in paragraph at lines 185--196
 [][] 
  []
 
@@ -1608,26 +1585,22 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [9])
-(content/04kapitel.tex [10]
+) [11])
+(content/04kapitel.tex [12]
 chapter 4.
-
-LaTeX Warning: Reference `Gackenheimer.2015' on page 11 undefined on input line
- 12.
-
-) (content/05kapitel.tex [11
+) (content/05kapitel.tex [13
 
 ]
 chapter 5.
-) (content/06kapitel.tex [12
+) (content/06kapitel.tex [14
 
 ]
 chapter 6.
-) [13
+) [15
 
 ] (ads/appendix.tex
 chapter A.
-) [14
+) [16
 
 
 
@@ -1643,8 +1616,26 @@ u-les\T1/lmr/m/n/12 (-20) . \T1/lmr/m/sc/12 (-20) url\T1/lmr/m/n/12 (-20) : [][
 ]$\T1/lmtt/m/n/12 \url{https : / / angular . io / guide / architecture -[]
  []
 
+! Undefined control sequence.
+<argument> ECMAScript{\circledR 
+                                }: 2018 Language Specification
+l.130 	
+       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (23.15533pt too wide) in paragraph at lines 130--130
+[][]\T1/lmr/m/n/12 (-20) Terlson, Bri-an, Hrsg. (2018). \T1/lmr/m/it/12 (-20) E
+C-MA-S-cript: 2018 Lan-gua-ge Spe-ci-fi-ca-ti-on\T1/lmr/m/n/12 (-20) . \T1/lmr/
+m/sc/12 (-20) url\T1/lmr/m/n/12 (-20) : [][]$\T1/lmtt/m/n/12 \url{https :
+ []
+
 No complaints by nag.
-[15
+[17
 
 
 
@@ -1667,13 +1658,13 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35426 strings out of 492970
- 676182 string characters out of 3135828
- 1355294 words of memory out of 3000000
- 38337 multiletter control sequences out of 15000+200000
- 73482 words of font info for 107 fonts, out of 3000000 for 9000
+ 35474 strings out of 492970
+ 677099 string characters out of 3135828
+ 1356372 words of memory out of 3000000
+ 38376 multiletter control sequences out of 15000+200000
+ 73224 words of font info for 105 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,2432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,2434s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -1685,9 +1676,9 @@ ic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb>
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on dokumentation.pdf (21 pages, 391375 bytes).
+Output written on dokumentation.pdf (23 pages, 413525 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 25412 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 25460 words of extra memory for PDF output out of 29859 (max. 10000000)
 

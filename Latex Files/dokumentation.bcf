@@ -95,7 +95,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -1994,10 +1994,57 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">literatur.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">Literatur.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="1">Woiwode.2018</bcf:citekey>
+    <bcf:citekey order="2">Terlson.2018</bcf:citekey>
+    <bcf:citekey order="3">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="4">Woiwode.2018</bcf:citekey>
+    <bcf:citekey order="5">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="6">Woiwode.2018</bcf:citekey>
+    <bcf:citekey order="7">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="8">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="9">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="11">Woiwode.2018</bcf:citekey>
+    <bcf:citekey order="13">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="15">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="16">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="17">Woiwode.2018</bcf:citekey>
+    <bcf:citekey order="18">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="19">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="20">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="21">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="22">Google.c</bcf:citekey>
+    <bcf:citekey order="23">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="24">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="25">Google.b</bcf:citekey>
+    <bcf:citekey order="26">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="27">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="28">Google.b</bcf:citekey>
+    <bcf:citekey order="29">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="30">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="31">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="32">Google.</bcf:citekey>
+    <bcf:citekey order="33">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="34">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="35">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="36">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="37">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="38">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="39">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="40">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="41">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="42">Google.d</bcf:citekey>
+    <bcf:citekey order="43">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="44">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="46">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="47">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="48">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="49">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="50">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="51">Gackenheimer.2015</bcf:citekey>
+    <bcf:citekey order="52">Zeigermann.2016</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

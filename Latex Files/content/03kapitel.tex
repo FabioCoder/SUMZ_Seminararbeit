@@ -5,7 +5,6 @@
 \section{Allgemein}
 
 \subsection{Einführung in das Framework}
-%%Umsetzung von MVC bzw. M*
 Angular ist ein von Google verwaltetes Open Source Framework für die Entwicklung von Single-Page-Applikationen. Die erste Version des Angular-Frameworks hat den Namen AngularJS. Alle nachfolgenden Versionen tragen den Namen Angular, da es wischen der ersten und zweiten Version des Frameworks grundlegende Änderungen gab. Das Framework wird kontinuierlich weiterentwickelt. Monatlich soll eine Minor-Version und alle sechs Monate eine Major-Version erscheinen. Die aktuellste stabilste Version von Angular hat die Versionsnummer 7.1.4. \autocites[vgl.][vii\psqq]{Woiwode.2018}[vgl.][3\psqq]{Freeman.2018}
 
 Das Framework selbst ist in der Sprache TypeScript geschrieben. Angular kann mit TypeScript, JavaScript oder Dart genutzt werden. \autocites[vgl.][vii\psq]{Woiwode.2018}[vgl.][13]{Steyer.2017}
@@ -17,13 +16,13 @@ Das in \autoref{} beschriebene MVC Entwurfsmuster kann in einer Angular-Anwendun
 
 \subsection{Vorbereitung der Entwicklungsumgebung}
 %% Hier besonders Angular Cli beschreiben
-Für die Entwicklung einer Angular-Anwendung wird unter anderem NodeJS, AngularCLI, ein Editor und ein Browser benötigt.  
+Für die Entwicklung einer Angular-Anwendung wird unter anderem NodeJS, AngularCLI, eine Entwicklungsumgebung und ein Browser benötigt.  
 
-Die JavaScript Laufzeitumgebung \textit{NodeJS} ermöglicht das Ausführen von JavaScript Code auf dem Server, stellt einen Applikationsserver zur Verfügung und beinhaltet den Paketmanager \textit{npm}. Die aktuellste Version kann von \url{https://nodejs.org/} heruntergeladen und installiert werden. \autocites[vgl.][2\psqq]{Steyer.2017}[vgl.][7\psq]{Freeman.2018}    
+Sowohl \textcite[vgl.][3\psqq]{Woiwode.2018} als auch \textcite[vgl.][3\psqq]{Steyer.2017} empfehlen die Verwendung der frei verfügbaren Entwicklungsumgebung Visual Studio Code. Die Entwicklungsumgebung unterstützt die Entwicklung in TypeScript und lässt sich leicht durch Plug-Ins, die die Entwicklung erleichtern sollen, erweitern. Visual Studio Code ist für Linux, Mac und Windows verfügbar und kann unter \url{https://code.visualstudio.com/Download}  heruntergeladen werden.
 
-Das Angular Commandline Interface (kurz: AngularCLI) unterstützt den Entwickler beim Erzeugen und Verwalten einer Angular-Anwendung. AngularCLI erzeugt unter anderem  das Grundgerüst einer Angular-Anwendung und richtet den TypeScript Compiler, Werkzeuge zur Testautomatisierung und den Build-Prozess ein. Die aktuelle Version von AngularCLI kann über den Paketmanager \textit{npm} siehe \autoref{lst:InstallAngularCLI} installiert werden. \autocites[vgl.][1\psqq]{Steyer.2017}[vgl.][8\psq]{Freeman.2018}
+Die JavaScript Laufzeitumgebung \textit{NodeJS} ermöglicht das Ausführen von JavaScript Code auf dem Server. Einige Tools, die zur Entwicklung einer Angular-Anwendung verwendet werden, verwenden NodeJS. Außerdem bietet NodeJS einige Pakete mit wiederverwendbarem Code, die über den in integrierten Paketmanager \textit{npm} installiert werden können. Die aktuellste Version kann von \url{https://nodejs.org/} heruntergeladen und installiert werden. 
 
-\comment{Evtl. Beschreibung eines Editors.} 
+Das Angular Commandline Interface (kurz: AngularCLI) unterstützt den Entwickler beim Erzeugen und Verwalten einer Angular-Anwendung. AngularCLI erzeugt unter anderem  das Grundgerüst einer Angular-Anwendung und richtet den TypeScript Compiler, Werkzeuge zur Testautomatisierung und den Build-Prozess ein. Die aktuelle Version von AngularCLI kann über den Paketmanager \textit{npm} siehe \autoref{lst:InstallAngularCLI} installiert werden. \autocites[vgl.][1\psqq]{Steyer.2017}[vgl.][7\psqq]{Freeman.2018}[vgl.][6\psqq]{Woiwode.2018} 
 
 %Teilweise ist das von AngularCLI generierte Projekt für den Anwendungsfall nicht ausreichend. Für diesen Fall gibt es weitere Möglichkeiten. \textcite[vgl.][8\psq]{Steyer.2017} beschreibt diese Möglichkeiten in seinem Buch. 
 
@@ -31,7 +30,7 @@ Das Angular Commandline Interface (kurz: AngularCLI) unterstützt den Entwickler
 npm install -g @angular/cli
 \end{lstlisting}
 
-Eine durch AngularCLI erzeugte Angular-Anwendung weist folgende Grundstruktur auf:
+Struktur einer durch AngularCLI erzeugte Angular-Anwendung:
 
 \begin{tabbing}
 	mm \= mm \= mmmmmmmmmmmmmmmm \= \kill
@@ -55,8 +54,7 @@ Eine durch AngularCLI erzeugte Angular-Anwendung weist folgende Grundstruktur au
 \end{tabbing}
 
 
-\comment{Kurz auf das Entwurfsmuster Decorator eingehen. Wird bei Komponenten, Services, Modulen, etc. verwendet}
-\section{Konzepte}
+\section{Grundkonzepte}
 
 
 \comment{Wie setzt Angular das MVC Pattern um? Abbildung S.35 Freeman - kurze Beschreibung und dann lange Beschreibung durch Unterkapitel} 
@@ -76,7 +74,7 @@ Im Folgenden werden die in Angular verwendeten Konzepte näher erläutert. Die B
 \subsection{Module}
 
 %%Funktion von Modulen
-Eine Angular-Anwendung ist modular aufgebaut und kann demnach aus mehreren Modulen bestehen. Module fassen zusammengehörige Codeeinheiten zusammen und können bestimmte Funktionalitäten bereitstellen, die wiederum von anderen Modulen verwendet werden können. \autocites[vgl.][103\psqq]{Steyer.2017} Die Module einer Angular-Anwendung können in Root-Module, Feature-Module und Shared-Module unterteilt werden. 
+Eine Angular-Anwendung ist modular aufgebaut und kann demnach aus mehreren Modulen bestehen. \autocites[vgl.][103\psqq]{Steyer.2017} Die Module einer Angular-Anwendung können in Root-Module, Feature-Module und Shared-Module unterteilt werden. 
 
 \comment{Den Begriff Bootstrapping erwähnen!}
 %%Bootstrapping
@@ -221,4 +219,7 @@ Um einen Service zu verwenden, muss dieser entweder global in einem Modul oder l
 Sobald ein Service global registrierte wurde, steht dieser auch in weiteren Modulen zur Verfügung. Ein lokal registrierter Service kann dahingegen nur von der jeweiligen Komponente und den direkten und indirekten Kindkomponenten verwendet werden. 
 
 %%Nutzung
-Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert Angular den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}    
+Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert Angular den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}
+
+
+\section{Verwendung}    
