@@ -15,7 +15,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Der Sprachstandard ECMAScript}{2}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Die Obermenge TypeScript}{3}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Die Obermenge TypeScript}{4}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.3}Die Erweiterung JSX}{4}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
@@ -49,16 +49,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Konzepte}{14}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Die Spracherweiterung JSX}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Virtueller DOM}{14}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Komponenten}{14}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Verwendung}{14}{section.4.3}
+\contentsline {section}{\numberline {4.3}Verwendung}{15}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}OpenUI5}{15}{chapter.5}
+\contentsline {chapter}{\numberline {5}OpenUI5}{16}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{16}{chapter.6}
+\contentsline {chapter}{\numberline {6}Fazit}{17}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Anhang}{17}{appendix.A}
+\contentsline {chapter}{\numberline {A}Anhang}{18}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{18}{chapter*.9}
+\contentsline {chapter}{\nonumberline Literatur}{19}{chapter*.9}

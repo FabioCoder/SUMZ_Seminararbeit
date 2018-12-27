@@ -32,7 +32,7 @@ npm install -g @angular/cli
 \end{lstlisting}
 
 Struktur einer durch AngularCLI erzeugte Angular-Anwendung:
-
+\comment{Evtl. an dieser Stelle den Source Code Ordner weg lassen und näher auf die anderen Dateien eingehen.}
 \begin{tabbing}
 	mm \= mm \= mmmmmmmmmmmmmmmm \= \kill
 	$\vdash$ \textbf{example/} \\ 
@@ -109,6 +109,8 @@ Feature Modulen ermöglichen die Gruppierung einer Anwendung in Anwendungsfälle
 
 \subsection{Komponenten}
 
+\comment{Evtl. auf den Lifecycle von Komponenten eingehen.}
+
 %%Beschreibung von Komponenten
 Komponenten sind Klassen, die Daten und Logik zur Anzeige in den zugehörigen Templates bereitstellen. Diese ermöglichen die Aufteilung einer Angular-Anwendung in logisch getrennte Teile. \autocite[vgl.][401]{Freeman.2018} 
 
@@ -183,7 +185,7 @@ Die von Angular bereitgestellten Direktiven (engl. Built-In Directives) können 
 Der Datenaustausch zwischen der Komponente und dem Template erfolgt durch Datenbindungsausdrücke. Ein Datenbindungsausdruck bindet einen JavaScript-Ausdruck an ein Ziel. Das Ziel kann entweder eine Attribut-Direktive oder eine Eigenschaft des zugehörigen HTML-Elements sein. Der JavaScript-Ausdruck ermöglicht den Zugriff auf die Eigenschaften und Methoden der Komponente. \autocites[vgl.][237\psqq]{Freeman.2018}[vgl.][52\psq]{Steyer.2017} [vgl.][]{Google.d} Es gibt insgesamt drei Arten von Data-Bindings, die anhand der Flussrichtung der Daten unterschieden werden können. 
 
 \begin{table}
-\begin{tabular}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{7cm}|}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{6.5cm}|}
 	\hline
 	\textbf{Richtung}&\textbf{Syntax}&\textbf{Verwendung}\\
 	\hline 
@@ -222,5 +224,6 @@ Sobald ein Service global registrierte wurde, steht dieser auch in weiteren Modu
 %%Nutzung
 Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert Angular den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}
 
+\comment{Evtl. noch einen kurzen Abschnitt zu Routen}
 
 \section{Verwendung}    

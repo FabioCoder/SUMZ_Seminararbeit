@@ -25,6 +25,10 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {4.1}Beispiel einer Komponente als Funktion}{15}{lstlisting.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Klasse}{15}{lstlisting.4.2}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
