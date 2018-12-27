@@ -1,6 +1,7 @@
 %!TEX root = ../dokumentation.tex
 
 \chapter{Angular}
+\label{ch:angular}
 
 \section{Allgemein}
 
@@ -71,17 +72,17 @@ Im Folgenden werden die in Angular verwendeten Konzepte näher erläutert. Die B
 
 
 %% Erklärung am Beispiel des Initialen Projekts --> Mit Hinweis darauf, dass dies Projekt beliebig erweitert werden kann.
-\subsection{Module}
+\subsection{Angular-Module}
 
 %%Funktion von Modulen
-Eine Angular-Anwendung ist modular aufgebaut und kann demnach aus mehreren Modulen bestehen. \autocites[vgl.][103\psqq]{Steyer.2017} Die Module einer Angular-Anwendung können in Root-Module, Feature-Module und Shared-Module unterteilt werden. 
+Eine Angular-Anwendung ist modular aufgebaut und kann demnach aus mehreren Angular-Modulen bestehen. Angular-Module sind nicht mit den in \autoref{sec:der-sprachstandard-ecmascript} vorgestellten JavaScript-Modulen zu verwechseln. \autocites[vgl.][103\psqq]{Steyer.2017}[vgl.][301\psqq]{Woiwode.2018} Die Module einer Angular-Anwendung können in Root-Module, Feature-Module und Shared-Module unterteilt werden. 
 
 \comment{Den Begriff Bootstrapping erwähnen!}
 %%Bootstrapping
 Wenn ein Client eine auf Angular basierte Seite anfordert, dann schickt der Server den Inhalt der \textit{index.html} als Antwort an den Client zurück. Der Client führt daraufhin die im HTML-Dokument enthaltenen Skript-Elemente aus. Dabei wird die Angular-Plattform initialisiert und das Root-Modul übergeben. Dieses Root-Modul konfiguriert die Angular-Anwendung.\autocites[vgl.][60]{Steyer.2017}[vgl.][226\psqq]{Freeman.2018}  Das Root-Modul der Beispielanwendung ist das Modul \textit{AppModule} siehe \autoref{lst:AppModule}. 
 
 %Dekorator und Eigenschaften
-Module werden im Allgemeinen durch den Dekorator \textit{@NgModule} gekennzeichnet und durch Eigenschaften konfiguriert. Ein Modul kann verschiedene weitere Module über die Eigenschaft \textit{import} importieren und damit die bereitgestellten Funktionalitäten verwenden. Die vom Modul verwendeten Direktiven, Komponenten und Pipes werden in der Eigenschaft \textit{declarations} angegeben. Jedes Root-Modul besitzt die Eigenschaft \textit{bootstrap}. Diese Eigenschaft spezifiziert die Komponente, die beim Starten der Anwendung geladen werden soll. 
+Module werden im Allgemeinen durch den Dekorator \textit{@NgModule} gekennzeichnet. Ein Modul kann verschiedene weitere Module über die Eigenschaft \textit{import} importieren und damit die bereitgestellten Funktionalitäten verwenden. Die vom Modul verwendeten Direktiven, Komponenten und Pipes werden in der Eigenschaft \textit{declarations} angegeben. Jedes Root-Modul besitzt die Eigenschaft \textit{bootstrap}. Diese Eigenschaft spezifiziert die Komponente, die beim Starten der Anwendung geladen werden soll. 
 
 %% Beschreibung am Beispiel
 Das Modul \textit{AppModule} in \autoref{lst:AppModule} importiert die Module \textit{NgModule}, \textit{BrowserModule} und \textit{FormsModule} und deklariert die zugehörigen Komponenten \textit{AppComponent} und \textit{HelloComponent}. Beim Starten der Anwendung soll die Komponente \textit{AppComponent} aufgerufen werden.
