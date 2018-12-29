@@ -18,12 +18,12 @@ Das Framework ist in JavaScript geschrieben und kann mit JavaScript oder einer i
 
 \section{Konzepte}
 
-\subsection{Virtueller DOM}
+\subsection{Rendern von Elementen}
 
 %ReactElement
 
 \subsection{Komponenten}
-Komponenten sind das zentrale Element in ReactJS. Sie enthalten sowohl die Logik als auch den zugehörigen Teil der Benutzeroberfläche. Eine Komponente kann entweder als Klasse oder als Funktion (engl. functional components) implementiert werden. Wobei der Zustand (State), Lifecycle-Methoden und refs sich nicht  mit Funktionskomponenten verwenden lassen. Laut \textcite[vgl.][82\psq]{Zeigermann.2016} solle man Komponenten vorzugsweise als Funktion implementieren,  außer es soll eine nur von klassenbasierten Komponenten bereitgestelltes Feature verwendet werden. 
+Komponenten sind das zentrale Element in ReactJS. Sie enthalten sowohl die Logik als auch die zugehörige Anzeige. Eine Komponente kann entweder als Klasse oder als Funktion (engl. functional components) implementiert werden.  %Laut \textcite[vgl.][82\psq]{Zeigermann.2016} solle man Komponenten vorzugsweise als Funktion implementieren,  außer es soll eine nur von klassenbasierten Komponenten bereitgestelltes Feature verwendet werden. 
 
 Die Funktion muss genau ein React-Element zurückgeben. Die implementierte Komponente trägt den gleichen Namen wie die Funktion. Die Funktion Hello in \autoref{lst:KomponenteFunktion} implementiert die Komponente Hello.
 
@@ -34,7 +34,7 @@ funtion Hello(){
 }
 \end{lstlisting}
 
-Eine Klasse, die eine React-Komponente implementiert, muss von \textit{React.Component} erben. Zudem muss die Klasse eine Methode \textit{render()}, die ein React-Element zurückgibt, implementieren. Das \autoref{lst:KomponenteKlasse} zeigt die Implementierung der Komponente Hello als Klasse.
+Eine Klasse, die eine React-Komponente implementiert, muss von \textit{React.Component} erben. Zudem muss die Klasse eine Methode \textit{render()}, die ein React-Element zurückgibt, implementieren. Das \autoref{lst:KomponenteKlasse} zeigt die Implementierung der Komponente Hello als Klasse.\autocite[vgl.][80\psqq]{Zeigermann.2016}
 
 \begin{lstlisting}[caption=Beispiel einer Komponente als Klasse, label=lst:KomponenteKlasse, language=Java]
 import React from 'react';
@@ -45,13 +45,31 @@ class Hello extends React.Component{
 }
 \end{lstlisting}
 
-%Beschreibung von Eigenschaften
+Durch Eigenschaften (engl. Properties) lässt sich das Aussehen und Verhalten einer Komponente von außen beeinflussen. Einer Komponente können Eigenschaften (engl. Properties) in Form eines Objektes übergeben werden. Eine Veränderung der Properties durch die Komponente ist nicht möglich. Bei Komponentenfunktionen wird das Objekt der Funktion und bei Komponentenklassen dem Konstruktor der Klasse übergeben. Nach der Weitergabe des Objekts an die Oberklasse React.Component stehen die Properties über die Instanzvariable \textit{props} zur Verfügung. \autocites[vgl.][24\psq,83-88]{Zeigermann.2016}[vgl.][12-17]{Stefanov.2017}
 
-Einer Komponente können beim Erzeugen Properties übergeben werden. Diese sind allerdings innerhalb der Komponente unveränderlich.\autocites[vgl.][71\psqq]{Zeigermann.2016}[vgl.][11\psqq]{Stefanov.2017}
+%Die von einer Komponente erwarteten Eigenschaften können über das Objekt \textit{propTypes} beschrieben werden. Das Objekt \textit{defaultProps} ermöglicht zudem das Bestimmen von Default-Werten für die Eigenschaften. Bei Komponentenfunktionen muss das Objekt als Eigenschaft der Funktion und bei Komponentenklassen als statisches Attribut an die Klasse gesetzt werden. Dies hat den Vorteil das React diese zur Laufzeit überprüfen und eine entsprechende Warnung ausgeben kann. Zudem kann der Entwickler auf einen Blick die von einer Komponenten erwarteten Eigenschaften erkennen. 
 
-%Beschreibung des Zustands
+
+Die Komponentenklasse bietet gegenüber der Komponentenfunktion einige zusätzliche Funktionen. Eine  Komponente, die als Klasse implementiert wird, hat einen Zustand (engl. State). Dieser wird in der Instanzvariable \textit{state} gehalten und kann nur von der Komponente gelesen und verändert werden. Die Änderung des States sollte hauptsächlich über die Methode \textit{setState()} erfolgen. Diese Methode  erwartet ein Objekt mit KeyValue-Paaren oder eine Callback-Funktion. Durch den Aufruf der Methode wird der State mit dem bisherigen State zusammengeführt.\autocites[vgl.][24\psq,89-93]{Zeigermann.2016}[vgl.][17\psq]{Stefanov.2017}
+
+Eine Änderung an den Properties oder am State führt zum erneuten Rendern einer Komponente. Dieser Vorgang erfolgt asynchron. Änderungen werden zum Teil zusammengefasst und nicht sofort angewandt. \autocites[vgl.][24\psq, 90\psq]{Zeigermann.2016}
+
+
+Eine Komponente hat einen gewissen Lebenszyklus. In diesen Zyklus kann bei Verwendung einer Komponentenklasse durch Überschreiben von Lebenszyklus-Methoden (engl. lifecycle-methods) eingegriffen werden. Die \autoref{fig:LifecyleComponent} zeigt die gebräuchlichsten Lebenszyklus-Methoden einer Komponente.\autocites[vgl.][96-100]{Zeigermann.2016}[vgl.][]{Facebook.2018}
 
 %Beschreibung des Lebenszyklusses einer Komponente
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{ReactLifecycle.png}
+	\caption{Lebenszyklus einer  React-Komponente} 
+	\quelle{\textcite{Maj.2018}}
+	\label{fig:LifecyleComponent}
+\end{figure}
+
+
+   
+
 
   
 %Auf die Zusammenarbeit der einzelnen Komponenten eingehen...Wie sieht eine typische React Anwendung aus?

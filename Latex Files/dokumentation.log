@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  27 DEC 2018 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  28 DEC 2018 21:06
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1089,20 +1089,10 @@ Package biblatex Info: ... file 'blx-compat.def' found.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def"
 File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 )
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-bibtex.def"
-File: blx-bibtex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 \c@textcitecount=\count345
 \c@textcitetotal=\count346
@@ -1371,10 +1361,7 @@ LaTeX Info: Redefining \nameref on input line 21.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-\openout5 = `dokumentation-blx.bib'.
+\openout5 = `dokumentation.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dokumentation.bbl' found.
@@ -1530,7 +1517,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2
 
 ]
-<images/JavaScript.png, id=171, 401.5pt x 401.5pt>
+<images/JavaScript.png, id=173, 401.5pt x 401.5pt>
 File: images/JavaScript.png Graphic file (type png)
 <use images/JavaScript.png>
 Package pdftex.def Info: images/JavaScript.png  used on input line 43.
@@ -1562,13 +1549,13 @@ LaTeX Warning: Reference ` ' on page 6 undefined on input line 13.
 ] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 ) [7]
-<images/angular-anwendung.png, id=250, 168.02776pt x 97.5645pt>
+<images/angular-anwendung.png, id=252, 168.02776pt x 97.5645pt>
 File: images/angular-anwendung.png Graphic file (type png)
 <use images/angular-anwendung.png>
 Package pdftex.def Info: images/angular-anwendung.png  used on input line 67.
 (pdftex.def)             Requested size: 168.02734pt x 97.56424pt.
 
-[8 <./images/angular-anwendung.png>] [9] [10] [11]
+[8 <./images/angular-anwendung.png>] [9] [10]
 Overfull \hbox (1.22168pt too wide) in paragraph at lines 194--194
 []|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
  []
@@ -1578,21 +1565,27 @@ Overfull \hbox (7.61911pt too wide) in paragraph at lines 196--196
 []|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
  []
 
-[12]) (content/04kapitel.tex [13]
+[11] [12]) (content/04kapitel.tex [13]
 chapter 4.
 [14
 
-]) (content/05kapitel.tex [15]
+] [15]
+<images/ReactLifecycle.png, id=391, 887.7165pt x 314.3745pt>
+File: images/ReactLifecycle.png Graphic file (type png)
+<use images/ReactLifecycle.png>
+Package pdftex.def Info: images/ReactLifecycle.png  used on input line 64.
+(pdftex.def)             Requested size: 426.79141pt x 151.14748pt.
+) (content/05kapitel.tex [16 <./images/ReactLifecycle.png>]
 chapter 5.
-) (content/06kapitel.tex [16
+) (content/06kapitel.tex [17
 
 ]
 chapter 6.
-) [17
+) [18
 
 ] (ads/appendix.tex
 chapter A.
-) [18
+) [19
 
 
 
@@ -1601,13 +1594,6 @@ chapter without number
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (25.76189pt too wide) in paragraph at lines 130--130
-[][][]\T1/lmr/m/n/12 (-20) Hrsg. \T1/lmr/m/it/12 (-20) In-tro-duc-ti-on to mo-d
-u-les\T1/lmr/m/n/12 (-20) . \T1/lmr/m/sc/12 (-20) url\T1/lmr/m/n/12 (-20) : [][
-]$\T1/lmtt/m/n/12 \url{https : / / angular . io / guide / architecture -[]
- []
-
 ! Undefined control sequence.
 <argument> ECMAScript{\circledR 
                                 }: 2018 Language Specification
@@ -1619,15 +1605,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (23.15533pt too wide) in paragraph at lines 130--130
-[][]\T1/lmr/m/n/12 (-20) Terlson, Bri-an, Hrsg. (2018). \T1/lmr/m/it/12 (-20) E
-C-MA-S-cript: 2018 Lan-gua-ge Spe-ci-fi-ca-ti-on\T1/lmr/m/n/12 (-20) . \T1/lmr/
-m/sc/12 (-20) url\T1/lmr/m/n/12 (-20) : [][]$\T1/lmtt/m/n/12 \url{https :
- []
-
 No complaints by nag.
-[19
+[20
 
 
 
@@ -1641,22 +1620,18 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 LaTeX Warning: There were undefined references.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 \openout1 = `dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35538 strings out of 492970
- 678009 string characters out of 3135828
- 1356372 words of memory out of 3000000
- 38400 multiletter control sequences out of 15000+200000
- 73444 words of font info for 107 fonts, out of 3000000 for 9000
+ 35527 strings out of 492970
+ 678137 string characters out of 3135828
+ 1376873 words of memory out of 3000000
+ 38392 multiletter control sequences out of 15000+200000
+ 73214 words of font info for 105 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,2436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,2447s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -1668,9 +1643,9 @@ ic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb>
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on dokumentation.pdf (25 pages, 436351 bytes).
+Output written on dokumentation.pdf (26 pages, 474853 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 25460 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 25465 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -2066,13 +2066,8 @@
     <bcf:citekey order="67">Zeigermann.2016</bcf:citekey>
     <bcf:citekey order="68">Zeigermann.2016</bcf:citekey>
     <bcf:citekey order="69">Stefanov.2017</bcf:citekey>
-    <bcf:citekey order="70">Zeigermann.2016</bcf:citekey>
-    <bcf:citekey order="71">Stefanov.2017</bcf:citekey>
-    <bcf:citekey order="72">Zeigermann.2016</bcf:citekey>
-    <bcf:citekey order="73">Zeigermann.2016</bcf:citekey>
-    <bcf:citekey order="74">Facebook.2018</bcf:citekey>
-    <bcf:citekey order="75">Maj.2018</bcf:citekey>
-    <bcf:citekey order="76">Maj.2018</bcf:citekey>
+    <bcf:citekey order="70">Maj.2018</bcf:citekey>
+    <bcf:citekey order="71">Maj.2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
