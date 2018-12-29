@@ -25,9 +25,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.1}Beispiel einer Komponente als Funktion}{15}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.1}Beispiel einer minimalen React-Anwendung}{14}{lstlisting.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Klasse}{15}{lstlisting.4.2}
+\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Funktion}{16}{lstlisting.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {lstlisting}{\numberline {4.3}Beispiel einer Komponente als Klasse}{16}{lstlisting.4.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

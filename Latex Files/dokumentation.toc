@@ -49,16 +49,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Konzepte}{14}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Virtueller DOM}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Rendern von Elementen}{14}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Komponenten}{14}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Komponenten}{15}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Verwendung}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.2.3}Virtueller DOM}{17}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}OpenUI5}{17}{chapter.5}
+\contentsline {section}{\numberline {4.3}Verwendung}{17}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{18}{chapter.6}
+\contentsline {chapter}{\numberline {5}OpenUI5}{18}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Anhang}{19}{appendix.A}
+\contentsline {chapter}{\numberline {6}Fazit}{19}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{20}{chapter*.10}
+\contentsline {chapter}{\numberline {A}Anhang}{20}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{21}{chapter*.10}

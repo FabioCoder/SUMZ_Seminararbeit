@@ -19,6 +19,74 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Facebook.2018c}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={Facebook},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A JavaScript library for building user interfaces}
+      \field{title}{React: Add React to a Website}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactjs.org/docs/add-react-to-a-website.html
+      \endverb
+      \verb{url}
+      \verb https://reactjs.org/docs/add-react-to-a-website.html
+      \endverb
+    \endentry
+    \entry{Facebook.2018b}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={Facebook},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A JavaScript library for building user interfaces}
+      \field{title}{React: React.Component}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactjs.org/docs/react-component.html
+      \endverb
+      \verb{url}
+      \verb https://reactjs.org/docs/react-component.html
+      \endverb
+    \endentry
     \entry{Facebook.2018}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
@@ -31,24 +99,26 @@
       \strng{editorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
       \strng{editornamehash}{d85544fce402c7a2a96a48078edaf203}
       \strng{editorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{3}
       \field{sortinit}{F}
       \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{abstract}{A JavaScript library for building user interfaces}
-      \field{title}{React.Component}
-      \field{urlday}{28}
+      \field{title}{React: Rendering Elements}
+      \field{urlday}{29}
       \field{urlmonth}{12}
       \field{urlyear}{2018}
       \field{year}{2018}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://reactjs.org/docs/react-component.html
+      \verb https://reactjs.org/docs/rendering-elements.html
       \endverb
       \verb{url}
-      \verb https://reactjs.org/docs/react-component.html
+      \verb https://reactjs.org/docs/rendering-elements.html
       \endverb
     \endentry
     \entry{Freeman.2018}{book}{}
@@ -117,7 +187,7 @@
       \field{year}{2015}
       \keyw{JavaScript (Computer program language);Web applications;Web site development;Web-based user interfaces}
     \endentry
-    \entry{Google.c}{misc}{}
+    \entry{Google.b}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -137,7 +207,7 @@
       \field{labeldatesource}{url}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{title}{Attribute Directives}
+      \field{title}{Angular: Attribute Directives}
       \field{urlday}{12}
       \field{urlmonth}{12}
       \field{urlyear}{2018}
@@ -149,7 +219,7 @@
       \verb https://angular.io/guide/attribute-directives
       \endverb
     \endentry
-    \entry{Google.d}{misc}{}
+    \entry{Google.c}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -169,7 +239,7 @@
       \field{labeldatesource}{url}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{title}{Introduction to components}
+      \field{title}{Angular: Introduction to components}
       \field{urlday}{13}
       \field{urlmonth}{12}
       \field{urlyear}{2018}
@@ -181,7 +251,7 @@
       \verb https://angular.io/guide/architecture-components
       \endverb
     \endentry
-    \entry{Google.b}{misc}{}
+    \entry{Google.}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -201,7 +271,7 @@
       \field{labeldatesource}{url}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{title}{Introduction to modules}
+      \field{title}{Angular: Introduction to modules}
       \field{urlday}{15}
       \field{urlmonth}{12}
       \field{urlyear}{2018}
@@ -213,7 +283,7 @@
       \verb https://angular.io/guide/architecture-modules
       \endverb
     \endentry
-    \entry{Google.}{misc}{}
+    \entry{Google.d}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -233,7 +303,7 @@
       \field{labeldatesource}{url}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
-      \field{title}{Template Syntax}
+      \field{title}{Angular: Template Syntax}
       \field{urlday}{17}
       \field{urlmonth}{12}
       \field{urlyear}{2018}
