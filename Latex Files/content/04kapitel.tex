@@ -13,8 +13,17 @@ Das Framework ist in JavaScript geschrieben und kann mit JavaScript oder einer i
 \comment{An dieser Stelle eventuell noch mehr auf das Problem eingehen.}
 
 \subsection{Vorbereitung der Entwicklungsumgebung}
+Für die Entwicklung einer React-Anwendung wird unter anderem \textit{NodeJS} (siehe \autoref{NodeJS}), ein Übersetzer (bspw. \textit{Babel} siehe \autoref{Babel}), ein Modul-Loader (bspw. \textit{Webpack} siehe \autoref{Webpack}) und die React-Bibliothek benötigt. Die React-Bibliothek bestehendes aus \textit{react} und \textit{react-dom} kann über den Paketmanager \textit{npm} installiert werden. \autocites[vgl.][92\psqq]{Stefanov.2017}[vgl.][8\psqq]{Zeigermann.2016}
 
 
+
+
+
+Erweiterungen: React Router, Redux (Flux- Implementierung)
+
+React Developer Tools
+
+React
 
 
 
@@ -46,11 +55,11 @@ React kann sowohl in mehreren kleineren Teilen eines Projekts als auch im gesamt
 
 Das React-Framework und der Babel-Transformer werden im Beispiel Zeile 6-8 von einem CDN geladen. Im vierten Script-Tag (Zeile 13-17) ist die React-Anwendung untergebracht. 
 
-Die Methode \textit{render()} des von React bereitgestellten Objekts ReactDOM veranlasst React zum Rendern der Anwendung im Browser. Als Parameter erwartet die Methode ein React-Element und ein Element aus dem DOM-Baum. Ein React-Element beschreibt die Anzeige. Es ist unveränderbar und kann nur durch Erzeugen eines neuen Elements aktualisiert werden.  Zur Definition des React-Elements wird die in \autoref{sec:die-erweiterung-jsx} vorgestellte Erweiterungssprache JSX verwendet.
+Die Methode \textit{render()} des von React bereitgestellten Objekts ReactDOM veranlasst React zum Rendern der Anwendung im Browser. Als Parameter erwartet die Methode ein React-Element und ein Element aus dem DOM-Baum. Ein React-Element ist ein Java-Objekt, dass die Benutzeroberfläche repräsentiert. Es ist unveränderbar und kann nur durch Erzeugen eines neuen Elements aktualisiert werden. Zur Definition des React-Elements wird die in \autoref{sec:die-erweiterung-jsx} vorgestellte Erweiterungssprache JSX verwendet.
 
 Beim Aufruf der HTML-Seite fügt React dem Element mit der ID \glqq \grqq{HelloMountPoint} das h1-Element hinzu. Der Browser gibt demnach \glqq Hello World!\grqq{} aus. \autocites[vgl.][4\psqq, 26\psqq]{Zeigermann.2016}[vgl.][]{Facebook.2018}[vgl.][]{Facebook.2018c}[vgl.][2\psqq]{Stefanov.2017}
 
-Anstatt eines React-Elements wird dem ersten Tag eher eine Komponente, die ein React-Element zurückliefert, übergeben. Auf die Komponenten und die Besonderheiten bei der Veränderung des DOM-Baums wird im Folgenden eingegangen.
+Anstatt eines React-Elements wird meist eine Komponente, die ein React-Element zurückliefert, übergeben. Auf die Komponenten und die Besonderheiten bei der Veränderung des DOM-Baums wird im Folgenden eingegangen.
 
 \subsection{Komponenten}
 Komponenten sind das zentrale Element in ReactJS. Sie enthalten sowohl die Logik als auch die zugehörige Anzeige. Eine Komponente kann entweder als Klasse oder als Funktion (engl. functional components) implementiert werden.  %Laut \textcite[vgl.][82\psq]{Zeigermann.2016} solle man Komponenten vorzugsweise als Funktion implementieren,  außer es soll eine nur von klassenbasierten Komponenten bereitgestelltes Feature verwendet werden. 
@@ -75,17 +84,17 @@ class Hello extends React.Component{
 }
 \end{lstlisting}
 
-Durch Eigenschaften (engl. Properties) lässt sich das Aussehen und Verhalten einer Komponente von außen beeinflussen. Einer Komponente können Eigenschaften (engl. Properties) in Form eines Objektes übergeben werden. Eine Veränderung der Properties durch die Komponente ist nicht möglich. Bei Komponentenfunktionen wird das Objekt der Funktion und bei Komponentenklassen dem Konstruktor der Klasse übergeben. Nach der Weitergabe des Objekts an die Oberklasse React.Component stehen die Properties über die Instanzvariable \textit{props} zur Verfügung. \autocites[vgl.][24\psq,83-88]{Zeigermann.2016}[vgl.][12-17]{Stefanov.2017}
+Durch Eigenschaften (engl. Properties) lässt sich das Aussehen und Verhalten einer Komponente von außen beeinflussen. Einer Komponente können Eigenschaften (engl. Properties) in Form eines Objektes übergeben werden. Eine Veränderung dieser Properties durch die Komponente ist nicht möglich. Bei Komponentenfunktionen wird das Objekt der Funktion und bei Komponentenklassen dem Konstruktor der Klasse übergeben. Nach der Weitergabe des Objekts an die Oberklasse React.Component stehen die Properties über die Instanzvariable \textit{props} zur Verfügung. \autocites[vgl.][24\psq,83-88]{Zeigermann.2016}[vgl.][12-17]{Stefanov.2017}
 
 %Die von einer Komponente erwarteten Eigenschaften können über das Objekt \textit{propTypes} beschrieben werden. Das Objekt \textit{defaultProps} ermöglicht zudem das Bestimmen von Default-Werten für die Eigenschaften. Bei Komponentenfunktionen muss das Objekt als Eigenschaft der Funktion und bei Komponentenklassen als statisches Attribut an die Klasse gesetzt werden. Dies hat den Vorteil das React diese zur Laufzeit überprüfen und eine entsprechende Warnung ausgeben kann. Zudem kann der Entwickler auf einen Blick die von einer Komponenten erwarteten Eigenschaften erkennen. 
 
-
 Die Komponentenklasse bietet gegenüber der Komponentenfunktion einige zusätzliche Funktionen. Eine  Komponente, die als Klasse implementiert wird, hat einen Zustand (engl. State). Dieser wird in der Instanzvariable \textit{state} gehalten und kann nur von der Komponente gelesen und verändert werden. Die Änderung des States sollte hauptsächlich über die Methode \textit{setState()} erfolgen. Diese Methode  erwartet ein Objekt mit KeyValue-Paaren oder eine Callback-Funktion. Durch den Aufruf der Methode wird der State mit dem bisherigen State zusammengeführt.\autocites[vgl.][24\psq,89-93]{Zeigermann.2016}[vgl.][17\psq]{Stefanov.2017}
 
-Eine Änderung an den Properties oder am State führt zum erneuten Rendern einer Komponente. Dieser Vorgang erfolgt asynchron. Änderungen werden zum Teil zusammengefasst und nicht sofort angewandt. \autocites[vgl.][24\psq, 90\psq]{Zeigermann.2016}
-
-
 Eine Komponente hat einen gewissen Lebenszyklus. In diesen Zyklus kann bei Verwendung einer Komponentenklasse durch Überschreiben von Lebenszyklus-Methoden (engl. lifecycle-methods) eingegriffen werden. Die \autoref{fig:LifecyleComponent} zeigt die gebräuchlichsten Lebenszyklus-Methoden einer Komponente.\autocites[vgl.][96-100]{Zeigermann.2016}[vgl.][]{Facebook.2018b}
+
+In einer Komponente können weitere Komponenten eingebunden werden. Eine Komponente wird dabei durch ihren Namen identifiziert. Das Einbinden erfolgt durch Verwendung der Komponente in der Ausgabe. Dieser können Attribute über die Properties mitgegeben werden.\autocites[vgl.][111\psqq]{Zeigermann.2016}
+
+
 
 %Beschreibung des Lebenszyklusses einer Komponente
 
@@ -100,14 +109,12 @@ Eine Komponente hat einen gewissen Lebenszyklus. In diesen Zyklus kann bei Verwe
 
 %Auf die Zusammenarbeit der einzelnen Komponenten eingehen...Wie sieht eine typische React Anwendung aus?
 
-\subsection{Virtueller DOM}
+\subsection{Virtueller DOM-Baum}
+Eine Änderung an den Properties oder am State einer Komponente veranlasst React zum erneuten Rendern. Beim Rendern wird das von einer Komponente bereitgestellte React-Element allerdings nicht direkt in ein DOM-Element umgewandelt und in das native DOM eingesetzt. An stattdessen wird beim Aufruf der Render-Methode eine virtuelle Repräsentation des DOM-Baums generiert.
 
-Durch Ausführen der Methode \textit{render()} wird die komplette Benutzeroberfläche neu erzeugt. Das Rendern kann, wie in den vorherigen Abschnitten beschrieben, beispielsweise durch Veränderung des Zustands oder der Eigenschaften einer Komponente erfolgen.
+Anschließend vergleicht React den virtuellen DOM-Baum vor und nach der Änderung. Auf Grundlage der ermittelten Unterschiede generiert React eine minimale Anzahl an DOM-Operationen.  Diese Operationen werden dann auf den nativen DOM-Baum angewandt und stellen somit den gewünschten Zustand her. Das Rendern ist ein asynchroner Vorgang. Änderungen werden zum Teil zusammengefasst und nicht sofort angewandt.
 
-Die Operationen werden allerdings nicht auf dem nativen, sondern auf einem virtuellen DOM-Baum ausgeführt. Nach Ausführen der render Methode vergleicht React den virtuellen DOM-Baum vor und nach der Änderung. Auf Grundlage der ermittelten Unterschiede generiert React eine minimale Anzahl an DOM-Operationen.  Diese Operationen werden dann auf den nativen DOM-Baum angewandt und stellen somit den gewünschten Zustand her. \autocites[vgl.][23\psq]{Zeigermann.2016}[vgl.][53\psq]{Stefanov.2017}[vgl.][]{Facebook.2018}
-
-
-
+React-Elemente sind einfache und leichtgewichtige JavaScript-Objekte. Daher können die Änderungen zwischen den zwei virtuellen DOM-Bäumen schnell ermittelt werden. Durch dieses Verfahren werden teure DOM-Manipulationen reduziert und damit die Performance der Web-Anwendung verbessert.\autocites[vgl.][23\psq,60\psq,90\psq]{Zeigermann.2016}[vgl.][53\psq]{Stefanov.2017}[vgl.][]{Facebook.2018}
 \section{Verwendung}
 
 

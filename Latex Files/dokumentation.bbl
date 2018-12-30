@@ -187,7 +187,7 @@
       \field{year}{2015}
       \keyw{JavaScript (Computer program language);Web applications;Web site development;Web-based user interfaces}
     \endentry
-    \entry{Google.b}{misc}{}
+    \entry{Google.c}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -219,7 +219,7 @@
       \verb https://angular.io/guide/attribute-directives
       \endverb
     \endentry
-    \entry{Google.c}{misc}{}
+    \entry{Google.b}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -251,7 +251,7 @@
       \verb https://angular.io/guide/architecture-components
       \endverb
     \endentry
-    \entry{Google.}{misc}{}
+    \entry{Google.d}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -283,7 +283,7 @@
       \verb https://angular.io/guide/architecture-modules
       \endverb
     \endentry
-    \entry{Google.d}{misc}{}
+    \entry{Google.}{misc}{}
       \name{editor}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
            family={Google},
@@ -313,6 +313,58 @@
       \endverb
       \verb{url}
       \verb https://angular.io/guide/template-syntax
+      \endverb
+    \endentry
+    \entry{Hlushko.2018}{misc}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=cde4aa3f3d7c5bfd179583160cd9f38d}{%
+           family={Hlushko},
+           familyi={H\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=63e2bd444800e11c0586abd644652e33}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Debbie},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c04aefb3a39c36d616c65997dc83665f}{%
+           family={Menichelli},
+           familyi={M\bibinitperiod},
+           given={Jeremias},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=040f325647417a1256464d2407b50b40}{%
+           family={Montoya},
+           familyi={M\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{fullhash}{6faf3ca91ad736777b1f86b07b646592}
+      \strng{bibnamehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{authorbibnamehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{authornamehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{authorfullhash}{6faf3ca91ad736777b1f86b07b646592}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Webpack: Why webpack}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://webpack.js.org/concepts/why-webpack/
+      \endverb
+      \verb{url}
+      \verb https://webpack.js.org/concepts/why-webpack/
       \endverb
     \endentry
     \entry{Maj.2018}{misc}{}

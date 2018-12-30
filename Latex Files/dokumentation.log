@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  29 DEC 2018 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  30 DEC 2018 20:57
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1517,7 +1517,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2
 
 ]
-<images/JavaScript.png, id=177, 401.5pt x 401.5pt>
+<images/JavaScript.png, id=179, 401.5pt x 401.5pt>
 File: images/JavaScript.png Graphic file (type png)
 <use images/JavaScript.png>
 Package pdftex.def Info: images/JavaScript.png  used on input line 43.
@@ -1535,57 +1535,58 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-))
-(content/03kapitel.tex [5]
+) [5])
+(content/03kapitel.tex [6]
 chapter 3.
 
-LaTeX Warning: Reference `' on page 6 undefined on input line 13.
+LaTeX Warning: Reference `' on page 7 undefined on input line 13.
 
 
-LaTeX Warning: Reference ` ' on page 6 undefined on input line 13.
+LaTeX Warning: Reference ` ' on page 7 undefined on input line 13.
 
-[6
+[7
 
 ] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-) [7]
-<images/angular-anwendung.png, id=256, 168.02776pt x 97.5645pt>
+) [8]
+<images/angular-anwendung.png, id=276, 168.02776pt x 97.5645pt>
 File: images/angular-anwendung.png Graphic file (type png)
 <use images/angular-anwendung.png>
-Package pdftex.def Info: images/angular-anwendung.png  used on input line 67.
+Package pdftex.def Info: images/angular-anwendung.png  used on input line 65.
 (pdftex.def)             Requested size: 168.02734pt x 97.56424pt.
 
-[8 <./images/angular-anwendung.png>] [9] [10]
-Overfull \hbox (1.22168pt too wide) in paragraph at lines 194--194
+[9 <./images/angular-anwendung.png>] [10] [11]
+Overfull \hbox (1.22168pt too wide) in paragraph at lines 192--192
 []|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
  []
 
 
-Overfull \hbox (7.61911pt too wide) in paragraph at lines 196--196
+Overfull \hbox (7.61911pt too wide) in paragraph at lines 194--194
 []|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
  []
 
-[11] [12]) (content/04kapitel.tex [13]
+[12] [13]) (content/04kapitel.tex [14]
 chapter 4.
-[14
+[15
 
-] [15] [16]
-<images/ReactLifecycle.png, id=425, 887.7165pt x 314.3745pt>
+] [16] [17]
+<images/ReactLifecycle.png, id=450, 887.7165pt x 314.3745pt>
 File: images/ReactLifecycle.png Graphic file (type png)
 <use images/ReactLifecycle.png>
-Package pdftex.def Info: images/ReactLifecycle.png  used on input line 94.
+Package pdftex.def Info: images/ReactLifecycle.png  used on input line 103.
 (pdftex.def)             Requested size: 426.79141pt x 151.14748pt.
-) (content/05kapitel.tex [17 <./images/ReactLifecycle.png>]
+ [18 <./images/ReactLifecycle.png>]) (content/05kapitel.tex
+[19]
 chapter 5.
-) (content/06kapitel.tex [18
+) (content/06kapitel.tex [20
 
 ]
 chapter 6.
-) [19
+) [21
 
 ] (ads/appendix.tex
 chapter A.
-) [20
+) [22
 
 
 
@@ -1606,7 +1607,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 No complaints by nag.
-[21
+[23
 
 
 
@@ -1621,21 +1622,22 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                dokumentation
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 \openout1 = `dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35577 strings out of 492970
- 678970 string characters out of 3135828
- 1380706 words of memory out of 3000000
- 38407 multiletter control sequences out of 15000+200000
- 73884 words of font info for 111 fonts, out of 3000000 for 9000
+ 35601 strings out of 492970
+ 679298 string characters out of 3135828
+ 1392882 words of memory out of 3000000
+ 38425 multiletter control sequences out of 15000+200000
+ 74061 words of font info for 112 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,2447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,3765s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
@@ -1647,9 +1649,9 @@ ic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb>
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmtt12.pfb>
-Output written on dokumentation.pdf (27 pages, 488457 bytes).
+Output written on dokumentation.pdf (29 pages, 496815 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 176 named destinations out of 1000 (max. 500000)
- 25473 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
+ 25481 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -49,13 +49,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Vorbereitung der Entwicklungsumgebung}{15}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Konzepte}{16}{section.4.2}
+\contentsline {section}{\numberline {4.2}Konzepte}{15}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Rendern von Elementen}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Rendern von Elementen}{15}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Komponenten}{17}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Virtueller DOM-Baum}{19}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Virtueller DOM-Baum}{18}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Verwendung}{19}{section.4.3}
 \defcounter {refsection}{0}\relax 

@@ -13,23 +13,21 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.1}Installation von AngularCLI}{8}{lstlisting.3.1}
+\contentsline {lstlisting}{\numberline {3.1}Installation von AngularCLI}{7}{lstlisting.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.2}Das Root-Module in der Datei app.module.ts}{10}{lstlisting.3.2}
+\contentsline {lstlisting}{\numberline {3.2}Das Root-Module in der Datei app.module.ts}{9}{lstlisting.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.3}Die Komponente AppComponent in der Datei app.component.ts}{11}{lstlisting.3.3}
+\contentsline {lstlisting}{\numberline {3.3}Die Komponente AppComponent in der Datei app.component.ts}{10}{lstlisting.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.4}Die Komponente HelloComponent in der Datei hello.component.ts}{11}{lstlisting.3.4}
+\contentsline {lstlisting}{\numberline {3.4}Die Komponente HelloComponent in der Datei hello.component.ts}{10}{lstlisting.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.5}Das Template in der Datei app.component.html}{13}{lstlisting.3.5}
+\contentsline {lstlisting}{\numberline {3.5}Das Template in der Datei app.component.html}{12}{lstlisting.3.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.1}Beispiel einer minimalen React-Anwendung}{16}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.1}Beispiel einer Komponente als Funktion}{15}{lstlisting.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Funktion}{17}{lstlisting.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.3}Beispiel einer Komponente als Klasse}{17}{lstlisting.4.3}
+\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Klasse}{15}{lstlisting.4.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -62,7 +62,8 @@ TypeScript ergänzt JavaScript unter anderem um ein stärkeres Typsystem. Hierdu
 TypeScript ermöglicht die Verwendung von Interfaces. \autocites[vgl.][40\psq]{Woiwode.2018}
 
 \subsection{Die Erweiterung JSX}\label{sec:die-erweiterung-jsx}
-Die Spracherweiterung JSX ermöglicht die Verwendung einer HTML ähnlichen Syntax in JavaScript. JSX wird durch einen geeigneten Transpilierer in gültiges JavaScript übersetzt. 
+\label{Babel}
+Die Spracherweiterung JSX ermöglicht die Verwendung einer HTML ähnlichen Syntax in JavaScript. JSX wird durch einen geeigneten Transpilierer in gültiges JavaScript übersetzt.\textcite[vgl.][10]{Zeigermann.2016} empfiehlt an dieser Stelle die Verwendung des Compilers \textit{Babel}.
 
 Die Spracherweiterung kann zum Beispiel bei der Entwicklung mit dem Framework React eingesetzt werden. Dieses Framework verwendet zur Darstellung der Benutzeroberfläche keine Templates. Die Benutzeroberfläche wird stattdessen mit JavaScript Befehlen aufgebaut. Um dies zu erleichtern, kann JSX verwendet werden. Im Folgenden werden die Grundkonzepte von JSX näher erläutert.
 
@@ -83,3 +84,17 @@ const helloWorld = <h1 style = {{
 
 
 \comment{NodeJS}
+
+\section{Zur Entwicklung benötigte Software oder Tools}
+Für die Entwicklung einer auf JavaScript basierenden Webanwendung wird unter anderem NodeJS, der Paketmanager npm und ein Modul-Loader benötigt. Da diese Tools auch bei der Verwendung der Frameworks Angular und ReactJS eine Rolle Spielen, werden diese  im folgenden näher erläutert.
+
+
+%NodeJS
+\label{NodeJS}
+Die JavaScript Laufzeitumgebung \textit{NodeJS} ermöglicht unter anderem das Ausführen von JavaScript Code auf dem Server. Einige Tools, die bei der Entwicklung einer Webanwendung eingesetzt werden, verwenden NodeJS. Außerdem bietet NodeJS Pakete mit wiederverwendbarem Code, die über den in integrierten Paketmanager \textit{npm} installiert werden können. Die aktuellste Version kann von \url{https://nodejs.org/} heruntergeladen und installiert werden.  \autocites[vgl.][1\psqq]{Steyer.2017}[vgl.][7\psqq]{Freeman.2018}[vgl.][6\psqq]{Woiwode.2018} 
+
+\label{Webpack}
+%Modul-Loader
+Wenn Java-Script Module in einer Webanwendung verwendet werden, wird ein Modul-Loader gebraucht. Dieser löst verschiedene Abhängigkeiten auf und erstellt daraus eine Ausgabedatei. Die Verwendung des Modul-Loader \textit{Webpack} wird sowohl für Angular als auch für React Anwendungen empfohlen. \textit{Webpack} unterstützt zudem Hot Module Replacement. Änderungen am Code werden zur Laufzeit übernommen. Dadurch muss eine Anwendung nach einer Änderung nicht komplett neu gebaut werden.\autocites[vgl.][13,21]{Woiwode.2018}[vgl.][9,295-301]{Zeigermann.2016}[vgl.][]{Hlushko.2018}
+
+%Übersetzer
