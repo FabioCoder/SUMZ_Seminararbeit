@@ -1,13 +1,17 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{III}{chapter*.3}
+\contentsline {chapter}{\nonumberline Abk\IeC {\"u}rzungsverzeichnis}{IV}{chapter*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{IV}{chapter*.4}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{V}{chapter*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Listings}{V}{chapter*.5}
+\contentsline {chapter}{\nonumberline Listings}{VI}{chapter*.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Projektumfeld}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Aufbau}{1}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Grundlagen}{2}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -21,48 +25,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Zur Entwicklung ben\IeC {\"o}tigte Software oder Tools}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Angular}{7}{chapter.3}
+\contentsline {section}{\numberline {2.3}Webframeworks}{6}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Allgemein}{7}{section.3.1}
+\contentsline {section}{\numberline {2.4}Vor- und Nachteile von Frameworks}{6}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Einf\IeC {\"u}hrung in das Framework}{7}{subsection.3.1.1}
+\contentsline {section}{\numberline {2.5}Black-Box- und White-Box-Frameworks}{8}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Vorbereitung der Entwicklungsumgebung}{7}{subsection.3.1.2}
+\contentsline {section}{\numberline {2.6}Webarchitekturen}{8}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Grundkonzepte}{8}{section.3.2}
+\contentsline {subsection}{\numberline {2.6.1}MVC-Modell}{8}{subsection.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Angular-Module}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {2.6.2}Single-Page-Applications}{9}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Komponenten}{10}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {2.6.3}Websockets}{9}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Templates}{11}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {3}Angular}{10}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Services}{13}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.1}Allgemein}{10}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Verwendung}{14}{section.3.3}
+\contentsline {subsection}{\numberline {3.1.1}Einf\IeC {\"u}hrung in das Framework}{10}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}ReactJS}{15}{chapter.4}
+\contentsline {subsection}{\numberline {3.1.2}Vorbereitung der Entwicklungsumgebung}{10}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Allgemein}{15}{section.4.1}
+\contentsline {section}{\numberline {3.2}Grundkonzepte}{11}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Einf\IeC {\"u}hrung in das Framework}{15}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {3.2.1}Angular-Module}{12}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Vorbereitung der Entwicklungsumgebung}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {3.2.2}Komponenten}{13}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Konzepte}{16}{section.4.2}
+\contentsline {subsection}{\numberline {3.2.3}Templates}{14}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Rendern von Elementen}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {3.2.4}Services}{16}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Komponenten}{17}{subsection.4.2.2}
+\contentsline {section}{\numberline {3.3}Verwendung}{17}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Virtueller DOM-Baum}{19}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {4}ReactJS}{18}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Verwendung}{19}{section.4.3}
+\contentsline {section}{\numberline {4.1}Allgemein}{18}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}OpenUI5}{20}{chapter.5}
+\contentsline {subsection}{\numberline {4.1.1}Einf\IeC {\"u}hrung in das Framework}{18}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{21}{chapter.6}
+\contentsline {subsection}{\numberline {4.1.2}Vorbereitung der Entwicklungsumgebung}{18}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Anhang}{22}{appendix.A}
+\contentsline {section}{\numberline {4.2}Konzepte}{19}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{23}{chapter*.10}
+\contentsline {subsection}{\numberline {4.2.1}Rendern von Elementen}{19}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Komponenten}{20}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Virtueller DOM-Baum}{21}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Verwendung}{23}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}OpenUI5}{24}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Allgemeines}{24}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Architektur}{24}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Verwendung}{26}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Fazit}{27}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Anhang}{28}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{29}{chapter*.10}
