@@ -2,3 +2,50 @@
 
 \chapter{OpenUI5}
 \label{ch:openUI5}
+
+\section{Allgemeines}
+
+Das dritte, im Rahmen dieser Seminararbeit betrachtete clientseitige Webframework heißt OpenUI5. Es ist ein Open-Source-Projekt der SAP SE und wurde im Dezember 2013 unter der Apache-Lizenz 2.0 veröffentlicht. Diese Lizenz erlaubt das freie Verwenden, Verteilen und Modifizieren der Software, durch diese Eigenschaften ist sie mit der GNU General Public License 3 kompatibel. Das Pendant zu OpenUI5 ist SAPUI5, es ist die proprietäre Version von OpenUI5. SAPUI5 hat den gleichen Funktionsumfang wie OpenUI5 und wird von der SAP SE kostenfrei an ihre Kunden vertrieben. Der Vorteil von SAPUI5 ist ein umfangreicher Softwaresupport, welcher für OpenUI5 nicht verfügbar ist. Da man für den Einsatz von SAPUI5 SAP-Kunde sein muss wird dieses Produkt im Rahmen dieser Seminararbeit nicht weiter betrachtet.
+
+Das OpenUI5-Framework basiert auf HTML5, CSS3 und JavaScript. Daher ist es auch mit allen Browsern kompatibel, welche diese Technologien unterstützen. Dazu zählen der Internet Explorer ab Version 9, Firefox ab Version 4 und Google Chrome ab Version 1. 
+
+
+\section{Architektur}
+
+OpenUI5 ist ein, wie in den Technischen Grundlagen beschrieben, clientseitiges JavaScript Black-Box-Framework. Dies bedeutet, man kann das Framework einfach mittels <script>-Befehl in ein HTML-Dokument importieren. Hierbei können wichtige Interfaceparameter übergaben werden, wie beispielsweise das zu verwendende Theme. Bei näherem Betrachten fällt auf, dass OpenUI5 auf einer modifizierten bootstrap-Bibliothek basiert. 
+
+\begin{lstlisting}[caption=Beispiel für das Einbinden von OpenUI5, label=lst:UI5Einbinden, language=HTML]
+<script id="sap-ui-bootstrap"
+	src=https://openui5.hana.ondemand.com/resources/sap-ui-core.js
+	data-sap-ui-theme="sap_belize">
+</script>
+\end{lstlisting}
+
+Nachdem die Bibliothek in das Dokument integriert wurde, kann man in einem JavaScript-Teil des HTML-Dokumentes verschiedene UI-Elemente generieren und diese auf der Webseite anzeigen lassen. Dieses Verfahren eignet sich jedoch aufgrund der schlechten Strukturierungsmöglichkeiten nur für sehr kleine und kompakte Webanwendungen mit geringem Funktionsumfang. 
+
+Für größere Webentwicklungsprojekte wird auf der OpenUI5-Dokumentationshomepage die Entwicklungsumgebung Eclipse empfohlen. Für diese wurde von der SAP das „SAPUI5 Application Development“-Add-on entwickelt. Dieses ist mit OpenUI5 kompatibel und dient als Assistent zur Erstellung neuer UI5-Entwicklungsprojekte. Der Assistent erstellt nach seinem Durchlauf eine Dateistruktur. Die wichtigsten Dateielemente lauten:
+
+\begin{itemize}
+	\item Index.html
+	\item Component.js
+	\item View.xml
+	\item Controller.js
+	\item I18n.properties
+\end{itemize}
+
+Auf die Funktion und Struktur der Elemente wird im Verlauf dieses Kapitels detailliert eingegangen.
+
+Die index.html-Datei ist der erste Schritt für den Browser beim Öffnen einer Webseite. Bei OpenUI5 werden in der index.html allgemeine Parameter wie beispielsweise Dateipfade oder Kompatibilitätsinformationen festgelegt. Darüber hinaus wird von ihr auf die anderen Bestandteile der Webanwendung verwiesen.
+
+In der Component.js werden alle Datenverbindungen beschrieben. Hierzu gehören beispielsweise einfach eingebundene JSON-Dateien oder auch Verbindungen zu einem ODATA-Webservice, welcher dem UI5-Frontend Daten zur Anzeige bereitstellt. Darüber hinaus wird in der Component.js festgelegt, welche Art der Datenbindung zum Webservice besteht. Möglich ist hierbei nur das bloße Anzeigen, aber auch das Verändern auf der Datenbank.
+
+Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt, wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut, eine grafische Oberfläche zu strukturieren. Denn in ihr kann man verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Die View in UI5 ermöglicht auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller.
+
+Die Datei Controller.js enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Es ist darüber hinaus auch möglich, im Controller weitere Frameworks zu laden und zu nutzen. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen.
+
+Das letzte wichtige OpenUI5-Fragment stellt die Datei i18n.properties dar. Sie ist für Webanwendungen im internationalen Umfeld sehr wichtig. Der Entwickler kann mehrere i18n-Dateien mit Übersetzungen in diversen Sprachen erstellen. Das OpenUI5-Framework stellt daraufhin sicher, dass die passende Sprache als Anzeigesprache verwendet wird. Die Syntax der Dateibenennung hierbei lautet i18n\_XX.properties, wobei das XX für das Länderkürzel der Sprache steht (z.B. Deutsch: i18n\_DE.properties).
+
+
+\section{Verwendung}
+
+OpenUI5 besitzt eine sehr umfassende und übersichtliche Dokumentation unter \url{www.openui5.hana.ondemand.com/#/api}. Diese umfasst darüber hinaus viele Anwendungsbeispiele aus der Praxis. Hierbei ist es möglich, den verwendeten Code zu analysieren und in der eigenen Anwendung zu verwenden. OpenUI5 wurde von der SAP entwickelt um die veralteten SAP ERP-Transaktionen zu ersetzen. In diesem Umfeld hat OpenUI5 auch die größten Stärken. Beispielsweise ist es sehr komfortabel möglich Single-Screen-Geschäftsanwendungen zu erstellen. Diese Anwendungen haben ihren Fokus zumeist auf dem Anzeigen, Pflegen und Auswerten von Daten aus einer Datenbank. Jedoch ist es aufgrund der Verwendung von HTML5 auch möglich, verschiedenste multimediale Inhalte wie beispielsweise Audio oder Video wiederzugeben. Einen weiteren Vorteil von OpenUI5 stellt die Responiveness der Oberfläche dar. Das Framework greift auf die Bibliotheken von bootstrap zu, welche dafür sorgen, dass die Weboberfläche auf jeder Geräteklasse optimal dargestellt wird. Bei der Datenanbindung setzt OpenUI5 auf die OData-Technologie, diese ermöglicht es Daten im JSON-Format asynchron über AJAX zu übertragen. Das auf HTTP basierende OData-Protokoll ist ein von Microsoft entwickelter offener Standard zur Datenübertragung. Der letzte Vorteil von OpenUI5 ist die mögliche Verwendung des MVC-Modells. Dieses vereinfacht die Übersichtlichkeit und Wartbarkeit der Webanwendung. 

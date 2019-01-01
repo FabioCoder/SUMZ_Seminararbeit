@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  31 DEC 2018 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.26)  1 JAN 2019 17:54
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -295,7 +295,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count112
 \LT@p@ftn=\toks20
 )
-Class scrreprt Info: longtable captions redefined on input line 60.
+Class scrreprt Info: longtable captions redefined on input line 61.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
@@ -915,9 +915,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 119.
-Package hyperref Info: Option `linktocpage' set `true' on input line 119.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 119.
+Package hyperref Info: Option `colorlinks' set `true' on input line 120.
+Package hyperref Info: Option `linktocpage' set `true' on input line 120.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 120.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty"
@@ -1364,9 +1364,9 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout5 = `dokumentation.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'dokumentation.bbl' found.
+Package biblatex Info: ... file 'dokumentation.bbl' not found.
 
-(dokumentation.bbl)
+No file dokumentation.bbl.
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1375,7 +1375,7 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 21.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 21.
- (ads/deckblatt.tex
+(ads/deckblatt.tex
 <images/dhbw.png, id=30, 710.655pt x 299.1175pt>
 File: images/dhbw.png Graphic file (type png)
 <use images/dhbw.png>
@@ -1400,41 +1400,42 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package tocbasic Info: character protrusion at toc deactivated on input line 67
 .
  (dokumentation.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 14.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 12.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 14.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 12.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 14.
+(Font)              <12> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 14.
-)
+(Font)              <6> on input line 12.
+ [2
+
+])
 \tf@toc=\write6
 \openout6 = `dokumentation.toc'.
 
- [2
-
-] (ads/acronyms.tex
+ [3]
+(ads/acronyms.tex
 chapter without number
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1451,7 +1452,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-) [3
+) [4
 
 
 
@@ -1463,7 +1464,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 79
 \tf@lof=\write7
 \openout7 = `dokumentation.lof'.
 
- [4
+ [5
 
 
 
@@ -1487,7 +1488,7 @@ chapter without number
 \tf@lol=\write8
 \openout8 = `dokumentation.lol'.
 
- [5
+ [6
 
 
 
@@ -1506,6 +1507,27 @@ l.3 \chapter
 
 ]
 chapter 2.
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 2 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Terlson.2018' on page 2 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 2 undefined on input line 14.
+
+
+Overfull \hbox (64.45691pt too wide) in paragraph at lines 13--14
+\T1/lmr/m/n/12 (-20) Brow-sern un-ter-stüt-ze Ver-si-on tran-spi-liert werden.(
+[][][]) 
+ []
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 2 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 2 undefined on input line 20.
+
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 23.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1517,48 +1539,248 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2
 
 ]
-<images/JavaScript.png, id=179, 401.5pt x 401.5pt>
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 3 undefined on input line 41.
+
+<images/JavaScript.png, id=198, 401.5pt x 401.5pt>
 File: images/JavaScript.png Graphic file (type png)
 <use images/JavaScript.png>
 Package pdftex.def Info: images/JavaScript.png  used on input line 46.
 (pdftex.def)             Requested size: 213.3957pt x 213.40048pt.
- [3 <./images/JavaScript.png>]
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 3 undefined on input line 48.
+
+[3 <./images/JavaScript.png>]
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 4 undefined on input line 55.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 4 undefined on input line 55.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 4 undefined on input line 55.
+
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 4 undefined on input line 56.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 4 undefined on input line 56.
+
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 58.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 58.
- [4]
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 4 undefined on input line 66.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 4 undefined on input line 69.
+
+
+[4]
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 5 undefined on input line 78.
+
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 5 undefined on input line 78.
+
+
+Overfull \hbox (166.06367pt too wide) in paragraph at lines 77--78
+\T1/lmr/m/n/12 (-20) mas-kiert. Ein String wird dem-nach im-mer als Text in-ter
+-pre-tiert und dargestellt.([][]) 
+ []
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [5])
-(content/03kapitel.tex [6]
+)
+
+LaTeX Warning: Citation 'Steyer.2017' on page 5 undefined on input line 97.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 5 undefined on input line 97.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 5 undefined on input line 97.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 5 undefined on input line 101.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 5 undefined on input line 101
+.
+
+
+LaTeX Warning: Citation 'Hlushko.2018' on page 5 undefined on input line 101.
+
+[5] [6] [7] [8]) (content/03kapitel.tex [9] [10]
 chapter 3.
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 13.
+
+
+Overfull \hbox (12.6941pt too wide) in paragraph at lines 12--13
+\T1/lmr/m/n/12 (-20) Ver-si-on von An-gu-lar hat die Ver-si-ons-num-mer 7.1.4. 
+([][]) 
+ []
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 16.
+
 
 Overfull \hbox (3.50267pt too wide) in paragraph at lines 16--17
 []\T1/lmr/m/n/12 (-20) Das in [][]Ka-pi-tel 2[][][] be-schrie-be-ne MVC Ent-wur
 fs-mus-ter kann in ei-ner Angular-Anwendung
  []
 
-<images/Angular-MVC.jpg, id=258, 520.344pt x 75.28125pt>
+<images/Angular-MVC.jpg, id=265, 520.344pt x 75.28125pt>
 File: images/Angular-MVC.jpg Graphic file (type jpg)
 <use images/Angular-MVC.jpg>
 Package pdftex.def Info: images/Angular-MVC.jpg  used on input line 20.
 (pdftex.def)             Requested size: 341.43442pt x 49.39973pt.
-[7
 
- <./images/Angular-MVC.jpg>] [8]
-<images/angular-anwendung.png, id=277, 168.02776pt x 97.5645pt>
+LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 32.
+
+[11
+
+ <./images/Angular-MVC.jpg>]
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 12 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 33.
+
+<images/angular-anwendung.png, id=273, 168.02776pt x 97.5645pt>
 File: images/angular-anwendung.png Graphic file (type png)
 <use images/angular-anwendung.png>
 Package pdftex.def Info: images/angular-anwendung.png  used on input line 66.
 (pdftex.def)             Requested size: 168.02734pt x 97.56424pt.
- [9 <./images/angular-anwendung.png>]
-[10] [11]
+[12]
+
+LaTeX Warning: Citation 'Steyer.2017' on page 13 undefined on input line 77.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 13 undefined on input line 77.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 13 undefined on input line 79.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 13 undefined on input line 79.
+
+
+Overfull \hbox (70.5239pt too wide) in paragraph at lines 77--80
+\T1/lmr/m/n/12 (-20) über-ge-ben. Die-ses Root-Modul kon-fi-gu-riert die Angula
+r-Anwendung.([][])
+ []
+
+[13 <./images/angular-anwendung.png>]
+
+LaTeX Warning: Citation 'Freeman.2018' on page 14 undefined on input line 106.
+
+
+LaTeX Warning: Citation 'Google.c' on page 14 undefined on input line 106.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 14 undefined on input line 106.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 14 undefined on input line 110.
+
+
+LaTeX Warning: Citation 'Google.b' on page 14 undefined on input line 114.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 14 undefined on input line 114.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 14 undefined on input line 114.
+
+[14]
+
+LaTeX Warning: Citation 'Google.b' on page 15 undefined on input line 149.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 149.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 151.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 151.
+
+
+LaTeX Warning: Citation 'Google.' on page 15 undefined on input line 151.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 160.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 160.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 160.
+
+
+Overfull \hbox (26.29576pt too wide) in paragraph at lines 160--162
+\T1/lmr/m/n/12 (-20) len Di-rek-ti-ven Tem-pla-tes, die be-lie-big oft ge-ren-d
+ert wer-den. ([][])
+ []
+
+[15]
+
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 168.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 168.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 176.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 177.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 180.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 180.
+
+
+LaTeX Warning: Citation 'Google.d' on page 16 undefined on input line 180.
+
+
+Overfull \hbox (53.06398pt too wide) in paragraph at lines 180--181
+\T1/lmr/m/n/12 (-20) auf die Ei-gen-schaf-ten und Me-tho-den der Kom-po-nen-te.
+ ([][][])
+ []
+
+
 Overfull \hbox (1.22168pt too wide) in paragraph at lines 189--189
 []|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
  []
@@ -1568,89 +1790,220 @@ Overfull \hbox (7.61911pt too wide) in paragraph at lines 191--191
 []|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
  []
 
-[12] [13]) (content/04kapitel.tex [14]
-chapter 4.
-[15
 
-] [16] [17]
-<images/ReactLifecycle.png, id=454, 887.7165pt x 314.3745pt>
+LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 199.
+
+[16]
+
+LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 208.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 209.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 17 undefined on input line 209.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 210.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 17 undefined on input line 221.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 221.
+
+) (content/04kapitel.tex [17]
+chapter 4.
+
+LaTeX Warning: Citation 'Gackenheimer.2015' on page 18 undefined on input line 
+12.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 12
+.
+
+
+Overfull \hbox (128.79616pt too wide) in paragraph at lines 11--12
+\T1/lmr/m/n/12 (-20) vaS-cript über-setz-ba-re Spra-che wie Ty-pe-S-cript ver-w
+en-det werden.([][]) 
+ []
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 18 undefined on input line 17.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 17
+.
+
+[18
+
+]
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 56
+.
+
+
+LaTeX Warning: Citation 'Facebook.2018' on page 19 undefined on input line 56.
+
+
+LaTeX Warning: Citation 'Facebook.2018c' on page 19 undefined on input line 56.
+
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 19 undefined on input line 56.
+
+
+Overfull \hbox (296.10374pt too wide) in paragraph at lines 55--56
+\T1/lmr/m/n/12 (-20) das h1-Element hin-zu. Der Brow-ser gibt dem-nach Hel-lo 
+World! aus. ([][][][]) 
+ []
+
+[19]
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 20 undefined on input line 62
+.
+
+
+Overfull \hbox (70.98885pt too wide) in paragraph at lines 62--63
+\T1/lmr/m/n/12 (-20) Klas-sen-na-me oder der Funk-ti-ons-na-me ent-spricht dem 
+Na-men der Komponente.([])
+ []
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 20 undefined on input line 87
+.
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 20 undefined on input line 87.
+
+[20]
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 21 undefined on input line 92
+.
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 21 undefined on input line 92.
+
+
+Overfull \hbox (39.00046pt too wide) in paragraph at lines 91--92
+\T1/lmr/m/n/12 (-20) der State mit dem bis-he-ri-gen State zusammengeführt.([][
+]) 
+ []
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 21 undefined on input line 94
+.
+
+
+LaTeX Warning: Citation 'Facebook.2018b' on page 21 undefined on input line 94.
+
+
+
+Overfull \hbox (21.75368pt too wide) in paragraph at lines 93--94
+\T1/lmr/m/n/12 (-20) ten Lebenszyklus-Methoden ei-ner Komponente.([][]) 
+ []
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 21 undefined on input line 96
+.
+
+<images/ReactLifecycle.png, id=395, 887.7165pt x 314.3745pt>
 File: images/ReactLifecycle.png Graphic file (type png)
 <use images/ReactLifecycle.png>
 Package pdftex.def Info: images/ReactLifecycle.png  used on input line 101.
 (pdftex.def)             Requested size: 426.79141pt x 151.14748pt.
- [18 <./images/ReactLifecycle.png>]) (content/05kapitel.tex
-[19]
+
+LaTeX Warning: Citation 'Maj.2018' on page 21 undefined on input line 103.
+
+[21 <./images/ReactLifecycle.png>]
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 22 undefined on input line 11
+6.
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 22 undefined on input line 116.
+
+
+
+LaTeX Warning: Citation 'Facebook.2018' on page 22 undefined on input line 116.
+
+
+
+Overfull \hbox (85.3181pt too wide) in paragraph at lines 115--116
+\T1/lmr/m/n/12 (-20) Per-for-man-ce der Web-Anwendung verbessert.([][][]) 
+ []
+
+) (content/05kapitel.tex [22]
 chapter 5.
-) (content/06kapitel.tex [20
+[23
 
 ]
+Overfull \hbox (7.41412pt too wide) in paragraph at lines 26--27
+[]\T1/lmr/m/n/12 (-20) Für grö-ÿe-re We-b-ent-wick-lungs-pro-jek-te wird auf de
+r OpenUI5-Dokumentationshomepage
+ []
+
+[24]
+Overfull \hbox (0.56877pt too wide) in paragraph at lines 44--45
+[]\T1/lmr/m/n/12 (-20) Die Da-tei Con-trol-ler.js ent-hält die pro-gramm-s-pe-z
+i-fi-sche Lo-gik der UI5-Webanwendung.
+ []
+
+) (content/06kapitel.tex [25] [26]
 chapter 6.
-) [21
+) [27
 
 ] (ads/appendix.tex
 chapter A.
-) [22
+) [28
 
 
 
 ]
-chapter without number
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
-! Undefined control sequence.
-<argument> ECMAScript{\circledR 
-                                }: 2018 Language Specification
-l.130 	
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+
+LaTeX Warning: Empty bibliography on input line 129.
 
 No complaints by nag.
-[23
-
-
-
-]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
- (dokumentation.aux)
+(dokumentation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                dokumentation
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 \openout1 = `dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35519 strings out of 492970
- 678463 string characters out of 3135828
- 1377993 words of memory out of 3000000
- 38348 multiletter control sequences out of 15000+200000
- 73788 words of font info for 109 fonts, out of 3000000 for 9000
+ 35384 strings out of 492970
+ 675018 string characters out of 3135828
+ 1369188 words of memory out of 3000000
+ 38207 multiletter control sequences out of 15000+200000
+ 73963 words of font info for 110 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,3765s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,3758s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-csc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
-m/lmtt12.pfb>
-Output written on dokumentation.pdf (29 pages, 512216 bytes).
+ype1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+bx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
+/lmtt12.pfb>
+Output written on dokumentation.pdf (35 pages, 518892 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
- 25486 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 24038 words of extra memory for PDF output out of 24883 (max. 10000000)
 
