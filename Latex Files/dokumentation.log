@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  31 DEC 2018 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  1 JAN 2019 18:02
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1521,6 +1521,12 @@ chapter without number
 (content/01kapitel.tex
 chapter 1.
 
+Overfull \hbox (29.07405pt too wide) in paragraph at lines 8--9
+\T1/lmr/m/n/12 (-20) werden. Mit dieser Anwendung soll es möglich werden, auf B
+asis von betriebswirtschaftlichen
+ []
+
+
 Overfull \hbox (4.02245pt too wide) in paragraph at lines 14--15
 \T1/lmr/m/n/12 (-20) Webframeworks AngularJS, ReactJS und OpenUI5 beschrieben. 
 In den Beschreibungen
@@ -1874,13 +1880,6 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 \openout1 = `dokumentation.run.xml'.
 
@@ -1904,7 +1903,7 @@ ll/fonts/type1/public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type
 1/public/lm/lmssbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm
 /lmsy10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb><
 /home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (39 pages, 494151 bytes).
+Output written on dokumentation.pdf (39 pages, 493805 bytes).
 PDF statistics:
  791 PDF objects out of 1000 (max. 8388607)
  207 named destinations out of 1000 (max. 500000)
