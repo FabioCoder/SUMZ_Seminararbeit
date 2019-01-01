@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  1 JAN 2019 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  1 JAN 2019 18:07
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -307,7 +307,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count112
 \LT@p@ftn=\toks20
 )
-Class scrreprt Info: longtable captions redefined on input line 61.
+Class scrreprt Info: longtable captions redefined on input line 62.
 
 (/home/vm/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
@@ -939,9 +939,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 120.
-Package hyperref Info: Option `linktocpage' set `true' on input line 120.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 120.
+Package hyperref Info: Option `colorlinks' set `true' on input line 121.
+Package hyperref Info: Option `linktocpage' set `true' on input line 121.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 121.
 
 
 (/home/vm/.miktex/texmfs/install/tex/latex/oberdiek/bookmark.sty
@@ -1521,15 +1521,15 @@ chapter without number
 (content/01kapitel.tex
 chapter 1.
 
-Overfull \hbox (29.07405pt too wide) in paragraph at lines 8--9
-\T1/lmr/m/n/12 (-20) werden. Mit dieser Anwendung soll es möglich werden, auf B
-asis von betriebswirtschaftlichen
+Underfull \hbox (badness 3333) in paragraph at lines 8--9
+\T1/lmr/m/n/12 (+20) der Zeitreihenanalyse, kurz SUMZ, soll die Software busi
+ness horizon
  []
 
 
-Overfull \hbox (4.02245pt too wide) in paragraph at lines 14--15
-\T1/lmr/m/n/12 (-20) Webframeworks AngularJS, ReactJS und OpenUI5 beschrieben. 
-In den Beschreibungen
+Underfull \hbox (badness 2245) in paragraph at lines 14--15
+[]\T1/lmr/m/n/12 (+20) Im weiteren Verlauf der vorliegenden Seminararbeit werde
+n die einzelnen
  []
 
 ) (content/02kapitel.texpdfTeX warning (ext4): destination with the same identi
@@ -1544,15 +1544,15 @@ l.3 \chapter
 ]
 chapter 2.
 
-Overfull \hbox (1.658pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/12 (-20) Allerdings verwendet nicht jeder Benutzer einen neuen Brow
-ser. Um die Kompatibilität
+Underfull \hbox (badness 2269) in paragraph at lines 10--11
+\T1/lmr/m/n/12 (+20) Allerdings verwendet nicht jeder Benutzer einen neuen Brow
+ser. Um die
  []
 
 
-Overfull \hbox (16.59013pt too wide) in paragraph at lines 14--15
-[]\T1/lmr/m/n/12 (-20) In ECMAScript2015 wurden die Variablentypen let zur Eing
-renzung des Geltungsbereichs
+Underfull \hbox (badness 2717) in paragraph at lines 14--15
+[]\T1/lmr/m/n/12 (+20) In ECMAScript2015 wurden die Variablentypen let zur Eing
+renzung des
  []
 
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 20.
@@ -1566,28 +1566,22 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2
 
 ]
-Overfull \hbox (44.0261pt too wide) in paragraph at lines 37--38
-\T1/lmr/m/n/12 (-20) vorgestellten Framwework Angular zur Kennzeichnung und Kon
-figuration der unterschiedlichen
- []
-
 <images/JavaScript.png, id=209, 401.5pt x 401.5pt>
 File: images/JavaScript.png Graphic file (type png)
 <use images/JavaScript.png>
 Package pdftex.def Info: images/JavaScript.png  used on input line 43.
 (pdftex.def)             Requested size: 213.3957pt x 213.40048pt.
-[3 <./images/JavaScript.png>]
+ [3 <./images/JavaScript.png>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 55.
-
-(/home/vm/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
+ (/home/vm/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 55.
 
-Overfull \hbox (37.18735pt too wide) in paragraph at lines 68--69
-\T1/lmr/m/n/12 (-20) React eingesetzt werden. Dieses Framework verwendet zur Da
-rstellung der Benutzeroberfläche
+Underfull \hbox (badness 1259) in paragraph at lines 68--69
+\T1/lmr/m/n/12 (+20) React eingesetzt werden. Dieses Framework verwendet zur Da
+rstellung der
  []
 
 [4] (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
@@ -1596,78 +1590,54 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 ) [5]
-Overfull \hbox (14.25919pt too wide) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (-20) Webframeworks bilden heutzutage oft die Rahmenstruktur für
- Oberflächenentwicklungen.
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+\T1/lmr/m/n/12 (+20) Webframeworks bilden heutzutage oft die Rahmenstruktur für
+
  []
 
 
-Overfull \hbox (30.67657pt too wide) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (-20) Sie sind eine Sammlung von Methoden, welche Funktionalität
-en durch einen Methodenaufruf
+Underfull \hbox (badness 2189) in paragraph at lines 104--105
+\T1/lmr/m/n/12 (+20) Oberflächenentwicklungen. Sie sind eine Sammlung von Metho
+den, welche
  []
 
 
-Overfull \hbox (7.62923pt too wide) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (-20) Entwicklung sein, sondern kann schon vorgefertigte und get
-estete Elemente übernehmen
+Underfull \hbox (badness 1210) in paragraph at lines 104--105
+\T1/lmr/m/n/12 (+20) Implementierung etabliert. Mit dem Einsatz von Webframewor
+ks muss der
  []
 
 
-Overfull \hbox (29.38318pt too wide) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (-20) und die spezielle Funktionalität nutzen. Beispielsweise ni
-mmt das Weboberflächenframework
+Underfull \hbox (badness 3590) in paragraph at lines 104--105
+\T1/lmr/m/n/12 (+20) Funktionalität nutzen. Beispielsweise nimmt das Weboberflä
+chenframework
  []
 
 
-Overfull \hbox (16.83185pt too wide) in paragraph at lines 106--107
-[]\T1/lmr/m/n/12 (-20) Ein Webframework nutzt hierbei ein Grundprinzip der Info
-rmatik: die Wiederverwendung.
+Underfull \hbox (badness 5316) in paragraph at lines 106--107
+[]\T1/lmr/m/n/12 (+20) Ein Webframework nutzt hierbei ein Grundprinzip der Info
+rmatik: die
  []
 
 
-Overfull \hbox (8.02512pt too wide) in paragraph at lines 113--114
-[]\T1/lmr/m/n/12 (-20) Zuerst werden auf die Nachteile bei der Verwendung von W
-ebframeworks eingegangen: 
+Underfull \hbox (badness 1460) in paragraph at lines 113--114
+[]\T1/lmr/m/n/12 (+20) Zuerst werden auf die Nachteile bei der Verwendung von W
+ebframeworks
  []
 
 [6]
-Overfull \hbox (38.63663pt too wide) in paragraph at lines 119--120
-[]\T1/lmr/m/n/12 (-20) Viele Frameworks (oft im Open-Source-Umfeld) leiden oft 
-an \T1/lmr/bx/n/12 mangelnder Dokumentation\T1/lmr/m/n/12 (-20) .
+Underfull \hbox (badness 1102) in paragraph at lines 119--120
+[]\T1/lmr/m/n/12 (+20) Viele Frameworks (oft im Open-Source-Umfeld) leiden oft 
+an \T1/lmr/bx/n/12 mangelnder
  []
 
 
-Overfull \hbox (0.82704pt too wide) in paragraph at lines 125--126
-[]\T1/lmr/m/n/12 (-20) Aufgrund der Generik eines Webframeworks ist es möglich,
- dieses für viele verschiedene
+Underfull \hbox (badness 2961) in paragraph at lines 125--126
+\T1/lmr/m/n/12 (+20) verschiedene Anwendungsfälle \T1/lmr/bx/n/12 wiederzuverwe
+nden\T1/lmr/m/n/12 (+20) . Damit spart sich der
  []
 
-
-Overfull \hbox (20.04045pt too wide) in paragraph at lines 129--130
-\T1/lmr/m/n/12 (-20) Framework abgegeben und der Entwickler kann sich voll und 
-ganz auf die Implementierung
- []
-
-
-Overfull \hbox (43.89157pt too wide) in paragraph at lines 131--132
-\T1/lmr/m/n/12 (-20) Datenbankzugriffen über PHP. Die Framework Standardisierun
-g verkürzt die Einarbeitungszeit
- []
-
-[7]
-Overfull \hbox (3.00119pt too wide) in paragraph at lines 141--142
-\T1/lmr/m/n/12 (-20) Verantwortlichkeiten. Diese Verantwortlichkeiten werden im
- Vorhinein in der Definition
- []
-
-
-Overfull \hbox (17.29553pt too wide) in paragraph at lines 141--142
-\T1/lmr/m/n/12 (-20) geregelt. Somit erreicht man voneinander unabhängige Kompo
-nenten, welche eigenständig
- []
-
-[8]) (content/03kapitel.tex [9] [10]
+[7] [8]) (content/03kapitel.tex [9] [10]
 chapter 3.
 
 LaTeX Warning: Reference `' on page 11 undefined on input line 13.
@@ -1697,42 +1667,12 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (2.12941pt too wide) in paragraph at lines 76--77
-\T1/lmr/m/n/12 (-20) Angular-Modulen bestehen. Angular-Module sind nicht mit de
-n in [][]Unterabschnitt 2.1.1[][][]
+Underfull \hbox (badness 2680) in paragraph at lines 76--77
+\T1/lmr/m/n/12 (+20) Eine Angular-Anwendung ist modular aufgebaut und kann demn
+ach aus
  []
 
-
-Overfull \hbox (0.79288pt too wide) in paragraph at lines 83--84
-\T1/lmr/m/n/12 (-20) Direktiven, Komponenten und Pipes werden in der Eigenschaf
-t \T1/lmr/m/it/12 (-20) declarations \T1/lmr/m/n/12 (-20) angegeben.
- []
-
-[13] [14]
-Overfull \hbox (49.15538pt too wide) in paragraph at lines 151--152
-\T1/lmr/m/n/12 (-20) aus HTML Code, der um Angular spezifische Konzepte wie Dir
-ektiven, Datenbindungsausdrücke
- []
-
-[15]
-Overfull \hbox (19.65616pt too wide) in paragraph at lines 163--165
-\T1/lmr/m/n/12 (-20) indem sie HTML-Elemente hinzufügen oder entfernen. Hierfür
- verwenden die strukturellen
- []
-
-
-Overfull \hbox (6.80318pt too wide) in paragraph at lines 173--174
-[]\T1/lmr/m/n/12 (-20) Mit dieser Direktive können unterschiedliche Style-Eigen
-schaften dem Element
- []
-
-
-Overfull \hbox (14.49875pt too wide) in paragraph at lines 183--184
-\T1/lmr/m/n/12 (-20) Datenbindungsausdrücke. Ein Datenbindungsausdruck bindet e
-inen JavaScript-Ausdruck
- []
-
-
+[13] [14] [15] [16]
 Overfull \hbox (1.22168pt too wide) in paragraph at lines 192--192
 []|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
  []
@@ -1742,46 +1682,17 @@ Overfull \hbox (7.61911pt too wide) in paragraph at lines 194--194
 []|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
  []
 
-[16]
-Overfull \hbox (21.44778pt too wide) in paragraph at lines 211--212
-\T1/lmr/m/n/12 (-20) wiederverwendbare Routinen oder Daten zur Verfügung, die v
-on Direktiven, Komponenten,
- []
-
 [17]) (content/04kapitel.tex [18]
 chapter 4.
-
-Overfull \hbox (2.228pt too wide) in paragraph at lines 11--12
-\T1/lmr/m/n/12 (-20) JavaScript übersetzbare Sprache wie TypeScript verwendet w
-erden.(vgl.[] Gackenheimer
- []
-
 [19
 
 ] [20]
-Overfull \hbox (2.0405pt too wide) in paragraph at lines 60--61
-\T1/lmr/m/n/12 (-20) das h1-Element hinzu. Der Browser gibt demnach Hello Worl
-d! aus. (vgl.[] Zeigermann
- []
-
-
-Overfull \hbox (4.94273pt too wide) in paragraph at lines 76--77
-\T1/lmr/m/n/12 (-20) zurückgibt, implementieren. Das [][]Listing 4.3[][][] zeig
-t die Implementierung der Komponente
+Underfull \hbox (badness 1314) in paragraph at lines 76--77
+\T1/lmr/m/n/12 (+20) zurückgibt, implementieren. Das [][]Listing 4.3[][][] zeig
+t die Implementierung der
  []
 
 [21]
-Overfull \hbox (12.69202pt too wide) in paragraph at lines 93--94
-\T1/lmr/m/n/12 (-20) Verwendung einer Komponentenklasse durch Überschreiben von
- Lebenszyklus-Methoden
- []
-
-
-Overfull \hbox (7.2633pt too wide) in paragraph at lines 93--94
-\T1/lmr/m/n/12 (-20) (engl. lifecycle-methods) eingegriffen werden. Die [][]Abb
-ildung 3[][][] zeigt die gebräuchlichsten
- []
-
 
 LaTeX Warning: File `ReactLifecycle.png' not found on input line 103.
 
@@ -1800,42 +1711,24 @@ If that doesn't work, type  X <return>  to quit.
 
 [22] [23]) (content/05kapitel.tex [24]
 chapter 5.
-
-Overfull \hbox (0.25824pt too wide) in paragraph at lines 15--16
-\T1/lmr/m/n/12 (-20) mittels <script>-Befehl in ein HTML-Dokument importieren. 
-Hierbei können wichtige
- []
-
 [25
 
 ]
-Overfull \hbox (7.41412pt too wide) in paragraph at lines 26--27
-[]\T1/lmr/m/n/12 (-20) Für gröÿere Webentwicklungsprojekte wird auf der OpenUI5
--Dokumentationshomepage
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+[]\T1/lmr/m/n/12 (+20) Für gröÿere Webentwicklungsprojekte wird auf der OpenUI5
+-
  []
 
 [26]
-Overfull \hbox (0.56877pt too wide) in paragraph at lines 44--45
-[]\T1/lmr/m/n/12 (-20) Die Datei Controller.js enthält die programmspezifische 
-Logik der UI5-Webanwendung.
- []
-
-
-Overfull \hbox (16.98361pt too wide) in paragraph at lines 46--47
-\T1/lmr/m/n/12 (-20) OpenUI5-Framework stellt daraufhin sicher, dass die passen
-de Sprache als Anzeigesprache
- []
-
-
-Overfull \hbox (25.96013pt too wide) in paragraph at lines 46--47
-\T1/lmr/m/n/12 (-20) wobei das XX für das Länderkürzel der Sprache steht (z.B. 
-Deutsch: i18n_DE.properties). 
+Underfull \hbox (badness 4846) in paragraph at lines 44--45
+[]\T1/lmr/m/n/12 (+20) Die Datei Controller.js enthält die programmspezifische 
+Logik der UI5-
  []
 
 ) (content/06kapitel.tex
-Overfull \hbox (50.16203pt too wide) in paragraph at lines 51--2
-\T1/lmtt/m/n/12 openui5 . hana . ondemand . com / # / api$[][]\T1/lmr/m/n/12 (-
-20) . Diese umfasst darüber hinaus viele Anwendungsbeispiele
+Underfull \hbox (badness 1009) in paragraph at lines 51--2
+[][]$\T1/lmtt/m/n/12 www . openui5 . hana . ondemand . com / # / api$[][]\T1/lm
+r/m/n/12 (+20) . Diese umfasst darüber hinaus viele
  []
 
 [27] [28]
@@ -1891,7 +1784,7 @@ Here is how much of TeX's memory you used:
  38203 multiletter control sequences out of 15000+200000
  74076 words of font info for 113 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,2549s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,2543s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/vm/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/home/vm/.mikt
 ex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}</home/vm/.miktex/texmfs/ins
 tall/fonts/type1/public/lm/lmbx12.pfb></home/vm/.miktex/texmfs/install/fonts/ty
@@ -1903,9 +1796,9 @@ ll/fonts/type1/public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type
 1/public/lm/lmssbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm
 /lmsy10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb><
 /home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (39 pages, 493805 bytes).
+Output written on dokumentation.pdf (39 pages, 493845 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
+ 790 PDF objects out of 1000 (max. 8388607)
  207 named destinations out of 1000 (max. 500000)
  25567 words of extra memory for PDF output out of 29859 (max. 10000000)
 
