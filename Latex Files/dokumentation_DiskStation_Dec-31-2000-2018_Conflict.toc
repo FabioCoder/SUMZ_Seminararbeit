@@ -19,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.3}Die Erweiterung JSX}{4}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Zur Entwicklung ben\IeC {\"o}tigte Tools}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Zur Entwicklung ben\IeC {\"o}tigte Software oder Tools}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Angular}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -29,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Vorbereitung der Entwicklungsumgebung}{7}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Grundkonzepte}{9}{section.3.2}
+\contentsline {section}{\numberline {3.2}Grundkonzepte}{8}{section.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Angular-Module}{9}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
@@ -65,4 +65,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Anhang}{22}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literatur}{23}{chapter*.11}
+\contentsline {chapter}{\nonumberline Literatur}{23}{chapter*.10}
