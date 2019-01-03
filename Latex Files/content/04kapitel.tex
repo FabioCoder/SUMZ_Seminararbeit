@@ -10,8 +10,6 @@ ReactJS ist eine von Facebook entwickelte JavaScript Bibliothek zur Entwicklung 
 
 Das Framework ist in JavaScript geschrieben und kann mit JavaScript oder einer in JavaScript übersetzbare Sprache wie TypeScript verwendet werden.\autocites[vgl.][1\psqq]{Gackenheimer.2015}[vgl.][3\psqq]{Zeigermann.2016}
 
-\comment{An dieser Stelle eventuell noch mehr auf das Problem eingehen.}
-
 \subsection{Vorbereitung der Entwicklungsumgebung}
 Für die Entwicklung einer React-Anwendung wird unter anderem \textit{NodeJS} (siehe \autoref{NodeJS}), ein Übersetzer (bspw. \textit{Babel} siehe \autoref{Babel}), ein Modul-Loader (bspw. \textit{Webpack} siehe \autoref{Webpack}) und die React-Bibliothek benötigt. Die React-Bibliothek bestehendes aus \textit{react} und \textit{react-dom} kann über den Paketmanager \textit{npm} installiert werden. \autocites[vgl.][92\psqq]{Stefanov.2017}[vgl.][8\psqq]{Zeigermann.2016}
 
@@ -28,73 +26,99 @@ React
 
 
 \section{Konzepte}
+Zur Erklärung der Grundkonzepte wird das Beispiel aus \autoref{BeschreibungHelloBsp} herangezogen.
 
 \subsection{Rendern von Elementen}
-React kann sowohl in mehreren kleineren Teilen eines Projekts als auch im gesamten Projekt eingesetzt werden. Um React in einem Projekt zu verwenden, muss auf einer HTML Seite ein Wurzelelement definiert und das React-Framework sowie der Code der Anwendung über Script-Tags eingebunden werden. In \autoref{lst:ReactAnwendung} ist ein Beispiel für eine minimale React-Anwendung. 
 
-\begin{lstlisting}[caption=Beispiel einer minimalen React-Anwendung , label=lst:ReactAnwendung, language=HTML]
+Eine React-Anwendung benötigt ein Wurzelelement auf einer HTML-Seite. Unter diesem HTML-Element rendert React die Benutzeroberfläche der React-Anwendung. Das Rendern bezeichnet dabei den Vorgang, der schlussendlich zum Einfügen von HTML-Elementen im DOM führt. Dieser Vorgang wird in \autoref{Rendern} näher betrachtet. 
+
+Die Benutzeroberfläche einer React-Anwendung wird durch React-Elemente repräsentiert. Ein React-Element ist ein JavaScript-Objekt. Es ist unveränderbar und kann nur durch Erzeugen eines neuen Elements aktualisiert werden.
+
+Das \autoref{lst:BeispielReactHtml} zeigt die HTML-Seite der Beispielanwendung. Die Benutzeroberfläche der Beispiel React-Anwendung aus \autoref{lst:BeispielReactRender} soll unter dem Element mit der ID \textit{app} gerendert werden. Dies erfolgt durch Aufruf der Methode \glqq ReactDOM.render() \grqq. Diese veranlasst React zum Rendern des im ersten Parameter definierten React-Elements in das im zweiten Parameter angegebenen Wurzelelements. Das React-Element wird unter Verwendung der Spracherweiterung JSX (siehe \autoref{JSX}) definiert.
+
+\begin{lstlisting}[caption=Beispiel React-Anwendung: HTML-Datei , label=lst:BeispielReactHtml, language=HTML]
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Hello World</title>
-		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-	</head>
+	...
 	<body>
-		<div id='HelloMountPoint'></div>
+		<div id="app"></div>
+		<script src="src/app.js"></script>
 	</body>
-	<script type="text/babel" >
-		ReactDOM.render(
-			<h1>Hello World!</h1>, 
-			document.getElementById('HelloMountPoint'));
-	</script>
+	...
 </html>
 \end{lstlisting}
 
-Das React-Framework und der Babel-Transformer werden im Beispiel Zeile 6-8 von einem CDN geladen. Im vierten Script-Tag (Zeile 13-17) ist die React-Anwendung untergebracht. 
+In diesem Beispiel wird der Methode die Komponente App, die ein React-Element zurückliefert, übergeben. Auf die Komponenten wird in \autoref{sec:reactKomponenten} näher eingegangen. \autocites[vgl.][4\psqq, 26\psqq]{Zeigermann.2016}[vgl.][]{Facebook.2018}[vgl.][]{Facebook.2018c}[vgl.][2\psqq]{Stefanov.2017}
 
-Die Methode \textit{render()} des von React bereitgestellten Objekts ReactDOM veranlasst React zum Rendern der Anwendung im Browser. Als Parameter erwartet die Methode ein React-Element und ein Element aus dem DOM-Baum. Ein React-Element ist ein Java-Objekt, dass die Benutzeroberfläche repräsentiert. Es ist unveränderbar und kann nur durch Erzeugen eines neuen Elements aktualisiert werden. Zur Definition des React-Elements wird die in \autoref{sec:die-erweiterung-jsx} vorgestellte Erweiterungssprache JSX verwendet.
 
-Beim Aufruf der HTML-Seite fügt React dem Element mit der ID \glqq \grqq{HelloMountPoint} das h1-Element hinzu. Der Browser gibt demnach \glqq Hello World!\grqq{} aus. \autocites[vgl.][4\psqq, 26\psqq]{Zeigermann.2016}[vgl.][]{Facebook.2018}[vgl.][]{Facebook.2018c}[vgl.][2\psqq]{Stefanov.2017}
+\begin{lstlisting}[caption=Beispiel React-Anwendung: Aufruf der Render-Methode, label=lst:BeispielReactRender, language=Java]
+import "./styles.css";
+import React from "react";
+import ReactDom from "react-dom";
+import Hello from "./hello";
 
-Anstatt eines React-Elements wird meist eine Komponente, die ein React-Element zurückliefert, übergeben. Auf die Komponenten und die Besonderheiten bei der Veränderung des DOM-Baums wird im Folgenden eingegangen.
-
-\subsection{Komponenten}
-Komponenten sind das zentrale Element in ReactJS. Sie enthalten sowohl die Logik als auch die zugehörige Anzeige. Eine Komponente kann entweder als Klasse oder als Funktion (engl. functional components) implementiert werden.  %Laut \textcite[vgl.][82\psq]{Zeigermann.2016} solle man Komponenten vorzugsweise als Funktion implementieren,  außer es soll eine nur von klassenbasierten Komponenten bereitgestelltes Feature verwendet werden. 
-
-Die Funktion muss genau ein React-Element zurückgeben. Die implementierte Komponente trägt den gleichen Namen wie die Funktion. Die Funktion Hello in \autoref{lst:KomponenteFunktion} implementiert die Komponente Hello.
-
-\begin{lstlisting}[caption=Beispiel einer Komponente als Funktion, label=lst:KomponenteFunktion, language=Java]
-import React from 'react';
-funtion Hello(){
-	return <h1>Hello World</h1>;
+class App extends React.Component {
+	render() {	
+		return (
+			<ErrorBoundary>
+				<Hello name="World" />
+			</ErrorBoundary>
+		);
+	}
 }
+
+class ErrorBoundary extends React.Component {
+	...	
+}
+
+ReactDom.render(<App />, document.getElementById("app"));
 \end{lstlisting}
 
-Eine Klasse, die eine React-Komponente implementiert, muss von \textit{React.Component} erben. Zudem muss die Klasse eine Methode \textit{render()}, die ein React-Element zurückgibt, implementieren. Das \autoref{lst:KomponenteKlasse} zeigt die Implementierung der Komponente Hello als Klasse.\autocite[vgl.][80\psqq]{Zeigermann.2016}
 
-\begin{lstlisting}[caption=Beispiel einer Komponente als Klasse, label=lst:KomponenteKlasse, language=Java]
-import React from 'react';
-class Hello extends React.Component{
+\subsection{Komponenten}\label{sec:reactKomponenten}
+
+Komponenten sind das zentrale Element in ReactJS. Sie enthalten sowohl die Logik als auch die zugehörige Anzeige. Eine Komponente kann entweder als Klasse oder als Funktion (engl. functional components) implementiert werden. 
+
+Eine Funktion, die eine React-Komponente implementiert, muss genau ein React-Element als Rückgabewert zurückgeben. Die Klasse muss von \textit{React.Component} erben und die Methode \textit{render()}, die ein React-Element zurückgibt, implementieren. Der Klassenname oder der Funktionsname entspricht dem Namen der Komponente.\autocite[vgl.][80\psqq]{Zeigermann.2016} Das \autoref{lst:BeispielReactHello} zeigt eine Komponente Hello, die als Komponentenklasse implementiert ist. 
+
+
+\begin{lstlisting}[caption=Beispiel React-Anwendung: Die Komponente Hello, label=lst:BeispielReactHello, language=Java]
+import "./styles.css";
+import React from "react";
+import ReactDom from "react-dom";
+
+export default class Hello extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = { name: this.props.name };
+	}
+	
+	onChange(event) {
+		this.setState({ name: event.target.value });
+	}
+
 	render() {
-		return <h1>Hello World</h1>;
+		return (<div>
+			<h1>Hello {this.state.name}</h1>
+			<input onChange={e => this.onChange(e)} />
+		</div>);
 	}
 }
 \end{lstlisting}
 
-Durch Eigenschaften (engl. Properties) lässt sich das Aussehen und Verhalten einer Komponente von außen beeinflussen. Einer Komponente können Eigenschaften (engl. Properties) in Form eines Objektes übergeben werden. Eine Veränderung dieser Properties durch die Komponente ist nicht möglich. Bei Komponentenfunktionen wird das Objekt der Funktion und bei Komponentenklassen dem Konstruktor der Klasse übergeben. Nach der Weitergabe des Objekts an die Oberklasse React.Component stehen die Properties über die Instanzvariable \textit{props} zur Verfügung. \autocites[vgl.][24\psq,83-88]{Zeigermann.2016}[vgl.][12-17]{Stefanov.2017}
+Durch Eigenschaften (engl. Properties) lässt sich das Aussehen und Verhalten einer Komponente von außen beeinflussen. Einer Komponente können Eigenschaften (engl. Properties) in Form eines Objektes übergeben werden. Das Propertie-Objekt kann von der Komponente nicht verändert werden. 
+
+Bei Komponentenfunktionen wird das Objekt der Funktion und bei Komponentenklassen dem Konstruktor der Klasse übergeben. Nach der Weitergabe des Objekts an die Oberklasse React.Component stehen die Properties über die Instanzvariable \textit{props} zur Verfügung. \autocites[vgl.][24\psq,83-88]{Zeigermann.2016}[vgl.][12-17]{Stefanov.2017}
 
 %Die von einer Komponente erwarteten Eigenschaften können über das Objekt \textit{propTypes} beschrieben werden. Das Objekt \textit{defaultProps} ermöglicht zudem das Bestimmen von Default-Werten für die Eigenschaften. Bei Komponentenfunktionen muss das Objekt als Eigenschaft der Funktion und bei Komponentenklassen als statisches Attribut an die Klasse gesetzt werden. Dies hat den Vorteil das React diese zur Laufzeit überprüfen und eine entsprechende Warnung ausgeben kann. Zudem kann der Entwickler auf einen Blick die von einer Komponenten erwarteten Eigenschaften erkennen. 
 
-Die Komponentenklasse bietet gegenüber der Komponentenfunktion einige zusätzliche Funktionen. Eine  Komponente, die als Klasse implementiert wird, hat einen Zustand (engl. State). Dieser wird in der Instanzvariable \textit{state} gehalten und kann nur von der Komponente gelesen und verändert werden. Die Änderung des States sollte hauptsächlich über die Methode \textit{setState()} erfolgen. Diese Methode  erwartet ein Objekt mit KeyValue-Paaren oder eine Callback-Funktion. Durch den Aufruf der Methode wird der State mit dem bisherigen State zusammengeführt.\autocites[vgl.][24\psq,89-93]{Zeigermann.2016}[vgl.][17\psq]{Stefanov.2017}
+Die Komponentenklasse bietet gegenüber der Komponentenfunktion einige zusätzliche Funktionen. Eine  Komponente, die als Klasse implementiert wird, hat einen Zustand (engl. State). Dieser wird in der Instanzvariable \textit{state} gehalten und kann nur von der Komponente gelesen und verändert werden. Die Änderung des States sollte hauptsächlich über die Methode \textit{setState()} erfolgen. Diese Methode  erwartet ein Objekt mit KeyValue-Paaren oder eine Callback-Funktion. Durch den Aufruf der Methode wird der State mit dem bisherigen State zusammengeführt.\autocites[vgl.][24\psq,89-93]{Zeigermann.2016}[vgl.][17\psq]{Stefanov.2017} 
+
+Die Komponente Hello in \autoref{lst:BeispielReactHello} verwendet einen über die Properties übergebenen Namen als initialen Wert für den im State gehaltenen Namen. Bei Änderungen im Inputfeld wird das Event OnChange ausgelöst, die Methode OnChange aufgerufen und der vom State gehaltene Namen über die Methode setState geändert. Der Aufruf der Methode führt zum erneuten Rendern der Anwendung. Der in der Überschrift angezeigte Name wird angepasst.
 
 Eine Komponente hat einen gewissen Lebenszyklus. In diesen Zyklus kann bei Verwendung einer Komponentenklasse durch Überschreiben von Lebenszyklus-Methoden (engl. lifecycle-methods) eingegriffen werden. Die \autoref{fig:LifecyleComponent} zeigt die gebräuchlichsten Lebenszyklus-Methoden einer Komponente.\autocites[vgl.][96-100]{Zeigermann.2016}[vgl.][]{Facebook.2018b}
 
-In einer Komponente können weitere Komponenten eingebunden werden. Eine Komponente wird dabei durch ihren Namen identifiziert. Das Einbinden erfolgt durch Verwendung der Komponente in der Ausgabe. Dieser können Attribute über die Properties mitgegeben werden.\autocites[vgl.][111\psqq]{Zeigermann.2016}
-
-
+In einer Komponente können weitere Komponenten eingebunden werden. Eine Komponente wird dabei durch ihren Namen identifiziert. Das Einbinden erfolgt durch Verwendung der Komponente in der Ausgabe. Dieser können Attribute über die Properties mitgegeben werden.\autocites[vgl.][111\psqq]{Zeigermann.2016} In diesem Beispiel wird die Komponente Hello aus \autoref{lst:BeispielReactHello}  und die Komponente ErrorBoundary aus \autoref{lst:BeispielReactRender} in der Komponente App verwendet. 
 
 %Beschreibung des Lebenszyklusses einer Komponente
 
@@ -109,7 +133,8 @@ In einer Komponente können weitere Komponenten eingebunden werden. Eine Kompone
 
 %Auf die Zusammenarbeit der einzelnen Komponenten eingehen...Wie sieht eine typische React Anwendung aus?
 
-\subsection{Virtueller DOM-Baum}
+\subsection{virtueller DOM-Baum }
+\label{Rendern}
 Eine Änderung an den Properties oder am State einer Komponente veranlasst React zum erneuten Rendern. Beim Rendern wird das von einer Komponente bereitgestellte React-Element allerdings nicht direkt in ein DOM-Element umgewandelt und in das native DOM eingesetzt. An stattdessen wird beim Aufruf der Render-Methode eine virtuelle Repräsentation des DOM-Baums generiert.
 
 Anschließend vergleicht React den virtuellen DOM-Baum vor und nach der Änderung. Auf Grundlage der ermittelten Unterschiede generiert React eine minimale Anzahl an DOM-Operationen.  Diese Operationen werden dann auf den nativen DOM-Baum angewandt und stellen somit den gewünschten Zustand her. Das Rendern ist ein asynchroner Vorgang. Änderungen werden zum Teil zusammengefasst und nicht sofort angewandt.

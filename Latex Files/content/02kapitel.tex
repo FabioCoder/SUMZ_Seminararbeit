@@ -60,6 +60,9 @@ Um das Jahr 2005 fing die Technologie AJAX (Asynchronous JavaScript and XML) an,
 
 Mit den bisher beschriebenen Technologien musste der Client immer eine Anfrage an den Server schicken, doch bei bestimmten Anwendungsfällen ist eine persistente und bidirektionale Verbindung zum Server notwendig. Beispielsweise will man bei Chat-Anwendungen oder Live-Sport-Ticker immer in Echtzeit die aktuellen Informationen bereitgestellt bekommen. Doch die bisher gängigen HTTP-Verbindungen sehen diese Art der Verbindung nicht vor. Auf ihrer Basis müsste der Benutzer die Webseite immer manuell aktualisieren. Mittels eines Websockets kann eine solche persistente Client-Server-Verbindung geöffnet werden. Ein Websocket basiert auf einem eigenen Protokoll, dieses muss zuerst über HTTP-Anfragen verhandelt werden. Wenn Client und Server der Verbindung zugestimmt haben, besteht zwischen den beiden Parteien ein dauerhafter „Tunnel“, über diesen können Informationen mit geringer Latenz ausgetauscht werden. Im Vergleich zu einer herkömmlichen HTTP-Verbindung wird der überflüssige Header eingespart, das führt zu weniger Internettraffic. Wenn eine der beiden Parteien die dauerhafte Verbindung trennen möchte, muss sie der Anderen eine „Close“-Nachricht senden.\autocites[vgl.][11\psqq]{Fink2014} (SPA-Dev)
 
+\label{MVC}
+
+
 \section{JavaScript}
 
 \subsection{Der Sprachstandard ECMAScript}\label{sec:der-sprachstandard-ecmascript}
@@ -145,7 +148,8 @@ fontSize: titleFontSize + 'px'
 
 \subsection{Zur Entwicklung benötigte Software oder Tools}
 Für die Entwicklung einer auf JavaScript basierenden Webanwendung wird unter anderem NodeJS, der Paketmanager npm und ein Modul-Loader benötigt. Da diese Tools auch bei der Verwendung der Frameworks Angular und ReactJS eine Rolle Spielen, werden diese  im folgenden näher erläutert.
-
+\section{Zur Entwicklung benötigte Tools}
+Für die Entwicklung einer auf JavaScript basierenden Webanwendung wird unter anderem NodeJS, der Paketmanager npm und ein Modul-Loader benötigt. Demnach werden diese auch bei Verwendung der Frameworks Angular und ReactJS eingesetzt. Im Folgenden werden die Tools näher erläutert.
 
 %NodeJS
 \label{NodeJS}

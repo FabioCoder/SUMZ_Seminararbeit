@@ -13,23 +13,21 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.1}Installation von AngularCLI}{12}{lstlisting.3.1}
+\contentsline {lstlisting}{\numberline {3.1}Das Root-Module in der Datei app.module.ts}{14}{lstlisting.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.2}Das Root-Module in der Datei app.module.ts}{14}{lstlisting.3.2}
+\contentsline {lstlisting}{\numberline {3.2}Die Komponente AppComponent in der Datei app.component.ts}{15}{lstlisting.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.3}Die Komponente AppComponent in der Datei app.component.ts}{15}{lstlisting.3.3}
+\contentsline {lstlisting}{\numberline {3.3}Die Komponente HelloComponent in der Datei hello.component.ts}{15}{lstlisting.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.4}Die Komponente HelloComponent in der Datei hello.component.ts}{15}{lstlisting.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {3.5}Das Template in der Datei app.component.html}{17}{lstlisting.3.5}
+\contentsline {lstlisting}{\numberline {3.4}Das Template in der Datei app.component.html}{17}{lstlisting.3.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.1}Beispiel einer minimalen React-Anwendung}{20}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.1}Beispiel React-Anwendung: HTML-Datei}{20}{lstlisting.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Funktion}{21}{lstlisting.4.2}
+\contentsline {lstlisting}{\numberline {4.2}Beispiel React-Anwendung: Aufruf der Render-Methode}{21}{lstlisting.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.3}Beispiel einer Komponente als Klasse}{21}{lstlisting.4.3}
+\contentsline {lstlisting}{\numberline {4.3}Beispiel React-Anwendung: Die Komponente Hello}{21}{lstlisting.4.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
