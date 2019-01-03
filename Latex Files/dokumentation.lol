@@ -23,15 +23,15 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.1}Beispiel einer minimalen React-Anwendung}{20}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.1}Beispiel React-Anwendung: HTML-Datei}{20}{lstlisting.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.2}Beispiel einer Komponente als Funktion}{21}{lstlisting.4.2}
+\contentsline {lstlisting}{\numberline {4.2}Beispiel React-Anwendung: Aufruf der Render-Methode}{21}{lstlisting.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.3}Beispiel einer Komponente als Klasse}{21}{lstlisting.4.3}
+\contentsline {lstlisting}{\numberline {4.3}Beispiel React-Anwendung: Die Komponente Hello}{21}{lstlisting.4.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {5.1}Beispiel f\IeC {\"u}r das Einbinden von OpenUI5}{24}{lstlisting.5.1}
+\contentsline {lstlisting}{\numberline {5.1}Beispiel f\IeC {\"u}r das Einbinden von OpenUI5}{25}{lstlisting.5.1}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

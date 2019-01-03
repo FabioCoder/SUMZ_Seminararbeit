@@ -1,0 +1,602 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Facebook.2018c}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={Facebook},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A JavaScript library for building user interfaces}
+      \field{title}{React: Add React to a Website}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactjs.org/docs/add-react-to-a-website.html
+      \endverb
+      \verb{url}
+      \verb https://reactjs.org/docs/add-react-to-a-website.html
+      \endverb
+    \endentry
+    \entry{Facebook.2018b}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={Facebook},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A JavaScript library for building user interfaces}
+      \field{title}{React: React.Component}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactjs.org/docs/react-component.html
+      \endverb
+      \verb{url}
+      \verb https://reactjs.org/docs/react-component.html
+      \endverb
+    \endentry
+    \entry{Facebook.2018}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d85544fce402c7a2a96a48078edaf203}{%
+           family={Facebook},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{fullhash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{bibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorbibnamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editornamehash}{d85544fce402c7a2a96a48078edaf203}
+      \strng{editorfullhash}{d85544fce402c7a2a96a48078edaf203}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A JavaScript library for building user interfaces}
+      \field{title}{React: Rendering Elements}
+      \field{urlday}{29}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactjs.org/docs/rendering-elements.html
+      \endverb
+      \verb{url}
+      \verb https://reactjs.org/docs/rendering-elements.html
+      \endverb
+    \endentry
+    \entry{Freeman.2018}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3e85ff35ac9460aa6193899e6707ba4a}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{3e85ff35ac9460aa6193899e6707ba4a}
+      \strng{fullhash}{3e85ff35ac9460aa6193899e6707ba4a}
+      \strng{bibnamehash}{3e85ff35ac9460aa6193899e6707ba4a}
+      \strng{authorbibnamehash}{3e85ff35ac9460aa6193899e6707ba4a}
+      \strng{authornamehash}{3e85ff35ac9460aa6193899e6707ba4a}
+      \strng{authorfullhash}{3e85ff35ac9460aa6193899e6707ba4a}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Part I - Getting Ready -- 1. Getting Started -- 2. Your First Angular App -- 3. Putting Angular in Context -- 4. HTML and Bootstrap CSS Primer -- 5. JavaScript and TypeScript Primer, Part 1 -- 6. JavaScript and TypeScript Primer, Part 2 -- 7. SportsStore: A Real Application -- 8. SportsStore: Orders and Checkout -- 9. SportsStore: Administration -- 10. SportsStore: Deployment -- Part II - Working with Angular -- 11. Creating an Angular Project -- 12. Using Data Bindings -- 13. Using the Built-In Directives -- 14. Using Events and Forms -- 15. Creating Attribute Directives -- 16. Creating Structural Directives -- 17. Understanding Components -- 18. Using and Creating Pipes -- 19. Using Services -- 20. Using Service Providers -- 21. Using and Creating Modules -- Part III - Advanced Angular Features -- 22. Creating the Example Project -- 23. Using Reactive Extensions -- 24. Making Asynchronous HTTP Requests -- 25. Routing and Navigation, Part 1 -- 26. Routing and Navigation, Part 2 -- 27. Routing and Navigation, Part 3 -- 28. Using Animation -- 29. Angular Unit Testing Get the most from Angular 6, the leading framework for building dynamic JavaScript applications. Understand the MVC pattern and the benefits it can offer. Best-selling author Adam Freeman shows you how to use Angular in your projects, starting from the nuts and bolts and building up to the most advanced and sophisticated features, going in-depth to give you the knowledge you need. Chapters include common problems and how to avoid them. What You'll Learn: Gain a solid architectural understanding of the MVC Pattern Create rich and dynamic web app clients using Angular 6 Use the ng tools to create and build an Angular project Extend and customize Angular 6 Test your Angular 6 projects What's New in This Edition: Revised for the features and changes in Angular 6 Covers @angular/cli, ng command line tools, and WebPack Includes HttpClient for simplified asynchronous HTTP requests Presents updates to pipes and localized text display}
+      \field{edition}{3}
+      \field{isbn}{978-1-4842-3649-9}
+      \field{title}{Pro Angular 6}
+      \field{year}{2018}
+    \endentry
+    \entry{Gackenheimer.2015}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2848f04a7847a6fe08b0163d47b0603b}{%
+           family={Gackenheimer},
+           familyi={G\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, New York}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{2848f04a7847a6fe08b0163d47b0603b}
+      \strng{fullhash}{2848f04a7847a6fe08b0163d47b0603b}
+      \strng{bibnamehash}{2848f04a7847a6fe08b0163d47b0603b}
+      \strng{authorbibnamehash}{2848f04a7847a6fe08b0163d47b0603b}
+      \strng{authornamehash}{2848f04a7847a6fe08b0163d47b0603b}
+      \strng{authorfullhash}{2848f04a7847a6fe08b0163d47b0603b}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781484212462}
+      \field{series}{The expert's voice in web development}
+      \field{title}{Introduction to React}
+      \field{year}{2015}
+      \keyw{JavaScript (Computer program language);Web applications;Web site development;Web-based user interfaces}
+    \endentry
+    \entry{Google.c}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular: Attribute Directives}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://angular.io/guide/attribute-directives
+      \endverb
+      \verb{url}
+      \verb https://angular.io/guide/attribute-directives
+      \endverb
+    \endentry
+    \entry{Google.b}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular: Introduction to components}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://angular.io/guide/architecture-components
+      \endverb
+      \verb{url}
+      \verb https://angular.io/guide/architecture-components
+      \endverb
+    \endentry
+    \entry{Google.d}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{3}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular: Introduction to modules}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://angular.io/guide/architecture-modules
+      \endverb
+      \verb{url}
+      \verb https://angular.io/guide/architecture-modules
+      \endverb
+    \endentry
+    \entry{Google.}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{editorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{4}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular: Template Syntax}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://angular.io/guide/template-syntax
+      \endverb
+      \verb{url}
+      \verb https://angular.io/guide/template-syntax
+      \endverb
+    \endentry
+    \entry{Hlushko.2018}{misc}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=cde4aa3f3d7c5bfd179583160cd9f38d}{%
+           family={Hlushko},
+           familyi={H\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=63e2bd444800e11c0586abd644652e33}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Debbie},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c04aefb3a39c36d616c65997dc83665f}{%
+           family={Menichelli},
+           familyi={M\bibinitperiod},
+           given={Jeremias},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=040f325647417a1256464d2407b50b40}{%
+           family={Montoya},
+           familyi={M\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{fullhash}{6faf3ca91ad736777b1f86b07b646592}
+      \strng{bibnamehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{authorbibnamehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{authornamehash}{5e4c265154b0d5feac3d5497c2650149}
+      \strng{authorfullhash}{6faf3ca91ad736777b1f86b07b646592}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Webpack: Why webpack}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://webpack.js.org/concepts/why-webpack/
+      \endverb
+      \verb{url}
+      \verb https://webpack.js.org/concepts/why-webpack/
+      \endverb
+    \endentry
+    \entry{Maj.2018}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5c9020f3c4995a9bceecb88c234d71df}{%
+           family={Maj},
+           familyi={M\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5c9020f3c4995a9bceecb88c234d71df}
+      \strng{fullhash}{5c9020f3c4995a9bceecb88c234d71df}
+      \strng{bibnamehash}{5c9020f3c4995a9bceecb88c234d71df}
+      \strng{authorbibnamehash}{5c9020f3c4995a9bceecb88c234d71df}
+      \strng{authornamehash}{5c9020f3c4995a9bceecb88c234d71df}
+      \strng{authorfullhash}{5c9020f3c4995a9bceecb88c234d71df}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fully interactive and accessible React Lifecycle Methods diagram.}
+      \field{title}{React Lifecycle Methods diagram}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+      \endverb
+      \verb{url}
+      \verb http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+      \endverb
+    \endentry
+    \entry{Stefanov.2017}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a4bf6558e723fe21d97b5a0fd026ff63}{%
+           family={Stefanov},
+           familyi={S\bibinitperiod},
+           given={Stoyan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {dpunkt.verlag}%
+      }
+      \strng{namehash}{a4bf6558e723fe21d97b5a0fd026ff63}
+      \strng{fullhash}{a4bf6558e723fe21d97b5a0fd026ff63}
+      \strng{bibnamehash}{a4bf6558e723fe21d97b5a0fd026ff63}
+      \strng{authorbibnamehash}{a4bf6558e723fe21d97b5a0fd026ff63}
+      \strng{authornamehash}{a4bf6558e723fe21d97b5a0fd026ff63}
+      \strng{authorfullhash}{a4bf6558e723fe21d97b5a0fd026ff63}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-3-96009-042-7}
+      \field{title}{Durchstarten mit React: Web-Apps einfach und modular entwickeln}
+      \field{year}{2017}
+    \endentry
+    \entry{Steyer.2017}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=d416e3996b5b6457865b1beeb277b5b1}{%
+           family={Steyer},
+           familyi={S\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=921fb26c73c742b51ec79a86ddbfa4c9}{%
+           family={Schwab},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{b9f1f92d410b815007588d269e4d09a7}
+      \strng{fullhash}{b9f1f92d410b815007588d269e4d09a7}
+      \strng{bibnamehash}{b9f1f92d410b815007588d269e4d09a7}
+      \strng{authorbibnamehash}{b9f1f92d410b815007588d269e4d09a7}
+      \strng{authornamehash}{b9f1f92d410b815007588d269e4d09a7}
+      \strng{authorfullhash}{b9f1f92d410b815007588d269e4d09a7}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-3-96009-026-7}
+      \field{title}{Angular: Das Praxisbuch zu Grundlagen und Best Practices}
+      \field{year}{2017}
+    \endentry
+    \entry{Terlson.2018}{misc}{}
+      \name{editor}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d1773cc6095a673949d80444c8c1a90e}{%
+           family={Terlson},
+           familyi={T\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d1773cc6095a673949d80444c8c1a90e}
+      \strng{fullhash}{d1773cc6095a673949d80444c8c1a90e}
+      \strng{bibnamehash}{d1773cc6095a673949d80444c8c1a90e}
+      \strng{editorbibnamehash}{d1773cc6095a673949d80444c8c1a90e}
+      \strng{editornamehash}{d1773cc6095a673949d80444c8c1a90e}
+      \strng{editorfullhash}{d1773cc6095a673949d80444c8c1a90e}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{title}{ECMAScript{\circledR}: 2018 Language Specification}
+      \field{urlday}{26}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ecma-international.org/ecma-262/9.0/
+      \endverb
+      \verb{url}
+      \verb https://www.ecma-international.org/ecma-262/9.0/
+      \endverb
+    \endentry
+    \entry{Woiwode.2018}{book}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=39d0a7b7564cd6bffe860c47619c3d46}{%
+           family={Woiwode},
+           familyi={W\bibinitperiod},
+           given={Gregor},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3dffc7deee4e2dcd1e300725d9dde711}{%
+           family={Malcher},
+           familyi={M\bibinitperiod},
+           given={Ferdinand},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=678e1db444adff504b109d26c0577b2c}{%
+           family={Koppenhagen},
+           familyi={K\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=778aec19a4d2bfd0902e69d0c001c5ba}{%
+           family={Hoppe},
+           familyi={H\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {dpunkt.verlag}%
+      }
+      \strng{namehash}{93926ad3ffac0e755bf9729b39e0a656}
+      \strng{fullhash}{832ec537f004d6c0ec39a81f69cfeb70}
+      \strng{bibnamehash}{93926ad3ffac0e755bf9729b39e0a656}
+      \strng{authorbibnamehash}{93926ad3ffac0e755bf9729b39e0a656}
+      \strng{authornamehash}{93926ad3ffac0e755bf9729b39e0a656}
+      \strng{authorfullhash}{832ec537f004d6c0ec39a81f69cfeb70}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{9783864903571}
+      \field{series}{ix edition}
+      \field{title}{Angular: Grundlagen, fortgeschrittene Techniken und Best Practices mit TypeScript - ab Angular 4, inklusive NativeScript und Redux}
+      \field{year}{2018}
+    \endentry
+    \entry{Zeigermann.2016}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=095ef11896a433fd924c5c59159bc2ae}{%
+           family={Zeigermann},
+           familyi={Z\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=41d8aabe028808b7d38773c770f04ed1}{%
+           family={Hartmann},
+           familyi={H\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {dpunkt}%
+      }
+      \strng{namehash}{cda07eb810c0c7aca36e711a0d2b7fbf}
+      \strng{fullhash}{cda07eb810c0c7aca36e711a0d2b7fbf}
+      \strng{bibnamehash}{cda07eb810c0c7aca36e711a0d2b7fbf}
+      \strng{authorbibnamehash}{cda07eb810c0c7aca36e711a0d2b7fbf}
+      \strng{authornamehash}{cda07eb810c0c7aca36e711a0d2b7fbf}
+      \strng{authorfullhash}{cda07eb810c0c7aca36e711a0d2b7fbf}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{React ist ein JavaScript-Framework zur Entwicklung von Benutzeroberfl{ä}chen sowohl im Browser als auch auf Mobilger{ä}ten. Entwickelt und eingesetzt von Facebook ist es mittlerweile als Open-Source-Projekt verf{ü}gbar und hat sich bereits im Einsatz bei diversen namhaften Websites, wie z. B. Airbnb und Netflix, bew{ä}hrt. Dieses Buch stellt Ihnen die Konzepte von React, React Router und Redux anhand eines durchgehenden Beispiels vor. Sie lernen, wie Sie mit React wiederverwendbare UI-Komponenten entwickeln und wie Sie auf Basis der einzelnen Komponenten ganze Anwendungen zusammenbauen. Unter anderem werden folgende Themen behandelt: - Entwickeln und Testen eigener React-Komponenten auf Basis des JavaScript-Standards ECMAScript 2015 (ES6) - Routing mit dem React Router - Das Architektur-Modell Flux und wie damit komplette Anwendungen umgesetzt werden (am Beispiel des Redux-Frameworks) - Serverseitiges Rendern von React-Komponenten und -Anwendungen - Anbindung eines REST-Backends Die im Buch eingesetzten Sprachfeatures aus ES6 werden in einem eigenen Kapitel vorgestellt, sodass zum Verst{ä}ndnis des Buches Kenntnisse von ES5 ausreichen. Nach der Lekt{ü}re des Buches werden Sie in der Lage sein, eigene Projekte mit React umzusetzen. Oliver Zeigermann ist Entwickler, Architekt, Berater und Coach. Oliver wendet seine Erfahrungen aus dem Java-Umfeld auch auf die Softwareentwicklung und Architektur mit JavaScript an. Nils Hartmann ist Software-Enwickler und -Architekt aus Hamburg. Nils hat langj{ä}hrige Erfahrung mit der Entwicklung von gro{ß}en Java-Anwendungen. Dar{ü}ber hinaus besch{ä}ftigt er sich mit dem server- und clientseitigen Einsatz von JavaScript.}
+      \field{edition}{1}
+      \field{isbn}{9783864903274}
+      \field{title}{React: Die praktische Einf{ü}hrung in React, React Router und Redux}
+      \field{year}{2016}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
