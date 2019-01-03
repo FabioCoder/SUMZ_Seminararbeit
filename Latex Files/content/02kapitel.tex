@@ -2,10 +2,9 @@
 
 \chapter{Grundlagen}
 
-\label{MVC}
-
-
 \section{JavaScript}
+Zur Entwicklung einer clientseitigen Anwendung wird die Skriptsprache JavaScript eingesetzt. Der Sprachstandard von JavaScript wird durch das  kontinuierlich weiterentwickelt ECMAScript spezifiziert. Durch die Verwendung der Obermenge TypeScript und der Spracherweiterung JSX kann die Entwicklung erleichtert und zudem können Funktionen, die nicht Teil des Sprachstandard von JavaScript sind, eingesetzt werden. Im Folgenden werden die mit JavaScript zusammenhängende Sprachen EcmaScript, TypeScript und JSX  näher erläutert.
+
 
 \subsection{Der Sprachstandard ECMAScript}\label{sec:der-sprachstandard-ecmascript}
 ECMAScript spezifiziert den Sprachstandard von JavaScript. Dieser wird seit dem Jahr 1997 Jahren von der European Computer Manufactures Association (kurz: ECMA) weiterentwickelt. Zunächst wurden die Versionen durchnummeriert (ES1, ES2, ES3, ES4, und ES5). Im Jahre 2015 wurde beschlossen, dass jährlich eine neue Version von ECMAScript erscheinen soll. Daher tragen die nachfolgenden Versionen das Veröffentlichungsjahr im Namen (ECMAScript2015, ECMAScript2016, ECMAScript2017, ECMAScript2018, …). 
@@ -18,28 +17,31 @@ In ECMAScript2015 wurden die Variablentypen let zur Eingrenzung des Geltungsbere
 
 Jede Datei ist ein eigenes Modul. Module fassen zusammengehörige Codeeinheiten zusammen und können Interfaces, Klassen oder Variablen bereitstellen, die wiederum von anderen Modulen verwendet werden können.\autocites[vgl.][34\psq]{Woiwode.2018}[vgl.][19\psqq]{Steyer.2017}
 
-Das Modul in \autoref{lst:ClassPerson} stellt eine Klasse Person zur Verfügung. Diese Klasse hat einen Konstruktor und eine Instanzmethode altere, die die Person um ein weiteres Jahr altern lässt.
+\label{Webpack}
+%Modul-Loader
+Wenn Java-Script Module in einer Webanwendung verwendet werden, wird ein Modul-Loader gebraucht. Dieser löst verschiedene Abhängigkeiten auf und erstellt daraus eine Ausgabedatei. Die Verwendung des Modul-Loader \textit{Webpack} wird sowohl für Angular als auch für React Anwendungen empfohlen. \textit{Webpack} unterstützt zudem Hot Module Replacement. Änderungen am Code werden zur Laufzeit übernommen. Dadurch muss eine Anwendung nach einer Änderung nicht komplett neu gebaut werden.\autocites[vgl.][13,21]{Woiwode.2018}[vgl.][9,295-301]{Zeigermann.2016}[vgl.][]{Hlushko.2018}
 
-\begin{lstlisting}[caption=Eine Klasse Person wird von einem Modul bereitgestellt , label=lst:ClassPerson, language=Java]
-export class Person{
-   private name 	: string;
-   private alter 	: number;
+%Das Modul in \autoref{lst:ClassPerson} stellt eine Klasse Person zur Verfügung. Diese Klasse hat einen Konstruktor und eine Instanzmethode altere, die die Person um ein weiteres Jahr altern lässt.
 
-   constructor(name: string, alter: number){
-      this.name = name;
-      this.alter = alter;
-   }
-
-   altere(): number{
-      alter = alter + 1;
-      return alter;
-   }
-}
-\end{lstlisting}
+%\begin{lstlisting}[caption=Eine Klasse Person wird von einem Modul bereitgestellt , label=lst:ClassPerson, language=Java]
+%export class Person{
+%   private name 	: string;
+%   private alter 	: number;
+%
+%   constructor(name: string, alter: number){
+%      this.name = name;
+%      this.alter = alter;
+%   }
+%
+%   altere(): number{
+%      alter = alter + 1;
+%      return alter;
+%   }
+%}
+%\end{lstlisting}
 
 Seit ECMAScript2017 können Dekoratoren für die Angabe von Metainformationen zu einer Klasse verwendet werden. Dies wird beispielsweise von dem in \autoref{ch:angular} vorgestellten Framwework Angular zur Kennzeichnung und Konfiguration der unterschiedlichen Bestandteile verwendet.\autocites[vgl.][30\psqq]{Woiwode.2018} 
 
-\comment{Object Spread Operator}
 \comment{Grafik ersetzen!}
 \begin{figure}[h]
 	\centering
@@ -68,7 +70,7 @@ TypeScript ermöglicht die Verwendung von Interfaces. \autocites[vgl.][40\psq]{W
 \label{Babel}
 Die Spracherweiterung JSX ermöglicht die Verwendung einer HTML ähnlichen Syntax in JavaScript. JSX wird durch einen geeigneten Transpilierer in gültiges JavaScript übersetzt.\textcite[vgl.][10]{Zeigermann.2016} empfiehlt an dieser Stelle die Verwendung des Compilers \textit{Babel}.
 
-Die Spracherweiterung kann zum Beispiel bei der Entwicklung mit dem Framework React eingesetzt werden. Dieses Framework verwendet zur Darstellung der Benutzeroberfläche keine Templates. Die Benutzeroberfläche wird stattdessen mit JavaScript Befehlen aufgebaut. Um dies zu erleichtern, kann JSX verwendet werden. Im Folgenden werden die Grundkonzepte von JSX näher erläutert.
+JSX wird unter anderem im Framework React zur Beschreibung einer Benutzeroberfläche eingesetzt. Die Benutzeroberfläche wird in React nicht unter Verwendung eines Templates, sondern über JavaScript-Befehle aufgebaut. Die Verwendung von JSX Ausdrücken anstatt JavaScript-Befehlen erleichtert diesen Vorgang. Im Folgenden werden die Grundkonzepte von JSX näher erläutert.
 
 Die Ausgabe von dynamische Informationen erfolgt unter Verwendung von JavaScript-Ausdrücken. Diese Ausdrücke müssen in ein paar geschweifter Klammern gepackt werden. Bedingungen können mithilfe des ternären Operatoren überprüft werden. Zur Ausgabe von Listen mit wiederholenden Elementen steht die für Arrays definierte JavaScript Methode map zur Verfügung.
 
@@ -85,21 +87,6 @@ const helloWorld = <h1 style = {{
 	}}> Hello, World</h1>
 \end{lstlisting}
 
-
-\comment{NodeJS}
-
-\section{Zur Entwicklung benötigte Tools}
-Für die Entwicklung einer auf JavaScript basierenden Webanwendung wird unter anderem NodeJS, der Paketmanager npm und ein Modul-Loader benötigt. Demnach werden diese auch bei Verwendung der Frameworks Angular und ReactJS eingesetzt. Im Folgenden werden die Tools näher erläutert.
-
-%NodeJS
-\label{NodeJS}
-Die JavaScript Laufzeitumgebung \textit{NodeJS} ermöglicht unter anderem das Ausführen von JavaScript Code auf dem Server. Einige Tools, die bei der Entwicklung einer Webanwendung eingesetzt werden, verwenden NodeJS. Außerdem bietet NodeJS Pakete mit wiederverwendbarem Code, die über den in integrierten Paketmanager \textit{npm} installiert werden können. Die aktuellste Version kann von \url{https://nodejs.org/} heruntergeladen und installiert werden.  \autocites[vgl.][1\psqq]{Steyer.2017}[vgl.][7\psqq]{Freeman.2018}[vgl.][6\psqq]{Woiwode.2018} 
-
-\label{Webpack}
-%Modul-Loader
-Wenn Java-Script Module in einer Webanwendung verwendet werden, wird ein Modul-Loader gebraucht. Dieser löst verschiedene Abhängigkeiten auf und erstellt daraus eine Ausgabedatei. Die Verwendung des Modul-Loader \textit{Webpack} wird sowohl für Angular als auch für React Anwendungen empfohlen. \textit{Webpack} unterstützt zudem Hot Module Replacement. Änderungen am Code werden zur Laufzeit übernommen. Dadurch muss eine Anwendung nach einer Änderung nicht komplett neu gebaut werden.\autocites[vgl.][13,21]{Woiwode.2018}[vgl.][9,295-301]{Zeigermann.2016}[vgl.][]{Hlushko.2018}
-
-%Übersetzer
 
 \section{Webframeworks}
 
@@ -139,6 +126,7 @@ Bei Frameworks unterscheidet man zwischen Black-Box- und White-Box-Frameworks. B
 \section{Webarchitekturen}
 
 \subsection{MVC-Modell}
+\label{MVC}
 
 Das Entwurfsmuster MVC stammt ursprünglich aus den 1970er Jahren. Es wurde ursprünglich für Desktopanwendungen entwickelt, wird nun aber auch sowohl im Web, als auch bei mobilen Anwendungen verwendet. Die Idee hinter dem MVC-Konzept ist die Trennung von Bestandteilen einer Anwendung in jeweils eigene Verantwortlichkeiten. Diese Verantwortlichkeiten werden im Vorhinein in der Definition geregelt. Somit erreicht man voneinander unabhängige Komponenten, welche eigenständig und austauschbar sind. Mit dem MVC-Konzept vermeidet man darüber hinaus eine Vermischung von Aufgaben und der damit verbundenen Logik.
 

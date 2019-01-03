@@ -13,13 +13,19 @@ Das Framework ist in JavaScript geschrieben und kann mit JavaScript oder einer i
 \subsection{Vorbereitung der Entwicklungsumgebung}
 Für die Entwicklung einer React-Anwendung wird unter anderem \textit{NodeJS} (siehe \autoref{NodeJS}), ein Übersetzer (bspw. \textit{Babel} siehe \autoref{Babel}), ein Modul-Loader (bspw. \textit{Webpack} siehe \autoref{Webpack}) und die React-Bibliothek benötigt. Die React-Bibliothek bestehendes aus \textit{react} und \textit{react-dom} kann über den Paketmanager \textit{npm} installiert werden. \autocites[vgl.][92\psqq]{Stefanov.2017}[vgl.][8\psqq]{Zeigermann.2016}
 
-Das Framework React kann nur zum Bilden von Benutzeroberflächen verwendet werden. Darüber hinaus bietet es keine weiteren Funktionen. Für die Entwicklung einer größeren Anwendung muss beispielsweise eine Router-Implementierung eingebunden und ein Architekturmodell definiert werden.
-Sowohl \textcite{Zeigermann.2016} als auch \textcite{Stefanov.2017} empfehlen die Verwendung des Architekturmodells Flux und der Implementierung Redux. Flux beschreibt ein Anwendungsmodell, bei dem die Daten ausschließlich in eine Richtung fließen. \autocites[vgl.][8]{Zeigermann.2016}[vgl.][11]{Zeigermann.2016}[vgl.][167]{Stefanov.2017} 
+Das Framework React kann nur zum Bilden von Benutzeroberflächen verwendet werden. Darüber hinaus bietet es keine weiteren Funktionen. Für die Entwicklung einer größeren Anwendung muss beispielsweise eine Router-Implementierung eingebunden und ein Architekturmodell entwickelt werden.
+ \autocites[vgl.][8]{Zeigermann.2016}
+\comment{Erweiterungen: React Router, Redux (Flux- Implementierung)}
 
-\section{Architektur}
-Zur Erklärung der Grundkonzepte wird das Hello Beispiel aus \autoref{BeschreibungHelloBsp} herangezogen.
 
-\subsection{Das Wurzelelement}
+
+
+\section{Konzepte}
+Zur Erklärung der Grundkonzepte wird das Beispiel aus \autoref{BeschreibungHelloBsp} herangezogen.
+
+\comment{Betrachtung der wesentlichen Bestandteile von React}
+
+\subsection{Rendern von Elementen}
 
 Eine React-Anwendung benötigt ein Wurzelelement auf einer HTML-Seite. Unter diesem HTML-Element rendert React die Benutzeroberfläche der React-Anwendung. Das Rendern bezeichnet dabei den Vorgang, der schlussendlich zum Einfügen von HTML-Elementen im DOM führt. Dieser Vorgang wird in \autoref{Rendern} näher betrachtet. 
 
@@ -126,14 +132,13 @@ In einer Komponente können weitere Komponenten eingebunden werden. Eine Kompone
 
 \comment{abschließende Beschreibung des Bsp}
 
-\subsection{Rendern von Komponenten}
+\subsection{virtueller DOM-Baum }
 \label{Rendern}
 Eine Änderung an den Properties oder am State einer Komponente veranlasst React zum erneuten Rendern. Beim Rendern wird das von einer Komponente bereitgestellte React-Element allerdings nicht direkt in ein DOM-Element umgewandelt und in das native DOM eingesetzt. An stattdessen wird beim Aufruf der Render-Methode eine virtuelle Repräsentation des DOM-Baums generiert.
 
 Anschließend vergleicht React den virtuellen DOM-Baum vor und nach der Änderung. Auf Grundlage der ermittelten Unterschiede generiert React eine minimale Anzahl an DOM-Operationen.  Diese Operationen werden dann auf den nativen DOM-Baum angewandt und stellen somit den gewünschten Zustand her. Das Rendern ist ein asynchroner Vorgang. Änderungen werden zum Teil zusammengefasst und nicht sofort angewandt.
 
 React-Elemente sind einfache und leichtgewichtige JavaScript-Objekte. Daher können die Änderungen zwischen den zwei virtuellen DOM-Bäumen schnell ermittelt werden. Durch dieses Verfahren werden teure DOM-Manipulationen reduziert und damit die Performance der Web-Anwendung verbessert.\autocites[vgl.][23\psq,60\psq,90\psq]{Zeigermann.2016}[vgl.][53\psq]{Stefanov.2017}[vgl.][]{Facebook.2018}
-
 \section{Verwendung}
 
 
