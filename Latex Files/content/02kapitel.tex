@@ -2,6 +2,65 @@
 
 \chapter{Grundlagen}
 
+%Übersetzer
+\section{Webframeworks}
+\subsection{Allgemeines}
+
+Webframeworks bilden heutzutage oft die Rahmenstruktur für Oberflächenentwicklungen. Sie sind eine Sammlung von Methoden, welche Funktionalitäten durch einen Methodenaufruf ermöglichen und somit die Struktur der Oberflächen bestimmen. Webframeworks haben sich aufgrund ihrer einfachen Implementierung etabliert. Mit dem Einsatz von Webframeworks muss der Entwickler nicht Experte in jedem Teilgebiet seiner Entwicklung sein, sondern kann schon vorgefertigte und getestete Elemente übernehmen und die spezielle Funktionalität nutzen. Beispielsweise nimmt das Weboberflächenframework Bootstrap dem Entwickler ab, sich um die Implementierung responsiven Fähigkeiten einer Webanwendung zu kümmern.\autocites[vgl.][312\psqq]{Schatten2010}  (best practice SE)
+
+Ein Webframework nutzt hierbei ein Grundprinzip der Informatik: die Wiederverwendung. Bei der Wiederverwendung wird vermieden redundanten Quellcode zu schreiben. Dies bietet zahlreiche Vorteile. Zum einen muss sich der Entwickler nicht mehrmals die gleichen Gedanken zur Problemlösung machen, zum anderen muss der Entwickler bei einem gefundenen Fehler nur an einer zentralen Stelle und nicht bei jeder Verwendung nachbessern.\autocites[vgl.][30\psqq]{Woiwode.2018} 
+ (techn Informatik s42)
+
+
+\subsection{Vor- und Nachteile von Webframeworks}
+
+Zum Abschluss des Kapitels „Webframeworks“ werden einige Vor- und Nachteile bei der Verwendung dieser kritisch betrachtet. 
+
+Zuerst werden auf die Nachteile bei der Verwendung von Webframeworks eingegangen:
+
+Jedes Framework hat einen hohen Grad an \textbf{Komplexität}. Dieser ist notwendig, um verschiedensten, teils komplexen Anforderungen gerecht zu werden. Doch auch der Anwender muss die Funktionsweise des Frameworks zumindest teilweise verstanden haben um es effizient in seiner Entwicklung einsetzen zu können.
+
+Bei der Nutzung eines Frameworks ergeben sich zwangsläufig \textbf{Anhängigkeiten} von diesem. Dies führt dazu, dass der Entwickler sich an eine bestimmte vorgegebene Architektur halten muss. Darüber hinaus muss der Frameworknutzer darauf vertrauen, dass der Frameworkentwickler seine Software ausreichend testet bevor er es an die Nutzer verteilt. Sonst ist die Funktionalität nicht gewährleistet.
+
+Viele Frameworks (oft im Open-Source-Umfeld) leiden oft an \textbf{mangelnder Dokumentation}. Dies macht es dem Entwickler schwer, sich in das Framework einzuarbeiten und es von Beginn an effizient zu nutzen.
+
+Sowohl die Komplexität als auch die Abhängigkeit können auf der einen Seite als Nachteil gesehen werden. Jedoch auf der anderen Seite kann durch das umfangreiche Funktionsangebot sehr viel Zeit und Aufwand gespart werden.
+
+Ein Framework wird normalerweise im objektorientierten Umfeld genutzt. Somit gibt es dem Entwickler schon ein bestimmtes \textbf{Architekturmuster} vor und er ist gezwungen seine Webanwendung modular aufzubauen.
+
+Aufgrund der Generik eines Webframeworks ist es möglich, dieses für viele verschiedene Anwendungsfälle \textbf{wiederzuverwenden}. Damit spart sich der Entwickler wertvolle Zeit und Aufwand.
+
+Webframeworks sind auf \textbf{Erweiterbarkeit} ausgelegt. Man kann den Quellcode jedes Frameworks untersuchen sowie beliebig verändern und erweitern. Dies bietet den Vorteil, wenn man als Entwickler einen anderen Datentyp benötigt oder in eine Funktion einen weiteren Parameter hinzufügen möchte kann man einfach das Framework an die speziellen Bedürfnisse anpassen.
+
+Durch \textbf{Inversion of Control} bleibt der Kotrollfluss auf Seiten des Frameworks. Somit wird die Steuerung zur Ausführung bestimmter Unterprogramme an das Framework abgegeben und der Entwickler kann sich voll und ganz auf die Implementierung seiner Geschäftslogik konzentrieren.
+
+Zuletzt ist der Vorteil durch \textbf{Standardisierung} anzuführen. Bestimmte Frameworks haben sich in ihrem Umfeld zum Standard entwickelt. Ein gutes Beispiel hierfür ist das PHP-Framework „Medoo“, es bildet den Open-Source-Standard bei SQL-Datenbankzugriffen über PHP. Die Framework Standardisierung verkürzt die Einarbeitungszeit von Entwicklern in diesem Umfeld, da die aufkommenden Probleme immer auf dieselbe Weise gelöst werden können.\autocites[vgl.][313\psqq]{Schatten2010}
+
+\subsection{Black-Box- und White-Box-Webframeworks}
+
+Bei Frameworks unterscheidet man zwischen Black-Box- und White-Box-Frameworks. Bei einem Black-Box-Frameworks ist der Entwickler gezwungen sich auf vorgefertigte Methoden zu verlassen. Er kann das Framework nur einbinden aber keine logischen Veränderungen daran vornehmen. Bei einem \textbf{White-Box-Framework} stehen im Gegensatz dazu oftmals nur abstrakte oder leere Methoden zur Verfügung. Diese Methodenhülsen muss der Entwickler nun in seiner Software mit Inhalt füllen. Bei einem Vergleich dieser beiden Frameworkarten lässt sich feststellen, dass der Entwickler bei einem 
+White-Box-Framework dieses im Ganzen verstanden haben muss um die Lücken mit seinem speziellen anwendungsfallspezifischen Code zu füllen. Wohingegen das \textbf{Black-Box-Framework} eine Standardlösung darstellt, welche sich nicht näher auf den speziellen Anwendungsfall anpassen lässt, aber dafür nur eine geringe Einarbeitungszeit seitens des Entwicklers fordert.
+
+\section{Webarchitekturen}
+
+\subsection{MVC-Modell}
+\label{MVC}
+Das Entwurfsmuster MVC stammt ursprünglich aus den 1970er Jahren. Es wurde ursprünglich für Desktopanwendungen entwickelt, wird nun aber auch sowohl im Web, als auch bei mobilen Anwendungen verwendet. Die Idee hinter dem MVC-Konzept ist die Trennung von Bestandteilen einer Anwendung in jeweils eigene Verantwortlichkeiten. Diese Verantwortlichkeiten werden im Vorhinein in der Definition geregelt. Somit erreicht man voneinander unabhängige Komponenten, welche eigenständig und austauschbar sind. Mit dem MVC-Konzept vermeidet man darüber hinaus eine Vermischung von Aufgaben und der damit verbundenen Logik. In älterer Software befinden sich das Model und der Controller typischerweise auf dem Server, jedoch bei neueren Entwicklungen werden diese beiden Komponenten in den Browser geladen. Der Vorteil hierbei ist, dass der Internettraffic reduziert und die Performance der Anwendung erhöht wird.\autocites[vgl.][7\psqq]{Steyer2017}
+
+Der MVC-Ansatz umfasst 3 Komponenten. Die Erste davon ist das Model. Es steht für das zu präsentierende Datenmodell einer Anwendung. Die Zweite Komponente stellt die View dar. Sie ist für die Präsentation der im Model enthaltenen Daten zuständig. In den Verantwortungsbereich der View fällt außerdem das Anzeigen von Benutzerinteraktionsmöglichkeiten wie beispielsweise ein Button. Die letzte Komponente bildet der Controller. Er bildet die Steuerungseinheit der Anwendung und kümmert sich um die Logik einer Applikation. Zu seinen Aufgaben gehört die Vermittlung zwischen dem Model und der View sowie der Interaktion mit dem Benutzer. Der Controller muss sicherstellen, dass alle Anpassungen in der View konsistent auf das Datenmodell angewandt werden.\autocites[vgl.][7\psqq]{Magnucki2017}
+
+\subsection{Single-Page-Applications}
+
+Bei dem zuvor beschriebenen MVC-Modell dient der Browser lediglich als einfaches Anzeigeprogramm. Bei jeder Interaktion wird eine Nachricht an den Server geschickt und es wird eine neue Webseite als Antwort zurückgesendet. Früher war dies aufgrund von langsamen Browsern die einzige Möglichkeit, auf Benutzereingaben zu reagieren. Im Laufe der Zeit wurden die Webbrowser immer performanter und damit wurde es komfortabel möglich, mittels JavaScript die Webseite ohne den Server zu verändern. 
+
+Um das Jahr 2005 fing die Technologie AJAX (Asynchronous JavaScript and XML) an, sich als Webkommunikationsstandard zu etablieren. Hierbei war die Technik, die AJAX zu Grunde liegt nicht neu, denn es ist lediglich eine Kombination bestehender Technologien mit einer XMLHttpRequest. Durch AJAX wurde es somit möglich, asynchrone Anfragen an den Webserver zu senden und die erhaltenen Daten in die bereits geöffnete Webseite zu integrieren. Nun war die Singe-Page-Application geboren, denn das Grundgerüst der Webseite bei dieser Technik nur beim initialen Aufruf geladen werden. Heutzutage nutzen fast alle Webframeworks die AJAX-Technik um die Ladezeiten der Webseiten zu verkürzen, falls nur eine kleine Änderung vorliegt. Ein weiterer Vorteil ergibt sich darüber hinaus durch die Asynchronität, denn falls eine schlechte Internetverbindung vorliegt zeigt der Browser während der Ladezeit nicht eine weiße Ladeseite sondern der Benutzer kann die Webinhalte weiter konsumieren.\autocites[vgl.][4]{Fink2014}
+
+\subsection{Websockets}
+
+Mit den bisher beschriebenen Technologien musste der Client immer eine Anfrage an den Server schicken, doch bei bestimmten Anwendungsfällen ist eine persistente und bidirektionale Verbindung zum Server notwendig. Beispielsweise will man bei Chat-Anwendungen oder Live-Sport-Ticker immer in Echtzeit die aktuellen Informationen bereitgestellt bekommen. Doch die bisher gängigen HTTP-Verbindungen sehen diese Art der Verbindung nicht vor. Auf ihrer Basis müsste der Benutzer die Webseite immer manuell aktualisieren. Mittels eines Websockets kann eine solche persistente Client-Server-Verbindung geöffnet werden. Ein Websocket basiert auf einem eigenen Protokoll, dieses muss zuerst über HTTP-Anfragen verhandelt werden. Wenn Client und Server der Verbindung zugestimmt haben, besteht zwischen den beiden Parteien ein dauerhafter „Tunnel“, über diesen können Informationen mit geringer Latenz ausgetauscht werden. Im Vergleich zu einer herkömmlichen HTTP-Verbindung wird der überflüssige Header eingespart, das führt zu weniger Internettraffic. Wenn eine der beiden Parteien die dauerhafte Verbindung trennen möchte, muss sie der Anderen eine „Close“-Nachricht senden.\autocites[vgl.][11\psqq]{Fink2014} (SPA-Dev)
+
+
+
 \section{JavaScript}
 Zur Entwicklung einer clientseitigen Anwendung wird die Skriptsprache JavaScript eingesetzt. Der Sprachstandard von JavaScript wird durch das  kontinuierlich weiterentwickelt ECMAScript spezifiziert. Durch die Verwendung der Obermenge TypeScript und der Spracherweiterung JSX kann die Entwicklung erleichtert und zudem können Funktionen, die nicht Teil des Sprachstandard von JavaScript sind, eingesetzt werden. Im Folgenden werden die mit JavaScript zusammenhängende Sprachen EcmaScript, TypeScript und JSX  näher erläutert.
 
@@ -82,62 +141,7 @@ Um XSS-Attacken zu verhindern, werden Strings in JSX automatisch escaped bzw. ma
 const titleColor = 'red';
 const titleFontSize = 12;
 const helloWorld = <h1 style = {{
-	color: titleColor,
-	fontSize: titleFontSize + 'px'
+		color: titleColor,
+		fontSize: titleFontSize + 'px'
 	}}> Hello, World</h1>
 \end{lstlisting}
-
-
-\section{Webframeworks}
-
-Webframeworks bilden heutzutage oft die Rahmenstruktur für Oberflächenentwicklungen. Sie sind eine Sammlung von Methoden, welche Funktionalitäten durch einen Methodenaufruf ermöglichen und somit die Struktur der Oberflächen bestimmen. Webframeworks haben sich aufgrund ihrer einfachen Implementierung etabliert. Mit dem Einsatz von Webframeworks muss der Entwickler nicht Experte in jedem Teilgebiet seiner Entwicklung sein, sondern kann schon vorgefertigte und getestete Elemente übernehmen und die spezielle Funktionalität nutzen. Beispielsweise nimmt das Weboberflächenframework Bootstrap dem Entwickler ab, sich um die Implementierung responsiven Fähigkeiten einer Webanwendung zu kümmern. (best practice SE)
-
-Ein Webframework nutzt hierbei ein Grundprinzip der Informatik: die Wiederverwendung. Bei der Wiederverwendung wird vermieden redundanten Quellcode zu schreiben. Dies bietet zahlreiche Vorteile. Zum einen muss sich der Entwickler nicht mehrmals die gleichen Gedanken zur Problemlösung machen, zum anderen muss der Entwickler bei einem gefundenen Fehler nur an einer zentralen Stelle und nicht bei jeder Verwendung nachbessern. (techn Informatik s42)
-
-
-\section{Vor- und Nachteile von Frameworks}
-
-Zum Abschluss des Kapitels „Webframeworks“ werden einige Vor- und Nachteile bei der Verwendung dieser kritisch betrachtet. 
-
-Zuerst werden auf die Nachteile bei der Verwendung von Webframeworks eingegangen:
-
-Jedes Framework hat einen hohen Grad an \textbf{Komplexität}. Dieser ist notwendig, um verschiedensten, teils komplexen Anforderungen gerecht zu werden. Doch auch der Anwender muss die Funktionsweise des Frameworks zumindest teilweise verstanden haben um es effizient in seiner Entwicklung einsetzen zu können.
-
-Bei der Nutzung eines Frameworks ergeben sich zwangsläufig \textbf{Anhängigkeiten} von diesem. Dies führt dazu, dass der Entwickler sich an eine bestimmte vorgegebene Architektur halten muss. Darüber hinaus muss der Frameworknutzer darauf vertrauen, dass der Frameworkentwickler seine Software ausreichend testet bevor er es an die Nutzer verteilt. Sonst ist die Funktionalität nicht gewährleistet.
-
-Viele Frameworks (oft im Open-Source-Umfeld) leiden oft an \textbf{mangelnder Dokumentation}. Dies macht es dem Entwickler schwer, sich in das Framework einzuarbeiten und es von Beginn an effizient zu nutzen.
-
-Sowohl die Komplexität als auch die Abhängigkeit können auf der einen Seite als Nachteil gesehen werden. Jedoch auf der anderen Seite kann durch das umfangreiche Funktionsangebot sehr viel Zeit und Aufwand gespart werden.
-
-Ein Framework wird normalerweise im objektorientierten Umfeld genutzt. Somit gibt es dem Entwickler schon ein bestimmtes \textbf{Architekturmuster} vor und er ist gezwungen seine Webanwendung modular aufzubauen.
-
-Aufgrund der Generik eines Webframeworks ist es möglich, dieses für viele verschiedene Anwendungsfälle \textbf{wiederzuverwenden}. Damit spart sich der Entwickler wertvolle Zeit und Aufwand.
-
-Webframeworks sind auf \textbf{Erweiterbarkeit} ausgelegt. Man kann den Quellcode jedes Frameworks untersuchen sowie beliebig verändern und erweitern. Dies bietet den Vorteil, wenn man als Entwickler einen anderen Datentyp benötigt oder in eine Funktion einen weiteren Parameter hinzufügen möchte kann man einfach das Framework an die speziellen Bedürfnisse anpassen.
-
-Durch \textbf{Inversion of Control} bleibt der Kotrollfluss auf Seiten des Frameworks. Somit wird die Steuerung zur Ausführung bestimmter Unterprogramme an das Framework abgegeben und der Entwickler kann sich voll und ganz auf die Implementierung seiner Geschäftslogik konzentrieren.
-
-Zuletzt ist der Vorteil durch \textbf{Standardisierung} anzuführen. Bestimmte Frameworks haben sich in ihrem Umfeld zum Standard entwickelt. Ein gutes Beispiel hierfür ist das PHP-Framework „Medoo“, es bildet den Open-Source-Standard bei SQL-Datenbankzugriffen über PHP. Die Framework Standardisierung verkürzt die Einarbeitungszeit von Entwicklern in diesem Umfeld, da die aufkommenden Probleme immer auf dieselbe Weise gelöst werden können.
-
-\section{Black-Box- und White-Box-Frameworks}
-
-Bei Frameworks unterscheidet man zwischen Black-Box- und White-Box-Frameworks. Bei einem Black-Box-Frameworks ist der Entwickler gezwungen sich auf vorgefertigte Methoden zu verlassen. Er kann das Framework nur einbinden aber keine logischen Veränderungen daran vornehmen. Bei einem \textbf{White-Box-Framework} stehen im Gegensatz dazu oftmals nur abstrakte oder leere Methoden zur Verfügung. Diese Methodenhülsen muss der Entwickler nun in seiner Software mit Inhalt füllen. Bei einem Vergleich dieser beiden Frameworkarten lässt sich feststellen, dass der Entwickler bei einem \textbf{White-Box-Framework} dieses im Ganzen verstanden haben muss um die Lücken mit seinem speziellen anwendungsfallspezifischen Code zu füllen. Wohingegen das Black-Box-Framework eine Standardlösung darstellt, welche sich nicht näher auf den speziellen Anwendungsfall anpassen lässt, aber dafür nur eine geringe Einarbeitungszeit seitens des Entwicklers fordert.
-
-\section{Webarchitekturen}
-
-\subsection{MVC-Modell}
-\label{MVC}
-
-Das Entwurfsmuster MVC stammt ursprünglich aus den 1970er Jahren. Es wurde ursprünglich für Desktopanwendungen entwickelt, wird nun aber auch sowohl im Web, als auch bei mobilen Anwendungen verwendet. Die Idee hinter dem MVC-Konzept ist die Trennung von Bestandteilen einer Anwendung in jeweils eigene Verantwortlichkeiten. Diese Verantwortlichkeiten werden im Vorhinein in der Definition geregelt. Somit erreicht man voneinander unabhängige Komponenten, welche eigenständig und austauschbar sind. Mit dem MVC-Konzept vermeidet man darüber hinaus eine Vermischung von Aufgaben und der damit verbundenen Logik.
-
-Der MVC-Ansatz umfasst 3 Komponenten. Die Erste davon ist das Model. Es steht für das zu präsentierende Datenmodell einer Anwendung. Die Zweite Komponente stellt die View dar. Sie ist für die Präsentation der im Model enthaltenen Daten zuständig. In den Verantwortungsbereich der View fällt außerdem das Anzeigen von Benutzerinteraktionsmöglichkeiten wie beispielsweise ein Button. Die letzte Komponente bildet der Controller. Er bildet die Steuerungseinheit der Anwendung und kümmert sich um die Logik einer Applikation. Zu seinen Aufgaben gehört die Vermittlung zwischen dem Model und der View sowie der Interaktion mit dem Benutzer. Der Controller muss sicherstellen, dass alle Anpassungen in der View konsistent auf das Datenmodell angewandt werden.
-
-\subsection{Single-Page-Applications}
-
-Bei dem zuvor beschriebenen MVC-Modell dient der Browser lediglich als einfaches Anzeigeprogramm. Bei jeder Interaktion wird eine Nachricht an den Server geschickt und es wird eine neue Webseite als Antwort zurückgesendet. Früher war dies aufgrund von langsamen Browsern die einzige Möglichkeit, auf Benutzereingaben zu reagieren. Im Laufe der Zeit wurden die Webbrowser immer performanter und damit wurde es komfortabel möglich, mittels JavaScript die Webseite ohne den Server zu verändern. 
-
-Um das Jahr 2005 fing die Technologie AJAX (Asynchronous JavaScript and XML) an, sich als Webkommunikationsstandard zu etablieren. Hierbei war die Technik, die AJAX zu Grunde liegt nicht neu, denn es ist lediglich eine Kombination bestehender Technologien mit einer XMLHttpRequest. Durch AJAX wurde es somit möglich, asynchrone Anfragen an den Webserver zu senden und die erhaltenen Daten in die bereits geöffnete Webseite zu integrieren. Nun war die Singe-Page-Application geboren, denn das Grundgerüst der Webseite bei dieser Technik nur beim initialen Aufruf geladen werden. Heutzutage nutzen fast alle Webframeworks die AJAX-Technik um die Ladezeiten der Webseiten zu verkürzen, falls nur eine kleine Änderung vorliegt. Ein weiterer Vorteil ergibt sich darüber hinaus durch die Asynchronität, denn falls eine schlechte Internetverbindung vorliegt zeigt der Browser während der Ladezeit nicht eine weiße Ladeseite sondern der Benutzer kann die Webinhalte weiter konsumieren. 
-
-\subsection{Websockets}
-
-Mit den bisher beschriebenen Technologien musste der Client immer eine Anfrage an den Server schicken, doch bei bestimmten Anwendungsfällen ist eine persistente und bidirektionale Verbindung zum Server notwendig. Beispielsweise will man bei Chat-Anwendungen oder Live-Sport-Ticker immer in Echtzeit die aktuellen Informationen bereitgestellt bekommen. Doch die bisher gängigen HTTP-Verbindungen sehen diese Art der Verbindung nicht vor. Auf ihrer Basis müsste der Benutzer die Webseite immer manuell aktualisieren. Mittels eines Websockets kann eine solche persistente Client-Server-Verbindung geöffnet werden. Ein Websocket basiert auf einem eigenen Protokoll, dieses muss zuerst über HTTP-Anfragen verhandelt werden. Wenn Client und Server der Verbindung zugestimmt haben, besteht zwischen den beiden Parteien ein dauerhafter „Tunnel“, über diesen können Informationen mit geringer Latenz ausgetauscht werden. Im Vergleich zu einer herkömmlichen HTTP-Verbindung wird der überflüssige Header eingespart, das führt zu weniger Internettraffic. Wenn eine der beiden Parteien die dauerhafte Verbindung trennen möchte, muss sie der Anderen eine „Close“-Nachricht senden. (SPA-Dev)

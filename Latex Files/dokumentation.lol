@@ -7,7 +7,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {2.1}Beispiel f\IeC {\"u}r die Verwendung von JSX}{5}{lstlisting.2.1}
+\contentsline {lstlisting}{\numberline {2.1}Beispiel f\IeC {\"u}r die Verwendung von JSX}{9}{lstlisting.2.1}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -30,8 +30,6 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {5.1}Beispiel f\IeC {\"u}r das Einbinden von OpenUI5}{24}{lstlisting.5.1}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
