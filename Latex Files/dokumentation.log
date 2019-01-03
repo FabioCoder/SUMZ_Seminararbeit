@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  1 JAN 2019 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  3 JAN 2019 17:46
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1544,100 +1544,127 @@ l.3 \chapter
 ]
 chapter 2.
 
-Underfull \hbox (badness 2269) in paragraph at lines 10--11
+LaTeX Warning: Citation 'Schatten2010' on page 2 undefined on input line 10.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+\T1/lmr/m/n/12 (+20) Webframeworks bilden heutzutage oft die Rahmenstruktur für
+
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 10--11
+\T1/lmr/m/n/12 (+20) Oberflächenentwicklungen. Sie sind eine Sammlung von Metho
+den, welche
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 10--11
+\T1/lmr/m/n/12 (+20) Implementierung etabliert. Mit dem Einsatz von Webframewor
+ks muss der
+ []
+
+
+Underfull \hbox (badness 3590) in paragraph at lines 10--11
+\T1/lmr/m/n/12 (+20) Funktionalität nutzen. Beispielsweise nimmt das Weboberflä
+chenframework
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 12--14
+[]\T1/lmr/m/n/12 (+20) Ein Webframework nutzt hierbei ein Grundprinzip der Info
+rmatik: die
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 20--21
+[]\T1/lmr/m/n/12 (+20) Zuerst werden auf die Nachteile bei der Verwendung von W
+ebframeworks
+ []
+
+[2
+
+]
+Underfull \hbox (badness 1102) in paragraph at lines 26--27
+[]\T1/lmr/m/n/12 (+20) Viele Frameworks (oft im Open-Source-Umfeld) leiden oft 
+an \T1/lmr/bx/n/12 mangelnder
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 32--33
+\T1/lmr/m/n/12 (+20) verschiedene Anwendungsfälle \T1/lmr/bx/n/12 wiederzuverwe
+nden\T1/lmr/m/n/12 (+20) . Damit spart sich der
+ []
+
+
+LaTeX Warning: Citation 'Schatten2010' on page 3 undefined on input line 39.
+
+[3]
+
+LaTeX Warning: Citation 'Steyer2017' on page 4 undefined on input line 50.
+
+
+LaTeX Warning: Citation 'Magnucki2017' on page 4 undefined on input line 52.
+
+[4]
+
+LaTeX Warning: Citation 'Fink2014' on page 5 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'Fink2014' on page 5 undefined on input line 61.
+
+[5]
+Underfull \hbox (badness 2269) in paragraph at lines 68--69
 \T1/lmr/m/n/12 (+20) Allerdings verwendet nicht jeder Benutzer einen neuen Brow
 ser. Um die
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 14--15
+Underfull \hbox (badness 2717) in paragraph at lines 72--73
 []\T1/lmr/m/n/12 (+20) In ECMAScript2015 wurden die Variablentypen let zur Eing
 renzung des
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 20.
-(/home/vm/.miktex/texmfs/install/tex/latex/lm/t1lmtt.fd
+[6]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
+ (/home/vm/.miktex/texmfs/install/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2
-
-]
-<images/JavaScript.png, id=209, 401.5pt x 401.5pt>
+<images/JavaScript.png, id=234, 401.5pt x 401.5pt>
 File: images/JavaScript.png Graphic file (type png)
 <use images/JavaScript.png>
-Package pdftex.def Info: images/JavaScript.png  used on input line 43.
+Package pdftex.def Info: images/JavaScript.png  used on input line 101.
 (pdftex.def)             Requested size: 213.3957pt x 213.40048pt.
- [3 <./images/JavaScript.png>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 55.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 113.
+
  (/home/vm/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 113.
 
-Underfull \hbox (badness 1259) in paragraph at lines 68--69
+Underfull \hbox (badness 1259) in paragraph at lines 126--127
 \T1/lmr/m/n/12 (+20) React eingesetzt werden. Dieses Framework verwendet zur Da
 rstellung der
  []
 
-[4] (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
+[8 <./images/JavaScript.png>]
+(/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [5]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (+20) Webframeworks bilden heutzutage oft die Rahmenstruktur für
-
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (+20) Oberflächenentwicklungen. Sie sind eine Sammlung von Metho
-den, welche
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (+20) Implementierung etabliert. Mit dem Einsatz von Webframewor
-ks muss der
- []
-
-
-Underfull \hbox (badness 3590) in paragraph at lines 104--105
-\T1/lmr/m/n/12 (+20) Funktionalität nutzen. Beispielsweise nimmt das Weboberflä
-chenframework
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 106--107
-[]\T1/lmr/m/n/12 (+20) Ein Webframework nutzt hierbei ein Grundprinzip der Info
-rmatik: die
- []
-
-
-Underfull \hbox (badness 1460) in paragraph at lines 113--114
-[]\T1/lmr/m/n/12 (+20) Zuerst werden auf die Nachteile bei der Verwendung von W
-ebframeworks
- []
-
-[6]
-Underfull \hbox (badness 1102) in paragraph at lines 119--120
-[]\T1/lmr/m/n/12 (+20) Viele Frameworks (oft im Open-Source-Umfeld) leiden oft 
-an \T1/lmr/bx/n/12 mangelnder
- []
-
-
-Underfull \hbox (badness 2961) in paragraph at lines 125--126
-\T1/lmr/m/n/12 (+20) verschiedene Anwendungsfälle \T1/lmr/bx/n/12 wiederzuverwe
-nden\T1/lmr/m/n/12 (+20) . Damit spart sich der
- []
-
-[7] [8]) (content/03kapitel.tex [9] [10]
+) [9])
+(content/03kapitel.tex [10]
 chapter 3.
 
 LaTeX Warning: Reference `' on page 11 undefined on input line 13.
@@ -1711,6 +1738,9 @@ If that doesn't work, type  X <return>  to quit.
 
 [22] [23]) (content/05kapitel.tex [24]
 chapter 5.
+
+LaTeX Warning: Citation 'SAP2013' on page 25 undefined on input line 11.
+
 [25
 
 ]
@@ -1773,16 +1803,21 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                dokumentation
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 \openout1 = `dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35654 strings out of 494889
- 678506 string characters out of 3178824
- 1388373 words of memory out of 3000000
- 38203 multiletter control sequences out of 15000+200000
- 74076 words of font info for 113 fonts, out of 3000000 for 9000
+ 35667 strings out of 494889
+ 678726 string characters out of 3178824
+ 1388614 words of memory out of 3000000
+ 38211 multiletter control sequences out of 15000+200000
+ 74205 words of font info for 114 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
  72i,20n,100p,9113b,2543s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/vm/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/home/vm/.mikt
@@ -1796,9 +1831,9 @@ ll/fonts/type1/public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type
 1/public/lm/lmssbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm
 /lmsy10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb><
 /home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (39 pages, 493845 bytes).
+Output written on dokumentation.pdf (39 pages, 496619 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 25567 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 802 PDF objects out of 1000 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
+ 25591 words of extra memory for PDF output out of 29859 (max. 10000000)
 

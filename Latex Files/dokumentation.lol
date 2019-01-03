@@ -7,9 +7,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {2.1}Eine Klasse Person wird von einem Modul bereitgestellt}{3}{lstlisting.2.1}
+\contentsline {lstlisting}{\numberline {2.1}Eine Klasse Person wird von einem Modul bereitgestellt}{7}{lstlisting.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {2.2}Beispiel f\IeC {\"u}r die Verwendung von JSX}{5}{lstlisting.2.2}
+\contentsline {lstlisting}{\numberline {2.2}Beispiel f\IeC {\"u}r die Verwendung von JSX}{9}{lstlisting.2.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
