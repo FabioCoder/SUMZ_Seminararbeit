@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  4 JAN 2019 09:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  4 JAN 2019 23:43
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1673,7 +1673,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 97.
 
-<images/JavaScript.png, id=224, 401.5pt x 401.5pt>
+<images/JavaScript.png, id=230, 401.5pt x 401.5pt>
 File: images/JavaScript.png Graphic file (type png)
 <use images/JavaScript.png>
 Package pdftex.def Info: images/JavaScript.png  used on input line 102.
@@ -1807,7 +1807,7 @@ LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 15.
 
 LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 16.
 
-<images/Angular-MVC.jpg, id=273, 520.344pt x 75.28125pt>
+<images/Angular-MVC.jpg, id=279, 520.344pt x 75.28125pt>
 File: images/Angular-MVC.jpg Graphic file (type jpg)
 <use images/Angular-MVC.jpg>
 Package pdftex.def Info: images/Angular-MVC.jpg  used on input line 20.
@@ -2252,34 +2252,69 @@ LaTeX Warning: Citation 'SAP2013' on page 26 undefined on input line 11.
 
 [26
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-[]\T1/lmr/m/n/12 (+20) Für gröÿere Webentwicklungsprojekte wird auf der OpenUI5
--
- []
-
-[27]
-Underfull \hbox (badness 4846) in paragraph at lines 44--45
+] [27] (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+Underfull \hbox (badness 4846) in paragraph at lines 56--57
 []\T1/lmr/m/n/12 (+20) Die Datei Controller.js enthält die programmspezifische 
 Logik der UI5-
  []
 
 
-LaTeX Warning: Citation 'Antolovic2014' on page 28 undefined on input line 47.
+LaTeX Warning: Citation 'Antolovic2014' on page 28 undefined on input line 66.
 
-) (content/06kapitel.tex
-Underfull \hbox (badness 1009) in paragraph at lines 51--2
+[28]) (content/06kapitel.tex
+Underfull \hbox (badness 1009) in paragraph at lines 70--2
 [][]$\T1/lmtt/m/n/12 www . openui5 . hana . ondemand . com / # / api$[][]\T1/lm
 r/m/n/12 (+20) . Diese umfasst darüber hinaus viele
  []
 
-[28] [29]
+[29]
 chapter 6.
-) [30
+[30
+
+]
+Underfull \hbox (badness 1087) in paragraph at lines 16--17
+[]\T1/lmr/m/n/12 (+20) Bei der Wahl der Entwicklungsumgebung ist man bei Angula
+r und React
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 18--19
+[]\T1/lmr/m/n/12 (+20) Es gibt darüber hinaus auch Unterschiede bei den Wahlmög
+lichkeiten der
+ []
+
+[31]) (content/07kapitel.tex [32]
+chapter 7.
+
+Underfull \hbox (badness 2478) in paragraph at lines 9--10
+\T1/lmr/m/n/12 (+20) der einzelnen Technologien erarbeitet werden. Es wurde fes
+tgestellt, dass
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 9--10
+\T1/lmr/m/n/12 (+20) von Inhalten auf der Weboberfläche. Jedoch hat ReactJS bei
+m Routing
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 11--114
+[]\T1/lmr/m/n/12 (+20) Somit wurde das Ziel dieser Seminararbeit erfüllt und mi
+t der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--114
+\T1/lmr/m/n/12 (+20) Verwendung von Angular eine fundierte Handlungsempfehlung
+ []
+
+[33
 
 ] (ads/appendix.tex
 chapter A.
-) [31
+) [34
 
 
 
@@ -2310,10 +2345,10 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35425 strings out of 494889
- 674503 string characters out of 3178824
- 1371138 words of memory out of 3000000
- 37983 multiletter control sequences out of 15000+200000
+ 35508 strings out of 494889
+ 675695 string characters out of 3178824
+ 1371248 words of memory out of 3000000
+ 38043 multiletter control sequences out of 15000+200000
  73318 words of font info for 105 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
  72i,20n,100p,9113b,3753s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2328,9 +2363,9 @@ l/fonts/type1/public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type1
 /public/lm/lmssbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/
 lmsy10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></
 home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (38 pages, 492572 bytes).
+Output written on dokumentation.pdf (41 pages, 508663 bytes).
 PDF statistics:
- 705 PDF objects out of 1000 (max. 8388607)
- 214 named destinations out of 1000 (max. 500000)
- 24060 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 745 PDF objects out of 1000 (max. 8388607)
+ 233 named destinations out of 1000 (max. 500000)
+ 24068 words of extra memory for PDF output out of 24883 (max. 10000000)
 

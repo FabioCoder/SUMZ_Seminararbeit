@@ -5,11 +5,31 @@
 \chapter{Resümee}
 \section{Vergleichende Betrachtung}
 
-Nachdem in den vorherigen drei Kapiteln die einzelnen Technologien detailliert beschrieben wurden, werden sie in dem folgenden Kapitel miteinander verglichen.
+Nachdem in den vorherigen drei Kapiteln die einzelnen Technologien detailliert beschrieben wurden, werden sie nun im folgenden Kapitel miteinander verglichen.
+
+Das erste Vergleichskriterium bildet der Umfang an Funktionen, welche direkt im Framework integriert sind. Alle drei Webframeworks erlauben es, Daten komfortabel auf der Weboberfläche anzeigen. Jedoch bieten nur Angular und OpenUI5 die Möglichkeit im Standard, eine Datenquelle "Two-Way" anzubinden. Bei React muss hierfür ein zusätzliches AddOn nachinstalliert werden. Ähnlich verhält es sich bei dem Routing zwischen mehreren Seiten der Anwendung. Angular und OpenUI5 liefern Möglichkeiten hierzu in ihrem Standard dazu aus, jedoch bei React wird hierfür wiederum ein zusätzliches AddOn benötigt. 
+
+Es gibt darüber hinaus weitere Unterschiede bei der empfohlenen Webarchitektur. Bei Angular und OpenUI5 wird man aufgrund des Frameworkaufbaus zur Verwendung des MVC-Modells gedrängt. Dies wird bei OpenUI5 deutlich, indem schon beim Einrichtungsassistenten die typische MVC-Struktur angelegt wird. Auch das Grundkonzept von Angular ist unter anderem aufrund des "Two-Way-Bindings" auf MVC ausgerichtet. Anders verhält es sich allerdings bei React, denn hier wird die Verwendung von Flux empfohlen, bei dem typischerweise die Daten nur in eine Richtung fließen. Dies generiert vor allem Performancevorteile bei React.
+
+Ein weiteres wichtiges Merkmal bei Webframeworks ist die Datenanzeige. Bei OpenUI5 ist die Anbindung an einen Webserver über OData sehr einfach gehalten. Mit nur ein paar wenigen Codezeilen ist es möglich, Daten anzuzeigen und diese auch bei Bedarf zu ändern. Jedoch ist man bei den Anzeigemöglichkeiten, welche einfach einzubinden sind, auf den Standard beschränkt. Will man Daten anderweitig anzeigen muss man sehr aufwendig andere Frameworks einbinden und den Datenaustausch mit diesen manuell implementieren. Bei Angular wird die Datenanzeige über Komponenten gesteuert, welche die Templates mit Inhalt füllen. Hierbei ist bei der Implementierung eines Webservices ein etwas größerer Aufwand als bei OpenUI5 von Nöten. Jedoch sind bei Angular oberflächenspezifische Anpassungen komfortabler und schneller möglich als bei OpenUI5. Die Implementierung der Datenanzeige bei React ähnelt derer von Angular. Somit ist der Aufwand, Daten anzuzeigen nahezu gleich. React hat hierbei klare Geschwindigkeitsvorteile im Vergleich zu OpenUI5 und Angular, denn das Framework reduziert die Anzahl der DOM-Manipulationen auf ein Minimum. Daraus folgt, dass der Webbrowser weniger Aktionen ausführen muss.
+
+Bei der Wahl der Entwicklungsumgebung ist man bei Angular und React weitestgehend frei. Man sollte jedoch bei beiden darauf achten, dass die Entwicklung in TypeScript unterstützt wird. Bei OpenUI5 ist man in dieser Hinsicht beschränkter. Prinzipiell ist jeder Texteditor dafür geeignet, jedoch werden in Eclipse spezielle AddOns angeboten, welche das Erstellen und Entwickeln an einer Anwendung erleichtern.
+
+Es gibt darüber hinaus auch Unterschiede bei den Wahlmöglichkeiten der Programmiersprache. Wie im Grundlagenkapitel xy erläutert bietet die von JavaScript abgeleitete Programmiersprache TypeScript zahlreiche Vorteile gegenüber ihrem Ursprung. Die Verwendung von TypeScript ist sowohl in Angular, als auch in React möglich. Somit können mögliche Syntaxfehler schon beim Kompilieren erkannt werden. Von OpenUI5 wird TypeScript nicht unterstützt, somit ist hierbei das Entwickeln nur in der Webgrundsprache JavaScript möglich. Diese wird darüber hinaus auch von Angular sowie React unterstützt.
+
+
 
 
 \section{Empfehlung für das Projekt}
 
-In diesem Abschnitt werden nun konkrete Empfehlungen zur Umsetzung in „business horizon“ ausgesprochen.
+In diesem Abschnitt werden nun nach dem Vergleich aus Kapitel xy konkrete Empfehlungen zur Umsetzung in „business horizon“ ausgesprochen.
+
+Um eine fundierte Empfehlung für eine Webtechnologie geben zu können muss zunächst die Anwendung auf ihre frontendrelevanten Eigenschaften untersucht werden. Nach einer umfassenden Analyse lassen sich einige Merkmale der Software erkennen. 
+Sie umfasst viele unterschiedliche Komponenten und hat darüber hinaus noch einen Anmeldebildschirm. Daraus folgt eine Vielzahl von Views, zwischen denen gewechselt werden muss. Beim Routing hat sowohl Angular, als auch OpenUI5 seine Stärken. In React muss hierfür ein zusätzliches AddOn installiert werden.
+In „business horizon“ gibt es ausschließlich unidirektionale Webserveranbindungen. OpenUI5 hätte bei bidirektionalen Bindungen seine Vorzüge, da es diese allerdings nur selten benötigt werden sind alle betrachteten Webframeworks gleichwertig.
+Die Anwendung umfasst darüber hinaus über viele nicht standardisiert aufgebaute Dialoge. Deshalb sollte das zu verwendende Framework viele Customizing-Möglichkeiten bieten. Diese Möglichkeiten bieten Angular und React, bei OpenUI5 sind diese mit einem erheblichen Mehraufwand verbunden.
+In der Analyse konnte zudem festgestellt werden, dass die Anwendung viele Formulareingaben benötigt. Da Formulareingaben auf Weboberflächen unabdingbar zum Standard gehören sind alle Webframeworks dahingehend gleichermaßen optimiert.
+
+Aufgrund der zuvor erörterten Argumente eignet sich Angular als Webfrontend für „business horizon“ am Besten. Die Grundlagen für diese Entscheidung werden nun erläutert. Angular hat im Vergleich zu React Vorteile beim Routing zwischen verschieden Views, welche in „business horizon“ des öfteren benötigt werden. Verglichen mit OpenUI5 hat Angular auch Vorzüge, denn es werden in der Anwendung viele Komponenten benötigt, welche nicht durch den Standard abgedeckt sind und somit selbst entwickelt werden müssen.
 
 

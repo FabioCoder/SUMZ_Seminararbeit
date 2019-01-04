@@ -12,7 +12,7 @@ Das OpenUI5-Framework basiert auf HTML5, CSS3 und JavaScript. Daher ist es auch 
 
 \section{Architektur}
 
-OpenUI5 ist ein, wie in den Technischen Grundlagen beschrieben, clientseitiges JavaScript Black-Box-Framework. Dies bedeutet, man kann das Framework einfach mittels <script>-Befehl in ein HTML-Dokument importieren. Hierbei können wichtige Interfaceparameter übergaben werden, wie beispielsweise das zu verwendende Theme. Bei näherem Betrachten fällt auf, dass OpenUI5 auf einer modifizierten bootstrap-Bibliothek basiert. 
+OpenUI5 ist ein, wie in den Technischen Grundlagen beschrieben, clientseitiges JavaScript Black-Box-Framework. Dies bedeutet, man kann das Framework einfach mittels <script>-Befehl in ein HTML-Dokument importieren. Hierbei können wichtige Interfaceparameter übergaben werden, wie beispielsweise das zu verwendende Theme.
 
 \begin{lstlisting}[caption=Beispiel für das Einbinden von OpenUI5, label=lst:UI5Einbinden, language=HTML]
 <script id="sap-ui-bootstrap"
@@ -23,7 +23,7 @@ OpenUI5 ist ein, wie in den Technischen Grundlagen beschrieben, clientseitiges J
 
 Nachdem die Bibliothek in das Dokument integriert wurde, kann man in einem JavaScript-Teil des HTML-Dokumentes verschiedene UI-Elemente generieren und diese auf der Webseite anzeigen lassen. Dieses Verfahren eignet sich jedoch aufgrund der schlechten Strukturierungsmöglichkeiten nur für sehr kleine und kompakte Webanwendungen mit geringem Funktionsumfang. 
 
-Für größere Webentwicklungsprojekte wird auf der OpenUI5-Dokumentationshomepage die Entwicklungsumgebung Eclipse empfohlen. Für diese wurde von der SAP das „SAPUI5 Application Development“-Add-on entwickelt. Dieses ist mit OpenUI5 kompatibel und dient als Assistent zur Erstellung neuer UI5-Entwicklungsprojekte. Der Assistent erstellt nach seinem Durchlauf eine Dateistruktur. Die wichtigsten Dateielemente lauten:
+Prinzipiell kann für die Entwicklung von OpenUI5-Anwendungen jeder beliebige Texteditor verwendet werden. Für größere Webentwicklungsprojekte wird jedoch auf der OpenUI5-Dokumentationshomepage die Entwicklungsumgebung Eclipse empfohlen. Für diese wurde von der SAP das „SAPUI5 Application Development“-Add-on entwickelt. Dieses ist mit OpenUI5 kompatibel und dient als Assistent zur Erstellung neuer UI5-Entwicklungsprojekte. Der Assistent erstellt nach seinem Durchlauf eine Dateistruktur. Die wichtigsten Dateielemente dieser lauten:
 
 \begin{itemize}
 	\item Index.html
@@ -33,15 +33,34 @@ Für größere Webentwicklungsprojekte wird auf der OpenUI5-Dokumentationshomepa
 	\item I18n.properties
 \end{itemize}
 
-Auf die Funktion und Struktur der Elemente wird im Verlauf dieses Kapitels detailliert eingegangen.
+Auf die Funktion und Struktur der Elemente wird im Verlauf dieses Kapitels detailliert eingegangen. Hierbei ist wichtig, dass die beschriebenen JavaScript- und XML-Dateien aus mehreren Komponenten bestehen und auch anders benannt werden können. 
 
 Die index.html-Datei ist der erste Schritt für den Browser beim Öffnen einer Webseite. Bei OpenUI5 werden in der index.html allgemeine Parameter wie beispielsweise Dateipfade oder Kompatibilitätsinformationen festgelegt. Darüber hinaus wird von ihr auf die anderen Bestandteile der Webanwendung verwiesen.
 
-In der Component.js werden alle Datenverbindungen beschrieben. Hierzu gehören beispielsweise einfach eingebundene JSON-Dateien oder auch Verbindungen zu einem ODATA-Webservice, welcher dem UI5-Frontend Daten zur Anzeige bereitstellt. Darüber hinaus wird in der Component.js festgelegt, welche Art der Datenbindung zum Webservice besteht. Möglich ist hierbei nur das bloße Anzeigen, aber auch das Verändern auf der Datenbank.
+In der Component.js werden alle Datenverbindungen beschrieben. Hierzu gehören beispielsweise einfach eingebundene JSON-Dateien oder auch Verbindungen zu einem ODATA-Webservice, welcher dem UI5-Frontend Daten zur Anzeige bereitstellt. Hierbei kann OpenUI5 im Standard sowohl mit JSON-, als auch mit XML-Dateien verarbeiten. Darüber hinaus wird in der Component.js festgelegt, welche Art der Datenbindung zum Webservice besteht. Möglich ist hierbei nur das bloße Anzeigen, aber auch das Verändern auf der Datenbank.
 
-Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt, wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut, eine grafische Oberfläche zu strukturieren. Denn in ihr kann man verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Die View in UI5 ermöglicht auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller.
+Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt, wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut, eine grafische Oberfläche zu strukturieren. Denn in ihr kann man verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Mittels, im OpenUI5-Standard enthaltenen, Router ist es möglich, verschiedene Views miteinander zu verbinden und somit eine Webanwendung mit mehreren Anzeigen zu schaffen. Die View in UI5 ermöglicht darüber hinaus auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller. Mit dem folgenden Codebeispiel xy, einer Produktliste, wird die große Stärke von OpenUI5 nochmals unterstrichen.
 
-Die Datei Controller.js enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Es ist darüber hinaus auch möglich, im Controller weitere Frameworks zu laden und zu nutzen. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen.
+\begin{lstlisting}[caption=Beispiel OpenUI5 View, label=lst:UI5View, language=XML]
+<List
+id="ProductList"
+items="{/ProductCollection}
+includeItemInSelection="true"">
+	<StandardListItem
+	title="{Name}"
+	description="{ProductId}"
+	icon="{ProductPicUrl}"/>
+</List>
+\end{lstlisting}
+
+Die Datei Controller.js enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Im Codebeispiel xy wird ein Szenario veranschaulicht, bei welchem auf Knopfdruck ein MessageToast mit Blindtext erscheint. Es ist darüber hinaus auch möglich mehrere Controller zu verwenden und in diese weitere Frameworks zur Benutzung zu laden. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen. 
+
+\begin{lstlisting}[caption=Beispiel OpenUI5 Controller, label=lst:UI5Controller, language=Javascript]
+handleMessageToastPress: function(oEvent) {
+	var msg = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\r\n eirmod.';
+MessageToast.show(msg);
+}
+\end{lstlisting}
 
 Das letzte wichtige OpenUI5-Fragment stellt die Datei i18n.properties dar. Sie ist für Webanwendungen im internationalen Umfeld sehr wichtig. Der Entwickler kann mehrere i18n-Dateien mit Übersetzungen in diversen Sprachen erstellen. Das OpenUI5-Framework stellt daraufhin sicher, dass die passende Sprache als Anzeigesprache verwendet wird. Die Syntax der Dateibenennung hierbei lautet i18n\_XX.properties, wobei das XX für das Länderkürzel der Sprache steht (z.B. Deutsch: i18n\_DE.properties).\autocites[vgl.][126\psqq]{Antolovic2014}
 
