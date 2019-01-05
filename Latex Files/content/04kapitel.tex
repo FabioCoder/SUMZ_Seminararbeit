@@ -5,21 +5,23 @@
 \section{Allgemein}
 
 \subsection{Einführung in das Framework}\label{sec:rEinf}
-
-ReactJS ist eine von Facebook entwickelte JavaScript Bibliothek zur Entwicklung von Benutzeroberflächen. Im Gegensatz zu Angular ist ReactJS ein reines View-Framework. Das Framework wird unter anderem bei Facebook, Instagram, Netflix, Airbnb und dem Content Management System Wordpress eingesetzt. Es bietet einige Vorteile bei der Entwicklung von Anwendungen mit großen Benutzeroberflächen mit Daten, die sich häufig verändern. 
+ReactJS ist eine von Facebook entwickelte JavaScript White-Box Framework zur Entwicklung von Benutzeroberflächen. Im Gegensatz zu Angular ist ReactJS ein reines View-Framework. Das Framework wird unter anderem bei Facebook, Instagram, Netflix, Airbnb und dem Content Management System Wordpress eingesetzt. Es bietet einige Vorteile bei der Entwicklung von Anwendungen mit großen Benutzeroberflächen mit Daten, die sich häufig verändern. 
 
 Das Framework ist in JavaScript geschrieben und kann mit JavaScript oder einer in JavaScript übersetzbare Sprache wie TypeScript verwendet werden.\autocites[vgl.][1\psqq]{Gackenheimer.2015}[vgl.][3\psqq]{Zeigermann.2016}
 
 \subsection{Vorbereitung der Entwicklungsumgebung}\label{sec:rEntw}
 Für die Entwicklung einer React-Anwendung wird unter anderem \textit{NodeJS} (siehe \autoref{NodeJS}), ein Übersetzer (bspw. \textit{Babel} siehe \autoref{Babel}), ein Modul-Loader (bspw. \textit{Webpack} siehe \autoref{Webpack}) und die React-Bibliothek benötigt. Die React-Bibliothek bestehendes aus \textit{react} und \textit{react-dom} kann über den Paketmanager \textit{npm} installiert werden. \autocites[vgl.][92\psqq]{Stefanov.2017}[vgl.][8\psqq]{Zeigermann.2016}
 
+\section{Grundkonzepte}
+Zur Erklärung der Grundkonzepte wird das Hello Beispiel aus \autoref{BeschreibungHelloBsp} herangezogen.
+
 Das Framework React kann nur zum Bilden von Benutzeroberflächen verwendet werden. Darüber hinaus bietet es keine weiteren Funktionen. Für die Entwicklung einer größeren Anwendung muss beispielsweise eine Router-Implementierung eingebunden und ein Architekturmodell definiert werden.
 Sowohl \textcite{Zeigermann.2016} als auch \textcite{Stefanov.2017} empfehlen die Verwendung des Architekturmodells Flux und der Implementierung Redux. Flux beschreibt ein Anwendungsmodell, bei dem die Daten ausschließlich in eine Richtung fließen. \autocites[vgl.][8]{Zeigermann.2016}[vgl.][11]{Zeigermann.2016}[vgl.][167]{Stefanov.2017} 
 
-\section{Architektur}
-Zur Erklärung der Grundkonzepte wird das Hello Beispiel aus \autoref{BeschreibungHelloBsp} herangezogen.
+Facebook bietet unter dem Namen React Native zudem eine Native Version von React an. Mit dieser können Apps für die unterschiedlichsten Plattformen entwickelt werden.\autocite{Facebook.2019}
 
-\subsection{Das Wurzelelement}\label{sec:rWurz}
+\label{ReactNative}
+\subsection{Einbinden von React}\label{sec:rWurz}
 
 Eine React-Anwendung benötigt ein Wurzelelement auf einer HTML-Seite. Unter diesem HTML-Element rendert React die Benutzeroberfläche der React-Anwendung. Das Rendern bezeichnet dabei den Vorgang, der schlussendlich zum Einfügen von HTML-Elementen im DOM führt. Dieser Vorgang wird in \autoref{Rendern} näher betrachtet. 
 
@@ -66,7 +68,7 @@ ReactDom.render(<App />, document.getElementById("app"));
 \end{lstlisting}
 
 
-\subsection{Komponenten}\label{sec:reactKomponenten}
+\subsection{React-Komponenten}\label{sec:reactKomponenten}
 
 \comment{Events in React}
 
@@ -134,6 +136,5 @@ Anschließend vergleicht React den virtuellen DOM-Baum vor und nach der Änderun
 
 React-Elemente sind einfache und leichtgewichtige JavaScript-Objekte. Daher können die Änderungen zwischen den zwei virtuellen DOM-Bäumen schnell ermittelt werden. Durch dieses Verfahren werden teure DOM-Manipulationen reduziert und damit die Performance der Web-Anwendung verbessert.\autocites[vgl.][23\psq,60\psq,90\psq]{Zeigermann.2016}[vgl.][53\psq]{Stefanov.2017}[vgl.][]{Facebook.2018}
 
-\section{Verwendung}
 
 

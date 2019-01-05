@@ -7,7 +7,7 @@
 
 \subsection{Einführung in das Framework}\label{sec:aEinf}
 
-Angular ist ein von Google verwaltetes Open Source Framework, mit dem unter anderem clientseitige Single-Page-Applikationen entwickelt werden können. Die erste Version des Angular-Frameworks hat den Namen AngularJS. Alle nachfolgenden Versionen tragen den Namen Angular, da es zwischen der ersten und zweiten Version des Frameworks grundlegende Änderungen gab. 
+Angular ist ein von Google verwaltetes OpenSource White-Box Framework, mit dem unter anderem clientseitige Single-Page-Applikationen entwickelt werden können. Die erste Version des Angular-Frameworks hat den Namen AngularJS. Alle nachfolgenden Versionen tragen den Namen Angular, da es zwischen der ersten und zweiten Version des Frameworks grundlegende Änderungen gab. 
 
 Das Framework wird kontinuierlich weiterentwickelt. Monatlich soll eine Minor-Version und alle sechs Monate eine Major-Version erscheinen. Die aktuellste stabilste Version von Angular hat die Versionsnummer 7.1.4. \autocites[vgl.][vii\psqq]{Woiwode.2018}[vgl.][3\psqq]{Freeman.2018}
 
@@ -60,11 +60,13 @@ Dies ist die Struktur einer durch AngularCLI erzeugten Angular-Anwendung:
 Sowohl \textcite[vgl.][3\psqq]{Woiwode.2018} als auch \textcite[vgl.][3\psqq]{Steyer.2017} empfehlen die Verwendung der frei verfügbaren Entwicklungsumgebung Visual Studio Code. Die Entwicklungsumgebung unterstützt die Entwicklung in TypeScript und lässt sich leicht durch Plug-Ins, die die Entwicklung erleichtern sollen, erweitern. Visual Studio Code ist für Linux, Mac und Windows verfügbar und kann unter \url{https://code.visualstudio.com/Download}  heruntergeladen werden.
 
 
-\section{Architektur}
-In diesem Kapitel werden die Grundkonzepte von Angular näher beschrieben. Darüber hinaus bietet Angular weitere Konzepte wie den Router, der Ansichten abhängig vom Zustand einer Anwendung lädt.\autocites[vgl.][109]{Steyer.2017}  Die weiteren Konzepte werden unter anderem in \textcites{Woiwode.2018}{Steyer.2017} näher erläutert.
+\section{Grundkonzepte}
+In diesem Kapitel werden die Grundkonzepte von Angular näher beschrieben. Darüber hinaus bietet Angular weitere Konzepte wie den Router, der Ansichten abhängig vom Zustand einer Anwendung lädt. Angular kann zudem auf weiteren Plattformen eingesetzt werden. Mit NativeScript lassen sich beispielsweise Native Apps für Android, IOS und Windows Phone entwickeln.\autocites[vgl.][109]{Steyer.2017}[vgl.][431-440]{Woiwode.2018} Diese weiteren Konzepte werden unter anderem in \textcites{Woiwode.2018}{Steyer.2017} näher erläutert.
+\label{NativeScript}
+
 
 \label{BeschreibungHelloBsp}
-Zur Beschreibung der Grundkonzepte wird die Beispielanwendung in \autoref{fig:AngularAnwendung}. Im Input-Feld der Anwendung kann ein Name eingegeben werden. Dieser Name wird zur Begrüßung in der Überschrift verwendet. Eine Änderung des Namens im Input-Feld bewirkt eine Veränderung des Namens in der Überschrift.
+Zur Beschreibung der Grundkonzepte wird die Beispielanwendung in \autoref{fig:AngularAnwendung} verwendet. Im Input-Feld der Anwendung kann ein Name eingegeben werden. Dieser Name wird zur Begrüßung in der Überschrift verwendet. Eine Änderung des Namens im Input-Feld bewirkt eine Veränderung des Namens in der Überschrift.
 
 \begin{figure}[h]
 	\centering
@@ -81,7 +83,7 @@ Ein Angular-Modul fasst zusammengehörige Codeeinheiten zusammen und ermöglicht
 
  
 %%Bootstrapping
-Wenn ein Client eine auf Angular basierte Seite anfordert, dann schickt der Server den Inhalt der \textit{index.html} als Antwort an den Client zurück. Der Client führt daraufhin die im HTML-Dokument enthaltenen Skript-Elemente aus. Dabei wird die Angular-Plattform initialisiert und das Root-Modul übergeben. Dieses Modul konfiguriert die Angular-Anwendung.\autocites[vgl.][60]{Steyer.2017}[vgl.][226\psqq]{Freeman.2018}  Das Root-Modul der Beispielanwendung ist das Modul \textit{AppModule} siehe \autoref{lst:AppModule}. 
+Jede Angular-Anwendung hat genau ein Root-Modul. Dieses Modul konfiguriert die Angular-Anwendung. Wenn ein Client eine auf Angular basierte Seite anfordert, dann schickt der Server den Inhalt der \textit{index.html} als Antwort an den Client zurück. Der Client führt daraufhin die im HTML-Dokument enthaltenen Skript-Elemente aus. Dabei wird die Angular-Plattform initialisiert und das Root-Modul übergeben. \autocites[vgl.][60]{Steyer.2017}[vgl.][226\psqq]{Freeman.2018}  Das Root-Modul der Beispielanwendung ist das Modul \textit{AppModule} siehe \autoref{lst:AppModule}. 
 
 %%Feature-Module und Shared-Module
 Feature Module ermöglichen die Gruppierung einer Anwendung in Anwendungsfällen. Mithilfe von Shared-Module können die Teile einer Anwendung zusammengefasst werden, die unabhängig vom Anwendungsfall verwendet werden können. \autocites[vgl.][528\psqq]{Freeman.2018}[vgl.][]{Google.c}[vgl.][105\psqq]{Steyer.2017}
@@ -109,7 +111,7 @@ export class AppModule { }
 
 \end{lstlisting}
 
-\subsection{Komponenten}
+\subsection{Angular-Komponenten}
 
 %%Beschreibung von Komponenten
 Komponenten sind Klassen, die Daten und Logik zur Anzeige in den zugehörigen Templates bereitstellen. Diese ermöglichen die Aufteilung einer Angular-Anwendung in logisch getrennte Teile. \autocite[vgl.][401]{Freeman.2018} 
@@ -221,9 +223,3 @@ Sobald ein Service global registrierte wurde, steht dieser auch in weiteren Modu
 
 %%Nutzung
 Zur Nutzung eines Services muss die jeweilige Klasse den Service importieren und im Konstruktor deklarieren. Beim Erzeugen einer Instanz der Klasse injiziert Angular den jeweiligen Service.\autocites[vgl.][92\psqq]{Steyer.2017}[vgl.][474\psqq]{Freeman.2018}
-
-
-\section{Verwendung} 
-
-\comment{Doku}
-\comment{vollständiges Framework}   
