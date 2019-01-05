@@ -9,7 +9,7 @@
 
 Das dritte, im Rahmen dieser Seminararbeit betrachtete clientseitige Webframework heißt OpenUI5. Es ist ein Open-Source-Projekt der SAP SE und wurde im Dezember 2013 unter der Apache-Lizenz 2.0 veröffentlicht. Diese Lizenz erlaubt das freie Verwenden, Verteilen und Modifizieren der Software, durch diese Eigenschaften ist sie mit der GNU General Public License 3 kompatibel. Das Pendant zu OpenUI5 ist SAPUI5, es ist die proprietäre Version von OpenUI5. SAPUI5 hat den gleichen Funktionsumfang wie OpenUI5 und wird von der SAP SE kostenfrei an ihre Kunden vertrieben. Der Vorteil von SAPUI5 ist ein umfangreicher Softwaresupport, welcher für OpenUI5 nicht verfügbar ist. Da man für den Einsatz von SAPUI5 SAP-Kunde sein muss wird dieses Produkt im Rahmen dieser Seminararbeit nicht weiter betrachtet.\autocites[vgl.][8]{Magnucki2017}
 
-Das OpenUI5-Framework basiert auf HTML5, CSS3 und JavaScript (TypeScript ist nicht vorgesehen, da es in keiner offiziellen Dokumentation erwähnt wird). Daher ist es auch mit allen Browsern kompatibel, welche diese Technologien unterstützen. Dazu zählen der Internet Explorer ab Version 9, Firefox ab Version 17 und Google Chrome ab Version 1.\autocites[vgl.][6]{SAP2013}
+Das OpenUI5-Framework basiert auf HTML5, CSS3 und JavaScript (TypeScript ist nicht vorgesehen, da es in keiner offiziellen Dokumentation erwähnt wird). Die OpenUI5-Standardsteuerelemente sind laut Dokumentation mit folgenden Browserversionen kompatibel. Dazu zählen der Internet Explorer ab Version 9, Firefox ab Version 17 und Google Chrome ab Version 1. Beim Scripting hängt die Kompatibilität zum Browser an der jeweils verwendeten ECMAScript-Version. Es wird kein offizielles Tool zum Transpilieren bereitgestellt. \autocites[vgl.][6]{SAP2013}
 
 \subsection{Auswahl der Entwicklungsumgebung}\label{sec:oEntw}
 
@@ -23,15 +23,22 @@ OpenUI5 besitzt eine sehr umfassende und übersichtliche Dokumentation unter \ur
 
 \section{Architektur}
 
-\subsection{Grundsätzliche Implementierung}\label{sec_oGrund}
+\subsection{Einbinden von OpenUI5}\label{sec_oGrund}
 
 In diesem Abschnitt wird beschrieben, wie OpenUI5 ohne die, vom Assistenten generierten MVC-Dateifragmente initialisiert. Allgemein ist OpenUI5, wie in den Technischen Grundlagen in \autoref{sec:FWTypen} beschrieben, ein clientseitiges JavaScript Black-Box-Framework. Dies bedeutet, man kann das Framework mittels <script>-Befehl in ein HTML-Dokument importieren. Hierbei können wichtige Interfaceparameter übergeben werden, wie beispielsweise das zu verwendende Theme. Dies kann man in \autoref{lst:UI5Einbinden} anschaulich sehen.
 
 \begin{lstlisting}[caption=Beispiel für das Einbinden von OpenUI5, label=lst:UI5Einbinden, language=HTML]
-<script id="sap-ui-bootstrap"
-	src=https://openui5.hana.ondemand.com/resources/sap-ui-core.js
-	data-sap-ui-theme="sap_belize">
-</script>
+<!DOCTYPE html>
+	<html>
+	...
+		<head>
+			<script id="sap-ui-bootstrap"
+				src=https://openui5.hana.ondemand.com/resources/sap-ui-core.js
+				data-sap-ui-theme="sap_belize">
+			</script>
+		</head>
+	...
+	</html>
 \end{lstlisting}
 
 Nachdem die Bibliothek in das Dokument integriert wurde, kann man in einem JavaScript-Teil des HTML-Dokumentes verschiedene UI-Elemente generieren und diese auf der Webseite anzeigen lassen. Dieses Verfahren eignet sich jedoch aufgrund der schlechten Strukturierungsmöglichkeiten nur für sehr kleine und kompakte Webanwendungen mit geringem Funktionsumfang.\autocites[vgl.][136\psqq]{Antolovic2014}
@@ -45,7 +52,6 @@ Wie im vorherigen \autoref{sec_oGrund} erwähnt, existiert für OpenUI5 ein AddO
 	\item Component.js
 	\item View.xml
 	\item Controller.js
-	\item I18n.properties
 \end{itemize}
 
 Auf die Funktion und Struktur der Elemente wird im Verlauf dieses Kapitels detailliert eingegangen. Hierbei ist wichtig, dass die beschriebenen JavaScript- und XML-Dateien aus mehreren Komponenten bestehen und auch anders benannt werden können. Die folgenden Dateien werden lediglich als Beispiele für eine empfohlene Struktur herangezogen. 
@@ -68,7 +74,7 @@ includeItemInSelection="true"">
 </List>
 \end{lstlisting}
 
-Die Datei Controller.js enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Im \autoref{lst:UI5Controller} wird ein Szenario veranschaulicht, bei welchem auf Knopfdruck ein MessageToast mit Blindtext erscheint. Es ist darüber hinaus auch möglich, mehrere Controller zu verwenden und in diese weitere Frameworks zur Benutzung zu laden. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen. 
+Das letzte wichtige OpenUI5-Fragment stellt die Datei Controller.js dar. Sie enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Im \autoref{lst:UI5Controller} wird ein Szenario veranschaulicht, bei welchem auf Knopfdruck ein MessageToast mit Blindtext erscheint. Es ist darüber hinaus auch möglich, mehrere Controller zu verwenden und in diese weitere Frameworks zur Benutzung zu laden. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen. 
 
 \begin{lstlisting}[caption=Beispiel OpenUI5 Controller, label=lst:UI5Controller, language=Javascript]
 handleMessageToastPress: function(oEvent) {
@@ -76,7 +82,3 @@ handleMessageToastPress: function(oEvent) {
 MessageToast.show(msg);
 }
 \end{lstlisting}
-
-Das letzte wichtige OpenUI5-Fragment stellt die Datei i18n.properties dar. Sie ist für Webanwendungen im internationalen Umfeld sehr wichtig. Der Entwickler kann mehrere i18n-Dateien mit Übersetzungen in diversen Sprachen erstellen. Das OpenUI5-Framework stellt auf Basis der Browsersprache sicher, dass die passende Sprache als Anzeigesprache verwendet wird. Die Syntax der Dateibenennung hierbei lautet i18n\_XX.properties, wobei das XX für das Länderkürzel der Sprache steht (z.B. Deutsch: i18n\_DE.properties).\autocites[vgl.][126\psqq]{Antolovic2014}
-
-

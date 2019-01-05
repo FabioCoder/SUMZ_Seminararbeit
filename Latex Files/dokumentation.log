@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  5 JAN 2019 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  5 JAN 2019 23:36
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -2256,21 +2256,12 @@ LaTeX Warning: Citation 'Magnucki2017' on page 25 undefined on input line 22.
 
 ] [26]
 
-LaTeX Warning: Citation 'Antolovic2014' on page 27 undefined on input line 38.
+LaTeX Warning: Citation 'Antolovic2014' on page 27 undefined on input line 45.
 
 [27] (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-Underfull \hbox (badness 4846) in paragraph at lines 71--72
-[]\T1/lmr/m/n/12 (+20) Die Datei Controller.js enthält die programmspezifische 
-Logik der UI5-
- []
-
-[28]
-
-LaTeX Warning: Citation 'Antolovic2014' on page 29 undefined on input line 81.
-
-) (content/06kapitel.tex [29]
+) [28])
+(content/06kapitel.tex [29]
 chapter 6.
 
 LaTeX Warning: Citation 'Zeigermann.2016' on page 30 undefined on input line 10
@@ -2352,6 +2343,9 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 LaTeX Warning: There were undefined references.
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                dokumentation
 (biblatex)                and rerun LaTeX afterwards.
@@ -2361,13 +2355,13 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35514 strings out of 494889
- 675713 string characters out of 3178824
+ 35521 strings out of 494889
+ 675820 string characters out of 3178824
  1366279 words of memory out of 3000000
  38061 multiletter control sequences out of 15000+200000
  77749 words of font info for 107 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,3747s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,3780s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/vm/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/home/vm/.mikt
 ex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}</home/vm/.miktex/texmfs/ins
 tall/fonts/type1/public/lm/lmbx10.pfb></home/vm/.miktex/texmfs/install/fonts/ty
@@ -2380,9 +2374,9 @@ public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lms
 sbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></h
 ome/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></home/vm/.mikte
 x/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (42 pages, 527045 bytes).
+Output written on dokumentation.pdf (42 pages, 528111 bytes).
 PDF statistics:
- 766 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
  24588 words of extra memory for PDF output out of 24883 (max. 10000000)
 
