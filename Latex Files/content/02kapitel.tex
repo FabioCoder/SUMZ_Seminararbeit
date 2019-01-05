@@ -61,6 +61,7 @@ Um das Jahr 2005 fing die Technologie AJAX (Asynchronous JavaScript and XML) an,
 Mit den bisher beschriebenen Technologien musste der Client immer eine Anfrage an den Server schicken. Doch bei bestimmten Anwendungsfällen ist eine persistente und bidirektionale Verbindung zum Server notwendig. Beispielsweise will man bei Chat-Anwendungen oder Live-Sport-Ticker immer in Echtzeit die aktuellen Informationen bereitgestellt bekommen. Doch die bisher gängigen HTTP-Verbindungen sehen diese Art der Verbindung nicht vor. Auf ihrer Basis müsste der Benutzer die Webseite immer manuell aktualisieren. Mittels eines Websockets kann eine solche persistente Client-Server-Verbindung geöffnet werden. Ein Websocket basiert auf einem eigenen Protokoll, dieses muss zuerst über HTTP-Anfragen verhandelt werden. Wenn Client und Server der Verbindung zugestimmt haben, besteht zwischen den beiden Parteien ein dauerhafter „Tunnel“, über diesen können Informationen mit geringer Latenz ausgetauscht werden. Im Vergleich zu einer herkömmlichen HTTP-Verbindung wird der überflüssige Header eingespart, dies führt zu weniger Internettraffic. Wenn eine der beiden Parteien die dauerhafte Verbindung trennen möchte, muss sie der Anderen eine „Close“-Nachricht senden.\autocites[vgl.][11\psqq]{Fink2014}
 
 \section{JavaScript}\label{sec:js}
+Zur Entwicklung einer clientseitigen Anwendung wird die Skriptsprache JavaScript eingesetzt. Der Sprachstandard von JavaScript wird durch das  kontinuierlich weiterentwickelt ECMAScript spezifiziert. Durch die Verwendung der Obermenge TypeScript und der Spracherweiterung JSX kann die Entwicklung erleichtert und zudem können Funktionen, die nicht Teil des Sprachstandard von JavaScript sind, eingesetzt werden. Im Folgenden werden die mit JavaScript zusammenhängende Sprachen EcmaScript, TypeScript und JSX  näher erläutert.
 
 \subsection{Der Sprachstandard ECMAScript}\label{sec:der-sprachstandard-ecmascript}
 ECMAScript spezifiziert den Sprachstandard von JavaScript. Dieser wird seit dem Jahr 1997 Jahren von der European Computer Manufactures Association (kurz: ECMA) weiterentwickelt. Zunächst wurden die Versionen durchnummeriert (ES1, ES2, ES3, ES4, und ES5). Im Jahre 2015 wurde beschlossen, dass jährlich eine neue Version von ECMAScript erscheinen soll. Daher tragen die nachfolgenden Versionen das Veröffentlichungsjahr im Namen (ECMAScript2015, ECMAScript2016, ECMAScript2017, ECMAScript2018, …). 
@@ -73,28 +74,32 @@ In ECMAScript2015 wurden die Variablentypen let zur Eingrenzung des Geltungsbere
 
 Jede Datei ist ein eigenes Modul. Module fassen zusammengehörige Codeeinheiten zusammen und können Interfaces, Klassen oder Variablen bereitstellen, die wiederum von anderen Modulen verwendet werden können.\autocites[vgl.][34\psq]{Woiwode.2018}[vgl.][19\psqq]{Steyer.2017}
 
-Das Modul in \autoref{lst:ClassPerson} stellt eine Klasse Person zur Verfügung. Diese Klasse hat einen Konstruktor und eine Instanzmethode altere, die die Person um ein weiteres Jahr altern lässt.
 
-\begin{lstlisting}[caption=Eine Klasse Person wird von einem Modul bereitgestellt , label=lst:ClassPerson, language=Java]
-export class Person{
-private name 	: string;
-private alter 	: number;
+\label{Webpack}
+%Modul-Loader
+Wenn Java-Script Module in einer Webanwendung verwendet werden, wird ein Modul-Loader gebraucht. Dieser löst verschiedene Abhängigkeiten auf und erstellt daraus eine Ausgabedatei. Die Verwendung des Modul-Loader \textit{Webpack} wird sowohl für Angular als auch für React Anwendungen empfohlen. \textit{Webpack} unterstützt zudem Hot Module Replacement. Änderungen am Code werden zur Laufzeit übernommen. Dadurch muss eine Anwendung nach einer Änderung nicht komplett neu gebaut werden.\autocites[vgl.][13,21]{Woiwode.2018}[vgl.][9,295-301]{Zeigermann.2016}[vgl.][]{Hlushko.2018}
 
-constructor(name: string, alter: number){
-this.name = name;
-this.alter = alter;
-}
+%Das Modul in \autoref{lst:ClassPerson} stellt eine Klasse Person zur Verfügung. Diese Klasse hat einen Konstruktor und eine Instanzmethode altere, die die Person um ein weiteres Jahr altern lässt.
 
-altere(): number{
-alter = alter + 1;
-return alter;
-}
-}
-\end{lstlisting}
+%\begin{lstlisting}[caption=Eine Klasse Person wird von einem Modul bereitgestellt , label=lst:ClassPerson, language=Java]
+%export class Person{
+%   private name 	: string;
+%   private alter 	: number;
+%
+%   constructor(name: string, alter: number){
+%      this.name = name;
+%      this.alter = alter;
+%   }
+%
+%   altere(): number{
+%      alter = alter + 1;
+%      return alter;
+%   }
+%}
+%\end{lstlisting}
 
 Seit ECMAScript2017 können Dekoratoren für die Angabe von Metainformationen zu einer Klasse verwendet werden. Dies wird beispielsweise von dem in \autoref{ch:angular} vorgestellten Framwework Angular zur Kennzeichnung und Konfiguration der unterschiedlichen Bestandteile verwendet.\autocites[vgl.][30\psqq]{Woiwode.2018} 
 
-\comment{Object Spread Operator}
 \comment{Grafik ersetzen!}
 \begin{figure}[h]
 	\centering
@@ -107,7 +112,10 @@ Seit ECMAScript2017 können Dekoratoren für die Angabe von Metainformationen zu
 \subsection{Die Obermenge TypeScript}\label{sec:ts}
 TypeScript ist eine von Anders Hejlsberg bei Microsoft entwickelte Sprache. Diese erweitert die bestehende ECMAScript Version um weitere Sprachelemente und bildet somit eine Obermenge von JavaScript (siehe \autoref{fig:ECMAScript}). Ein Transpilierer übersetzt TypeScript in JavaScript. 
 
-TypeScript ergänzt JavaScript unter anderem um ein stärkeres Typsystem. Hierdurch können Typfehler bereits zur Compilezeit erkannt und Tools zur Codeanalyse (automatische Codevervollständigung, Refactoring-Unterstützung, …) eingesetzt werden.\autocites[vgl.][27\psqq]{Woiwode.2018}[vgl.][13\psqq]{Steyer.2017}[vgl.][10]{Zeigermann.2016} Folgende Basistypen stellt TypeScript zur Verfügung: \autocites[vgl.][34\psqq]{Woiwode.2018}[vgl.][16\psqq]{Steyer.2017}
+TypeScript ergänzt JavaScript unter anderem um ein stärkeres Typsystem. Hierdurch können Typfehler bereits zur Compilezeit erkannt und Tools zur Codeanalyse (automatische Codevervollständigung, Refactoring-Unterstützung, …) eingesetzt werden.\autocites[vgl.][27\psqq]{Woiwode.2018}[vgl.][13\psqq]{Steyer.2017}[vgl.][10]{Zeigermann.2016}TypeScript ermöglicht zudem die Verwendung von Interfaces. \autocites[vgl.][40\psq]{Woiwode.2018} 
+
+
+Folgende Basisstypen stellt TypeScript zur Verfügung: \autocites[vgl.][34\psqq]{Woiwode.2018}[vgl.][16\psqq]{Steyer.2017}
 
 \begin{itemize}
 	\item  \textbf{number}: Ganz- oder Kommazahl
@@ -117,13 +125,14 @@ TypeScript ergänzt JavaScript unter anderem um ein stärkeres Typsystem. Hierdu
 	\item \textbf{any}: simuliert Standardverhalten von JavaScript  – beliebiger Datentyp
 	\item \textbf{Function}: Funktion
 \end{itemize}
-TypeScript ermöglicht die Verwendung von Interfaces. \autocites[vgl.][40\psq]{Woiwode.2018}
+
 
 \subsection{Die Erweiterung JSX}\label{sec:die-erweiterung-jsx}
 \label{Babel}
 Die Spracherweiterung JSX ermöglicht die Verwendung einer HTML ähnlichen Syntax in JavaScript. JSX wird durch einen geeigneten Transpilierer in gültiges JavaScript übersetzt.\textcite[vgl.][10]{Zeigermann.2016} empfiehlt an dieser Stelle die Verwendung des Compilers \textit{Babel}.
 
-Die Spracherweiterung kann zum Beispiel bei der Entwicklung mit dem Framework React eingesetzt werden. Dieses Framework verwendet zur Darstellung der Benutzeroberfläche keine Templatesgesetzt. Die Benutzeroberfläche wird stattdessen mitin icht unter Verwendung eines Templates, sondern üann JSX verwendet wrdenDie Verwendung von JSX Ausdrücken anstatt JavaScript-Befehlen erleichtert diesen Vorgang. Im Folgenden werden die Grundkonzept
+JSX wird unter anderem im Framework React zur Beschreibung einer Benutzeroberfläche eingesetzt. Die Benutzeroberfläche wird in React nicht unter Verwendung eines Templates, sondern über JavaScript-Befehle aufgebaut. Die Verwendung von JSX Ausdrücken anstatt JavaScript-Befehlen erleichtert diesen Vorgang. Im Folgenden werden die Grundkonzepte von JSX näher erläutert.
+
 Die Ausgabe von dynamische Informationen erfolgt unter Verwendung von JavaScript-Ausdrücken. Diese Ausdrücke müssen in ein paar geschweifter Klammern gepackt werden. Bedingungen können mithilfe des ternären Operatoren überprüft werden. Zur Ausgabe von Listen mit wiederholenden Elementen steht die für Arrays definierte JavaScript Methode map zur Verfügung.
 
 JSX bietet zudem die Möglichkeit das Aussehen eines Elements über das style-Attribut zu verändern. Das sytle-Attribut ist ein Objekt, daher wird die CSS-Eigenschaft und der zugehörige Wert als Objekt-Literal übergeben. Zudem ist zu beachten, dass die CamelCase-Notation für die CSS-Eigenschaften verwendet werden muss. In \autoref{lst:JSXBeispiel} wird die CSS-Eigenschaft \textit{color} und \textit{font-size} des HTML-Elements gesetzt.
@@ -138,20 +147,3 @@ color: titleColor,
 fontSize: titleFontSize + 'px'
 }}> Hello, World</h1>
 \end{lstlisting}
-
-
-\comment{NodeJS}
-
-\subsection{Zur Entwicklung benötigte Software oder Tools}\label{sec:glTools}
-Für die Entwicklung einer auf JavaScript basierenden Webanwendung wird unter anderem NodeJS, der Paketmanager npm und ein Modul-Loader benötigt. Da diese Tools auch bei der Verwendung der Frameworks Angular und ReactJS eine Rolle Spielen, werden diese  im folgenden näher erläutert.
-\section{Zur Entwicklung benötigte Tools}
-Für die Entwicklung einer auf JavaScript basierenden Webanwendung wird unter anderem NodeJS, der Paketmanager npm und ein Modul-Loader benötigt. Demnach werden diese auch bei Verwendung der Frameworks Angular und ReactJS eingesetzt. Im Folgenden werden die Tools näher erläutert.
-
-%NodeJS
-\label{NodeJS}
-Die JavaScript Laufzeitumgebung \textit{NodeJS} ermöglicht unter anderem das Ausführen von JavaScript Code auf dem Server. Einige Tools, die bei der Entwicklung einer Webanwendung eingesetzt werden, verwenden NodeJS. Außerdem bietet NodeJS Pakete mit wiederverwendbarem Code, die über den in integrierten Paketmanager \textit{npm} installiert werden können. Die aktuellste Version kann von \url{https://nodejs.org/} heruntergeladen und installiert werden.  \autocites[vgl.][1\psqq]{Steyer.2017}[vgl.][7\psqq]{Freeman.2018}[vgl.][6\psqq]{Woiwode.2018} 
-
-\label{Webpack}
-%Modul-Loader
-Wenn Java-Script Module in einer Webanwendung verwendet werden, wird ein Modul-Loader gebraucht. Dieser löst verschiedene Abhängigkeiten auf und erstellt daraus eine Ausgabedatei. Die Verwendung des Modul-Loader \textit{Webpack} wird sowohl für Angular als auch für React Anwendungen empfohlen. \textit{Webpack} unterstützt zudem Hot Module Replacement. Änderungen am Code werden zur Laufzeit übernommen. Dadurch muss eine Anwendung nach einer Änderung nicht komplett neu gebaut werden.\autocites[vgl.][13,21]{Woiwode.2018}[vgl.][9,295-301]{Zeigermann.2016}[vgl.][]{Hlushko.2018}
-
