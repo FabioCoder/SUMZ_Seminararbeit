@@ -4,13 +4,13 @@
 
 \section{Allgemein}
 
-\subsection{Einführung in das Framework}
+\subsection{Einführung in das Framework}\label{sec:rEinf}
 
 ReactJS ist eine von Facebook entwickelte JavaScript Bibliothek zur Entwicklung von Benutzeroberflächen. Im Gegensatz zu Angular ist ReactJS ein reines View-Framework. Das Framework wird unter anderem bei Facebook, Instagram, Netflix, Airbnb und dem Content Management System Wordpress eingesetzt. Es bietet einige Vorteile bei der Entwicklung von Anwendungen mit großen Benutzeroberflächen mit Daten, die sich häufig verändern. 
 
 Das Framework ist in JavaScript geschrieben und kann mit JavaScript oder einer in JavaScript übersetzbare Sprache wie TypeScript verwendet werden.\autocites[vgl.][1\psqq]{Gackenheimer.2015}[vgl.][3\psqq]{Zeigermann.2016}
 
-\subsection{Vorbereitung der Entwicklungsumgebung}
+\subsection{Vorbereitung der Entwicklungsumgebung}\label{sec:rEntw}
 Für die Entwicklung einer React-Anwendung wird unter anderem \textit{NodeJS} (siehe \autoref{NodeJS}), ein Übersetzer (bspw. \textit{Babel} siehe \autoref{Babel}), ein Modul-Loader (bspw. \textit{Webpack} siehe \autoref{Webpack}) und die React-Bibliothek benötigt. Die React-Bibliothek bestehendes aus \textit{react} und \textit{react-dom} kann über den Paketmanager \textit{npm} installiert werden. \autocites[vgl.][92\psqq]{Stefanov.2017}[vgl.][8\psqq]{Zeigermann.2016}
 
 Das Framework React kann nur zum Bilden von Benutzeroberflächen verwendet werden. Darüber hinaus bietet es keine weiteren Funktionen. Für die Entwicklung einer größeren Anwendung muss beispielsweise eine Router-Implementierung eingebunden und ein Architekturmodell definiert werden.
@@ -19,7 +19,7 @@ Sowohl \textcite{Zeigermann.2016} als auch \textcite{Stefanov.2017} empfehlen di
 \section{Architektur}
 Zur Erklärung der Grundkonzepte wird das Hello Beispiel aus \autoref{BeschreibungHelloBsp} herangezogen.
 
-\subsection{Das Wurzelelement}
+\subsection{Das Wurzelelement}\label{sec:rWurz}
 
 Eine React-Anwendung benötigt ein Wurzelelement auf einer HTML-Seite. Unter diesem HTML-Element rendert React die Benutzeroberfläche der React-Anwendung. Das Rendern bezeichnet dabei den Vorgang, der schlussendlich zum Einfügen von HTML-Elementen im DOM führt. Dieser Vorgang wird in \autoref{Rendern} näher betrachtet. 
 
