@@ -29,17 +29,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Single-Page-Applications}{5}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Websockets}{6}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Websockets}{5}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}JavaScript}{6}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Der Sprachstandard ECMAScript}{6}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Die Obermenge TypeScript}{8}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Die Obermenge TypeScript}{7}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Die Erweiterung JSX}{9}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Die Erweiterung JSX}{8}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.4}Zur Entwicklung ben\IeC {\"o}tigte Software oder Tools}{10}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Zur Entwicklung ben\IeC {\"o}tigte Software oder Tools}{9}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Zur Entwicklung ben\IeC {\"o}tigte Tools}{10}{section.2.4}
 \defcounter {refsection}{0}\relax 
@@ -97,12 +97,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Typische Einsatzgebiete}{29}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Res\IeC {\"u}mee}{31}{chapter.6}
+\contentsline {chapter}{\numberline {6}Projektbezogener Vergleich der Webframeworks}{31}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Vergleichende Betrachtung}{31}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Empfehlung f\IeC {\"u}r das Projekt}{32}{section.6.2}
+\contentsline {section}{\numberline {6.2}Handlungsempfehlung}{33}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Fazit}{34}{chapter.7}
+\contentsline {chapter}{\numberline {7}Fazit}{35}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Anhang}{35}{appendix.A}
+\contentsline {chapter}{\numberline {A}Anhang}{36}{appendix.A}
