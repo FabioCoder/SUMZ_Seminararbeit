@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  5 JAN 2019 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.11.26)  5 JAN 2019 23:02
 entering extended mode
 **./dokumentation.tex
 (dokumentation.tex
@@ -1253,11 +1253,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/home/vm/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
-(dokumentation.aux
-
-LaTeX Warning: Label `NodeJS' multiply defined.
-
-)
+(dokumentation.aux)
 \openout1 = `dokumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -1392,9 +1388,9 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout5 = `dokumentation.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'dokumentation.bbl' found.
+Package biblatex Info: ... file 'dokumentation.bbl' not found.
 
-(dokumentation.bbl)
+No file dokumentation.bbl.
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1403,7 +1399,7 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 21.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 21.
- (ads/deckblatt.tex
+(ads/deckblatt.tex
 <images/dhbw.png, id=30, 710.655pt x 299.1175pt>
 File: images/dhbw.png Graphic file (type png)
 <use images/dhbw.png>
@@ -1424,13 +1420,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
 ) [1]
 Package tocbasic Info: character protrusion at toc deactivated on input line 67
 .
-
-(dokumentation.toc
+ (dokumentation.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 12.
- (/home/vm/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
+
+(/home/vm/.miktex/texmfs/install/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 12.
@@ -1463,34 +1469,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout6 = `dokumentation.toc'.
 
  [3]
-(ads/acronyms.tex
-chapter without number
+Package tocbasic Info: character protrusion at lof deactivated on input line 79
+.
 
-Class scrreprt Warning: \float@addtolists detected!
-(scrreprt)              Implementation of \float@addtolist became
-(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrreprt)              has been replaced by several more flexible
-(scrreprt)              features of package `tocbasic`.
-(scrreprt)              Since Version 3.12 support for deprecated
-(scrreprt)              \float@addtolist interface has been
-(scrreprt)              restricted to only some of the KOMA-Script
-(scrreprt)              features and been removed from others.
-(scrreprt)              Loading of package `scrhack' may help to
-(scrreprt)              avoid this warning, if you are using a
-(scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@addtolist interface .
+(dokumentation.lof)
+\tf@lof=\write7
+\openout7 = `dokumentation.lof'.
 
-) [4
+ [4
 
 
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 79
+Package tocbasic Info: character protrusion at lot deactivated on input line 84
 .
- (dokumentation.lof)
-\tf@lof=\write7
-\openout7 = `dokumentation.lof'.
+ (dokumentation.lot)
+\tf@lot=\write8
+\openout8 = `dokumentation.lot'.
 
  [5
 
@@ -1512,9 +1508,24 @@ Class scrreprt Warning: \float@listhead detected!
 
 
 chapter without number
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface .
+
 (dokumentation.lol)
-\tf@lol=\write8
-\openout8 = `dokumentation.lol'.
+\tf@lol=\write9
+\openout9 = `dokumentation.lol'.
 
  [6
 
@@ -1617,40 +1628,127 @@ LaTeX Warning: Citation 'Fink2014' on page 5 undefined on input line 62.
 
 [5]
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 6 undefined on input line 69.
+LaTeX Warning: Citation 'Woiwode.2018' on page 6 undefined on input line 70.
 
 
-LaTeX Warning: Citation 'Terlson.2018' on page 6 undefined on input line 69.
+LaTeX Warning: Citation 'Terlson.2018' on page 6 undefined on input line 70.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 6 undefined on input line 69.
+LaTeX Warning: Citation 'Steyer.2017' on page 6 undefined on input line 70.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 []\T1/lmr/m/n/12 (+20) Die neusten Browser unterstützen meist den aktuellsten E
 CMAScript
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 68--69
+Underfull \hbox (badness 5490) in paragraph at lines 69--70
 \T1/lmr/m/n/12 (+20) Sprachstandard. Allerdings verwendet nicht jeder Benutzer 
 einen neuen
  []
 
-
-Underfull \hbox (badness 2717) in paragraph at lines 72--73
+[6]
+Underfull \hbox (badness 2717) in paragraph at lines 73--74
 []\T1/lmr/m/n/12 (+20) In ECMAScript2015 wurden die Variablentypen let zur Eing
 renzung des
  []
 
-[6]
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 75.
+LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 76.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 7 undefined on input line 75.
+LaTeX Warning: Citation 'Steyer.2017' on page 7 undefined on input line 76.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 78.
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 7 undefined on input line 81.
+
+
+
+LaTeX Warning: Citation 'Hlushko.2018' on page 7 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 102.
+
+<images/JavaScript.png, id=235, 401.5pt x 401.5pt>
+File: images/JavaScript.png Graphic file (type png)
+<use images/JavaScript.png>
+Package pdftex.def Info: images/JavaScript.png  used on input line 106.
+(pdftex.def)             Requested size: 213.3957pt x 213.40048pt.
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 108.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 115.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 7 undefined on input line 115.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 7 undefined on input line 115
+.
+
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 116.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+\T1/lmr/m/n/12 (+20) werden.([][][])TypeScript ermöglicht
+ []
+
+[7]
+
+LaTeX Warning: Citation 'Woiwode.2018' on page 8 undefined on input line 119.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 8 undefined on input line 119.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+[]\T1/lmr/m/n/12 (+20) Folgende Basisstypen stellt TypeScript zur Verfügung:
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 121.
+
+(/home/vm/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 121.
+
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 8 undefined on input line 132
+.
+
+
+Underfull \hbox (badness 4291) in paragraph at lines 134--135
+[]\T1/lmr/m/n/12 (+20) JSX wird unter anderem im Framework React zur Beschreibu
+ng einer
+ []
+
+[8 <./images/JavaScript.png>]
+
+LaTeX Warning: Citation 'Zeigermann.2016' on page 9 undefined on input line 141
+.
+
+
+LaTeX Warning: Citation 'Stefanov.2017' on page 9 undefined on input line 141.
+
+(/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+(/home/vm/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+)
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 142.
+
+
 (/home/vm/.miktex/texmfs/install/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1658,117 +1756,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 96.
-
-<images/JavaScript.png, id=242, 401.5pt x 401.5pt>
-File: images/JavaScript.png Graphic file (type png)
-<use images/JavaScript.png>
-Package pdftex.def Info: images/JavaScript.png  used on input line 101.
-(pdftex.def)             Requested size: 213.3957pt x 213.40048pt.
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 103.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 110.
-
-
-LaTeX Warning: Citation 'Steyer.2017' on page 7 undefined on input line 110.
-
-
-LaTeX Warning: Citation 'Zeigermann.2016' on page 7 undefined on input line 110
-.
-
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 7 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'Steyer.2017' on page 7 undefined on input line 111.
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 110--111
-[]\T1/lmr/m/n/12 (+20) TypeScript ergänzt JavaScript unter anderem um ein stärk
-eres Typsystem.
- []
-
-[7]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 113.
-
- (/home/vm/.miktex/texmfs/install/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 113.
-
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 8 undefined on input line 121.
-
-
-LaTeX Warning: Citation 'Zeigermann.2016' on page 8 undefined on input line 124
-.
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 126--128
-\T1/lmr/m/n/12 (+20) React eingesetzt werden. Dieses Framework verwendet zur Da
-rstellung der
- []
-
-[8 <./images/JavaScript.png>]
-
-LaTeX Warning: Citation 'Zeigermann.2016' on page 9 undefined on input line 132
-.
-
-
-LaTeX Warning: Citation 'Stefanov.2017' on page 9 undefined on input line 132.
-
-(/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-)
-(/home/vm/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) [9]
-
-LaTeX Warning: Citation 'Steyer.2017' on page 10 undefined on input line 153.
-
-
-LaTeX Warning: Citation 'Freeman.2018' on page 10 undefined on input line 153.
-
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 10 undefined on input line 153.
-
-
-Underfull \hbox (badness 3746) in paragraph at lines 152--153
-[]\T1/lmr/m/n/12 (+20) Die JavaScript Laufzeitumgebung \T1/lmr/m/it/12 (+20) No
-deJS \T1/lmr/m/n/12 (+20) ermöglicht unter anderem das
- []
-
-
-Underfull \hbox (badness 3590) in paragraph at lines 152--153
-\T1/lmr/m/n/12 (+20) Ausführen von JavaScript Code auf dem Server. Einige Tools
-, die bei
- []
-
-
-LaTeX Warning: Citation 'Woiwode.2018' on page 10 undefined on input line 157.
-
-
-LaTeX Warning: Citation 'Zeigermann.2016' on page 10 undefined on input line 15
-7.
-
-
-LaTeX Warning: Citation 'Hlushko.2018' on page 10 undefined on input line 157.
-
-) (content/03kapitel.tex [10]
+(content/03kapitel.tex [9]
 chapter 3.
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 13.
+LaTeX Warning: Citation 'Woiwode.2018' on page 10 undefined on input line 13.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 13.
+LaTeX Warning: Citation 'Freeman.2018' on page 10 undefined on input line 13.
 
 
 Underfull \hbox (badness 4634) in paragraph at lines 12--13
@@ -1789,30 +1784,30 @@ ummer 7.1.4.
  []
 
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 15.
+LaTeX Warning: Citation 'Woiwode.2018' on page 10 undefined on input line 15.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 15.
+LaTeX Warning: Citation 'Steyer.2017' on page 10 undefined on input line 15.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 16.
+LaTeX Warning: Citation 'Freeman.2018' on page 10 undefined on input line 16.
 
-<images/Angular-MVC.jpg, id=291, 520.344pt x 75.28125pt>
+<images/Angular-MVC.jpg, id=264, 520.344pt x 75.28125pt>
 File: images/Angular-MVC.jpg Graphic file (type jpg)
 <use images/Angular-MVC.jpg>
 Package pdftex.def Info: images/Angular-MVC.jpg  used on input line 20.
 (pdftex.def)             Requested size: 341.43442pt x 49.39973pt.
 
-LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 22.
+LaTeX Warning: Citation 'Freeman.2018' on page 10 undefined on input line 22.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 32.
+LaTeX Warning: Citation 'Steyer.2017' on page 10 undefined on input line 32.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 32.
+LaTeX Warning: Citation 'Freeman.2018' on page 10 undefined on input line 32.
 
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 32.
+LaTeX Warning: Citation 'Woiwode.2018' on page 10 undefined on input line 32.
 
 
 Underfull \hbox (badness 3746) in paragraph at lines 31--32
@@ -1826,36 +1821,39 @@ Underfull \hbox (badness 3590) in paragraph at lines 31--32
 , die bei
  []
 
-[11
+[10
 
  <./images/Angular-MVC.jpg>]
 
-LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 34.
+LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 34.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 12 undefined on input line 34.
+LaTeX Warning: Citation 'Freeman.2018' on page 11 undefined on input line 34.
 
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 12 undefined on input line 34.
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 34.
 
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 12 undefined on input line 60.
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 60.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 60.
+LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 60.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 64.
+LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 64.
 
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 12 undefined on input line 64.
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 64.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 64.
+LaTeX Warning: Citation 'Woiwode.2018' on page 11 undefined on input line 64.
 
-[12]
 
-LaTeX Warning: File `angular-anwendung.png' not found on input line 71.
+LaTeX Warning: Citation 'Steyer.2017' on page 11 undefined on input line 64.
+
+[11]
+
+LaTeX Warning: File `angular-anwendung.png' not found on input line 73.
 
 
 ! Package pdftex.def Error: File `angular-anwendung.png' not found: using draft
@@ -1865,323 +1863,328 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 	\includegraphics{angular-anwendung.png}
+l.73 	\includegraphics{angular-anwendung.png}
                                              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 13 undefined on input line 80.
+LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 82.
 
 
-LaTeX Warning: Citation 'Woiwode.2018' on page 13 undefined on input line 80.
+LaTeX Warning: Citation 'Woiwode.2018' on page 12 undefined on input line 82.
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 80--81
+Underfull \hbox (badness 2495) in paragraph at lines 82--83
 \T1/lmr/m/n/12 (+20) Ein Angular-Modul fasst zusammengehörige Codeeinheiten zus
 ammen und
  []
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 13 undefined on input line 84.
+LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 86.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 13 undefined on input line 84.
+LaTeX Warning: Citation 'Freeman.2018' on page 12 undefined on input line 86.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 13 undefined on input line 88.
+LaTeX Warning: Citation 'Freeman.2018' on page 12 undefined on input line 90.
 
 
-LaTeX Warning: Citation 'Google.c' on page 13 undefined on input line 88.
+LaTeX Warning: Citation 'Google.c' on page 12 undefined on input line 90.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 13 undefined on input line 88.
+LaTeX Warning: Citation 'Steyer.2017' on page 12 undefined on input line 90.
 
 
-Underfull \hbox (badness 5064) in paragraph at lines 87--88
+Underfull \hbox (badness 5064) in paragraph at lines 89--90
 \T1/lmr/m/n/12 (+20) werden, die unabhängig vom Anwendungsfall verwendet werden
  können.
  []
 
+[12]
+
+LaTeX Warning: Citation 'Freeman.2018' on page 13 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'Google.b' on page 13 undefined on input line 121.
+
+
+LaTeX Warning: Citation 'Freeman.2018' on page 13 undefined on input line 121.
+
+
+LaTeX Warning: Citation 'Steyer.2017' on page 13 undefined on input line 121.
+
 [13]
 
-LaTeX Warning: Citation 'Freeman.2018' on page 14 undefined on input line 115.
+LaTeX Warning: Citation 'Google.b' on page 14 undefined on input line 154.
 
 
-LaTeX Warning: Citation 'Google.b' on page 14 undefined on input line 119.
+LaTeX Warning: Citation 'Steyer.2017' on page 14 undefined on input line 154.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 14 undefined on input line 119.
+LaTeX Warning: Citation 'Steyer.2017' on page 14 undefined on input line 156.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 14 undefined on input line 119.
+LaTeX Warning: Citation 'Freeman.2018' on page 14 undefined on input line 156.
+
+
+LaTeX Warning: Citation 'Google.' on page 14 undefined on input line 156.
 
 [14]
 
-LaTeX Warning: Citation 'Google.b' on page 15 undefined on input line 152.
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 165.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 152.
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 165.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 154.
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 165.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 154.
-
-
-LaTeX Warning: Citation 'Google.' on page 15 undefined on input line 154.
-
-[15]
-
-LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 163.
-
-
-LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 163.
-
-
-LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 163.
-
-
-Underfull \hbox (badness 2050) in paragraph at lines 163--165
+Underfull \hbox (badness 2050) in paragraph at lines 165--167
 []\T1/lmr/m/n/12 (+20) Die strukturellen Direktiven ändern die Struktur des zug
 ehörigen HTML-
  []
 
 
-Underfull \hbox (badness 2237) in paragraph at lines 163--165
+Underfull \hbox (badness 2237) in paragraph at lines 165--167
 \T1/lmr/m/n/12 (+20) die strukturellen Direktiven Templates, die beliebig oft g
 erendert werden.
  []
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 171.
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 173.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 171.
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 173.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 179.
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 181.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 180.
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 182.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 183.
+LaTeX Warning: Citation 'Freeman.2018' on page 15 undefined on input line 185.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 183.
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 185.
 
 
-LaTeX Warning: Citation 'Google.d' on page 16 undefined on input line 183.
+LaTeX Warning: Citation 'Google.d' on page 15 undefined on input line 185.
 
 
-Overfull \hbox (1.22168pt too wide) in paragraph at lines 192--192
+Overfull \hbox (1.22168pt too wide) in paragraph at lines 194--194
 []|\T1/lmr/m/n/12 (-20) (Ziel)="Ausdruck"|  
  []
 
 
-Overfull \hbox (7.61911pt too wide) in paragraph at lines 194--194
+Overfull \hbox (7.61911pt too wide) in paragraph at lines 196--196
 []|\T1/lmr/m/n/12 (-20) [(Ziel)]="Ausdruck"|  
  []
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 202.
+LaTeX Warning: Citation 'Steyer.2017' on page 15 undefined on input line 204.
 
-[16]
+[15]
 
-LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 211.
-
-
-LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 212.
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 213.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 17 undefined on input line 212.
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 214.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 213.
+LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 214.
 
 
-LaTeX Warning: Citation 'Steyer.2017' on page 17 undefined on input line 224.
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 215.
+
+)
+
+LaTeX Warning: Citation 'Steyer.2017' on page 16 undefined on input line 113.
 
 
-LaTeX Warning: Citation 'Freeman.2018' on page 17 undefined on input line 224.
+LaTeX Warning: Citation 'Freeman.2018' on page 16 undefined on input line 113.
 
-[17]) (content/04kapitel.tex [18]
+(content/04kapitel.tex [16] [17]
 chapter 4.
 
-LaTeX Warning: Citation 'Gackenheimer.2015' on page 19 undefined on input line 
-12.
+LaTeX Warning: Citation 'Gackenheimer.2015' on page 18 undefined on input line 
+11.
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 12
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 11
 .
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 11--12
+Underfull \hbox (badness 3557) in paragraph at lines 10--11
 []\T1/lmr/m/n/12 (+20) Das Framework ist in JavaScript geschrieben und kann mit
  JavaScript
  []
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 11--12
+Underfull \hbox (badness 2689) in paragraph at lines 10--11
 \T1/lmr/m/n/12 (+20) oder einer in JavaScript übersetzbare Sprache wie TypeScri
 pt verwendet
  []
 
 
-LaTeX Warning: Citation 'Stefanov.2017' on page 19 undefined on input line 15.
+LaTeX Warning: Citation 'Stefanov.2017' on page 18 undefined on input line 14.
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 15
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 14
 .
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 17
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 19
 .
 
 
-LaTeX Warning: Citation 'Stefanov.2017' on page 19 undefined on input line 17.
+LaTeX Warning: Citation 'Stefanov.2017' on page 18 undefined on input line 19.
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 18
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 20
 .
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 18
+LaTeX Warning: Citation 'Zeigermann.2016' on page 18 undefined on input line 20
 .
 
 
-LaTeX Warning: Citation 'Stefanov.2017' on page 19 undefined on input line 18.
+LaTeX Warning: Citation 'Stefanov.2017' on page 18 undefined on input line 20.
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 16--18
+Underfull \hbox (badness 6675) in paragraph at lines 18--20
 []\T1/lmr/m/n/12 (+20) Das Framework React kann nur zum Bilden von Benutzerober
 flächen
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 16--18
+Underfull \hbox (badness 1077) in paragraph at lines 18--20
 [] \T1/lmr/m/n/12 (+20) als auch [] empfehlen die Verwendung des
  []
 
-[19
+[18
 
 ]
-Underfull \hbox (badness 1590) in paragraph at lines 26--27
+
+LaTeX Warning: Citation 'Facebook.2019' on page 19 undefined on input line 21.
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 28--29
 []\T1/lmr/m/n/12 (+20) Die Benutzeroberfläche einer React-Anwendung wird durch 
 React-Elemente
  []
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 20 undefined on input line 43
+LaTeX Warning: Citation 'Zeigermann.2016' on page 19 undefined on input line 45
 .
 
 
-LaTeX Warning: Citation 'Facebook.2018' on page 20 undefined on input line 43.
+LaTeX Warning: Citation 'Facebook.2018' on page 19 undefined on input line 45.
 
 
-LaTeX Warning: Citation 'Facebook.2018c' on page 20 undefined on input line 43.
+LaTeX Warning: Citation 'Facebook.2018c' on page 19 undefined on input line 45.
 
 
 
-LaTeX Warning: Citation 'Stefanov.2017' on page 20 undefined on input line 43.
+LaTeX Warning: Citation 'Stefanov.2017' on page 19 undefined on input line 45.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 []\T1/lmr/m/n/12 (+20) In diesem Beispiel wird der Methode die Komponente App,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 \T1/lmr/m/n/12 (+20) die ein React-Element zurückliefert, übergeben. Auf die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 \T1/lmr/m/n/12 (+20) Komponenten wird in [][]Unterabschnitt 4.2.2[][][] näher e
 ingegangen.
  []
 
-[20]
+[19]
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 21 undefined on input line 75
+LaTeX Warning: Citation 'Zeigermann.2016' on page 20 undefined on input line 77
 .
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 75--76
+Underfull \hbox (badness 6125) in paragraph at lines 77--78
 \T1/lmr/m/n/12 (+20) Der Klassenname oder der Funktionsname entspricht dem Name
 n der
  []
 
-[21]
+[20]
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 22 undefined on input line 10
-5.
-
-
-LaTeX Warning: Citation 'Stefanov.2017' on page 22 undefined on input line 105.
+LaTeX Warning: Citation 'Zeigermann.2016' on page 21 undefined on input line 10
+7.
 
 
+LaTeX Warning: Citation 'Stefanov.2017' on page 21 undefined on input line 107.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 []\T1/lmr/m/n/12 (+20) Bei Komponentenfunktionen wird das Objekt der Funktion u
 nd bei
  []
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 22 undefined on input line 10
-9.
+LaTeX Warning: Citation 'Zeigermann.2016' on page 21 undefined on input line 11
+1.
 
 
-LaTeX Warning: Citation 'Stefanov.2017' on page 22 undefined on input line 109.
+LaTeX Warning: Citation 'Stefanov.2017' on page 21 undefined on input line 111.
 
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 108--109
+Underfull \hbox (badness 1189) in paragraph at lines 110--111
 \T1/lmr/m/n/12 (+20) Durch den Aufruf der Methode wird der State mit dem bisher
 igen State
  []
 
-[22]
+[21]
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 23 undefined on input line 11
-3.
+LaTeX Warning: Citation 'Zeigermann.2016' on page 22 undefined on input line 11
+5.
 
 
-LaTeX Warning: Citation 'Facebook.2018b' on page 23 undefined on input line 113
+LaTeX Warning: Citation 'Facebook.2018b' on page 22 undefined on input line 115
 .
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 112--113
+Underfull \hbox (badness 7522) in paragraph at lines 114--115
 []\T1/lmr/m/n/12 (+20) Eine Komponente hat einen gewissen Lebenszyklus. In dies
 en Zyklus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 \T1/lmr/m/n/12 (+20) kann bei Verwendung einer Komponentenklasse durch Überschr
 eiben
  []
 
 
-Underfull \hbox (badness 7814) in paragraph at lines 112--113
+Underfull \hbox (badness 7814) in paragraph at lines 114--115
 \T1/lmr/m/n/12 (+20) von Lebenszyklus-Methoden (engl. lifecycle-methods) eingeg
 riffen werden.
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 112--113
+Underfull \hbox (badness 3118) in paragraph at lines 114--115
 \T1/lmr/m/n/12 (+20) Die [][]Abbildung 4[][][] zeigt die gebräuchlichsten Leben
 szyklus-Methoden einer
  []
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 23 undefined on input line 11
-4.
+LaTeX Warning: Citation 'Zeigermann.2016' on page 22 undefined on input line 11
+6.
 
 
-LaTeX Warning: File `ReactLifecycle.png' not found on input line 120.
+LaTeX Warning: File `ReactLifecycle.png' not found on input line 122.
 
 
 ! Package pdftex.def Error: File `ReactLifecycle.png' not found: using draft se
@@ -2191,91 +2194,110 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120 ...ics[width=\linewidth]{ReactLifecycle.png}
+l.122 ...ics[width=\linewidth]{ReactLifecycle.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation 'Maj.2018' on page 23 undefined on input line 122.
+LaTeX Warning: Citation 'Maj.2018' on page 22 undefined on input line 124.
 
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 23 undefined on input line 13
-6.
+LaTeX Warning: Citation 'Zeigermann.2016' on page 22 undefined on input line 13
+8.
 
 
-LaTeX Warning: Citation 'Stefanov.2017' on page 23 undefined on input line 136.
-
-
-
-LaTeX Warning: Citation 'Facebook.2018' on page 23 undefined on input line 136.
+LaTeX Warning: Citation 'Stefanov.2017' on page 22 undefined on input line 138.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+LaTeX Warning: Citation 'Facebook.2018' on page 22 undefined on input line 138.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 []\T1/lmr/m/n/12 (+20) React-Elemente sind einfache und leichtgewichtige JavaSc
 ript-Objekte.
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 135--136
+Underfull \hbox (badness 1082) in paragraph at lines 137--138
 \T1/lmr/m/n/12 (+20) Daher können die Änderungen zwischen den zwei virtuellen D
 OM-Bäumen
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 135--136
+Underfull \hbox (badness 7451) in paragraph at lines 137--138
 \T1/lmr/m/n/12 (+20) schnell ermittelt werden. Durch dieses Verfahren werden te
 ure DOM-
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 135--136
+Underfull \hbox (badness 1472) in paragraph at lines 137--138
 \T1/lmr/m/n/12 (+20) Manipulationen reduziert und damit die Performance der Web
 -Anwendung
  []
 
-) (content/05kapitel.tex [23] [24] [25]
+) (content/05kapitel.tex [22] [23] [24]
 chapter 5.
 
-LaTeX Warning: Citation 'Magnucki2017' on page 26 undefined on input line 11.
+LaTeX Warning: Citation 'Magnucki2017' on page 25 undefined on input line 11.
 
 
-LaTeX Warning: Citation 'SAP2013' on page 26 undefined on input line 13.
+LaTeX Warning: Citation 'SAP2013' on page 25 undefined on input line 13.
 
 
-LaTeX Warning: Citation 'Antolovic2014' on page 26 undefined on input line 17.
+LaTeX Warning: Citation 'Antolovic2014' on page 25 undefined on input line 17.
 
-[26
 
-]
+LaTeX Warning: Citation 'Magnucki2017' on page 25 undefined on input line 22.
 
-LaTeX Warning: Citation 'Antolovic2014' on page 27 undefined on input line 32.
+[25
+
+] [26]
+
+LaTeX Warning: Citation 'Antolovic2014' on page 27 undefined on input line 38.
 
 [27] (/home/vm/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-) [28]
-Underfull \hbox (badness 4846) in paragraph at lines 65--66
+)
+Underfull \hbox (badness 4846) in paragraph at lines 71--72
 []\T1/lmr/m/n/12 (+20) Die Datei Controller.js enthält die programmspezifische 
 Logik der UI5-
  []
 
+[28]
 
-LaTeX Warning: Citation 'Antolovic2014' on page 29 undefined on input line 75.
+LaTeX Warning: Citation 'Antolovic2014' on page 29 undefined on input line 81.
 
-
-LaTeX Warning: Citation 'Magnucki2017' on page 29 undefined on input line 80.
-
-[29]) (content/06kapitel.tex [30]
+) (content/06kapitel.tex [29]
 chapter 6.
 
-LaTeX Warning: Citation 'Zeigermann.2016' on page 31 undefined on input line 10
+LaTeX Warning: Citation 'Zeigermann.2016' on page 30 undefined on input line 10
 .
 
 
-LaTeX Warning: Reference `sec:Rendern' on page 31 undefined on input line 14.
+Underfull \hbox (badness 1137) in paragraph at lines 10--11
+\T1/lmr/m/n/12 (+20) Seiten der Anwendung. Angular und OpenUI5 liefern Möglichk
+eiten hierzu
+ []
 
-[31
+
+Underfull \hbox (badness 1173) in paragraph at lines 12--13
+\T1/lmr/m/n/12 (+20) Bei Angular und OpenUI5 wird man aufgrund des Frameworkauf
+baus zur
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 12--13
+[][]\T1/lmr/m/n/12 (+20) Unterabschnitt 5.2.2[][][]). Auch das Grundkonzept von
+ Angular ist auf MVC
+ []
+
+
+LaTeX Warning: Reference `sec:Rendern' on page 30 undefined on input line 14.
+
+[30
 
 ]
 Underfull \hbox (badness 1087) in paragraph at lines 16--17
@@ -2289,11 +2311,11 @@ Underfull \hbox (badness 1365) in paragraph at lines 18--19
 lichkeiten der
  []
 
-[32]
+[31]
 
-LaTeX Warning: Citation 'UI5Doku1' on page 33 undefined on input line 32.
+LaTeX Warning: Citation 'UI5Doku1' on page 32 undefined on input line 32.
 
-[33]) (content/07kapitel.tex [34]
+[32]) (content/07kapitel.tex [33]
 chapter 7.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 11--114
@@ -2307,11 +2329,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--114
 hlung
  []
 
-[35
+[34
 
 ] (ads/appendix.tex
 chapter A.
-) [36
+) [35
 
 
 
@@ -2330,9 +2352,6 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 136.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                dokumentation
 (biblatex)                and rerun LaTeX afterwards.
@@ -2342,13 +2361,13 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35531 strings out of 494889
- 675950 string characters out of 3178824
- 1372388 words of memory out of 3000000
- 38060 multiletter control sequences out of 15000+200000
- 73318 words of font info for 105 fonts, out of 3000000 for 9000
+ 35514 strings out of 494889
+ 675713 string characters out of 3178824
+ 1366279 words of memory out of 3000000
+ 38061 multiletter control sequences out of 15000+200000
+ 77749 words of font info for 107 fonts, out of 3000000 for 9000
  2 hyphenation exceptions out of 8191
- 72i,20n,100p,9113b,3755s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 72i,20n,100p,9113b,3747s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/vm/.miktex/texmfs/install/fonts/enc/dvips/lm/lm-ec.enc}{/home/vm/.mikt
 ex/texmfs/install/fonts/enc/dvips/lm/lm-mathsy.enc}</home/vm/.miktex/texmfs/ins
 tall/fonts/type1/public/lm/lmbx10.pfb></home/vm/.miktex/texmfs/install/fonts/ty
@@ -2356,13 +2375,14 @@ pe1/public/lm/lmbx12.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm
 /lmr10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmr12.pfb></h
 ome/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmr6.pfb></home/vm/.miktex/
 texmfs/install/fonts/type1/public/lm/lmri12.pfb></home/vm/.miktex/texmfs/instal
-l/fonts/type1/public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type1
-/public/lm/lmssbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/
-lmsy10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></
-home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (43 pages, 524337 bytes).
+l/fonts/type1/public/lm/lmri8.pfb></home/vm/.miktex/texmfs/install/fonts/type1/
+public/lm/lmro12.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lms
+sbx10.pfb></home/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmsy10.pfb></h
+ome/vm/.miktex/texmfs/install/fonts/type1/public/lm/lmtt10.pfb></home/vm/.mikte
+x/texmfs/install/fonts/type1/public/lm/lmtt12.pfb>
+Output written on dokumentation.pdf (42 pages, 527045 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 24100 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
+ 24588 words of extra memory for PDF output out of 24883 (max. 10000000)
 

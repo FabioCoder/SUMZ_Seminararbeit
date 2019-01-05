@@ -38,7 +38,7 @@ Nachdem die Bibliothek in das Dokument integriert wurde, kann man in einem JavaS
 
 \subsection{Dateifragmente}\label{sec:oDateien}
 
-Wie im vorherigen Kapitel \ref{sec_oGrund} erwähnt, existiert für OpenUI5 ein AddOn, welches beim Anlegen des Projektes alle wichtigen Bibliotheken und eine MVC-Dateistruktur erstellt. Die wichtigsten Dateielemente dieser Struktur lauten:
+Wie im vorherigen \autoref{sec_oGrund} erwähnt, existiert für OpenUI5 ein AddOn, welches beim Anlegen des Projektes alle wichtigen Bibliotheken und eine MVC-Dateistruktur erstellt. Die wichtigsten Dateielemente dieser Struktur lauten:
 
 \begin{itemize}
 	\item Index.html
@@ -54,7 +54,7 @@ Die index.html-Datei ist der erste Schritt für den Browser, beim Öffnen einer 
 
 In der Component.js werden alle Datenverbindungen beschrieben. Hierzu gehören beispielsweise einfach eingebundene JSON-Dateien oder auch Verbindungen zu einem ODATA-Webservice, welcher dem UI5-Frontend Daten zur Anzeige bereitstellt. Hierbei kann OpenUI5 im Standard sowohl JSON-, als auch mit XML-Dateien verarbeiten. Darüber hinaus wird in der Component.js festgelegt, welche Art der Datenbindung zum Webservice besteht. Möglich ist hierbei nur das bloße Anzeigen (unidirektionale Bindung), aber zusätzlich auch das Verändern auf der Datenbank (bidirektionale Bindung).
 
-Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt, wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut, eine grafische Oberfläche mit vorgegebenen Steuerungselementen zu strukturieren. Denn in ihr kann man verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Mittels, im OpenUI5-Standard enthaltenen, Router ist es möglich, verschiedene Views miteinander zu verbinden und somit eine Webanwendung mit mehreren Unterseiten zu schaffen. Die View in UI5 ermöglicht darüber hinaus auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller. Mit dem folgenden Listing \ref{lst:UI5View}, einer Produktliste, wird die große Stärke von OpenUI5 nochmals unterstrichen.
+Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt, wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut, eine grafische Oberfläche mit vorgegebenen Steuerungselementen zu strukturieren. Denn in ihr kann man verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Mittels, im OpenUI5-Standard enthaltenen, Router ist es möglich, verschiedene Views miteinander zu verbinden und somit eine Webanwendung mit mehreren Unterseiten zu schaffen. Die View in UI5 ermöglicht darüber hinaus auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller. Mit dem folgenden \autoref{lst:UI5View}, einer Produktliste, wird die große Stärke von OpenUI5 nochmals unterstrichen.
 
 \begin{lstlisting}[caption=Beispiel OpenUI5 View, label=lst:UI5View, language=XML]
 <List
@@ -68,7 +68,7 @@ includeItemInSelection="true"">
 </List>
 \end{lstlisting}
 
-Die Datei Controller.js enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Im Listing \ref{lst:UI5Controller} wird ein Szenario veranschaulicht, bei welchem auf Knopfdruck ein MessageToast mit Blindtext erscheint. Es ist darüber hinaus auch möglich, mehrere Controller zu verwenden und in diese weitere Frameworks zur Benutzung zu laden. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen. 
+Die Datei Controller.js enthält die programmspezifische Logik der UI5-Webanwendung. In ihr können mittels JavaScript die gewünschten Funktionen ausprogrammiert werden. Eine typische Funktion stellt beispielsweise, das Öffnen eines Dialogfensters beim Drücken eines zuvor in der View definierten Buttons dar. Somit fügt der Controller der einfachen View Funktionen, welche über einfache Tabellenanzeigen oder -änderungen hinausgehen hinzu. Im \autoref{lst:UI5Controller} wird ein Szenario veranschaulicht, bei welchem auf Knopfdruck ein MessageToast mit Blindtext erscheint. Es ist darüber hinaus auch möglich, mehrere Controller zu verwenden und in diese weitere Frameworks zur Benutzung zu laden. Als mögliches Anwendungsbeispiel wäre hierbei das Einbinden eines Barcodescannerframeworks (zum Beispiel quagga.js) um mit einer Handykamera industrielle Barcodes zu lesen. 
 
 \begin{lstlisting}[caption=Beispiel OpenUI5 Controller, label=lst:UI5Controller, language=Javascript]
 handleMessageToastPress: function(oEvent) {
