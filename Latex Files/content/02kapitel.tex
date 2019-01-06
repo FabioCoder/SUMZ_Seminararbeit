@@ -1,6 +1,8 @@
 %!TEX root = ../dokumentation.tex
 
 \chapter{Grundlagen}
+\vskip -3em
+\textbf{Autor: Sebastian Greulich}
 
 Dieses Kapitel hat das Ziel ein allgemeines Verständnis von Webframeworks, Webarchitekturen und JavaScript mit seinen Erweiterungen und Obermengen (TypeScript, JSX) zu vermitteln. Zuerst werden in \autoref{sec:webframeworks} Webframeworks im Allgemeinen vorgestellt. Im Anschluss daran werden Black-Box- und White-Box-Frameworks miteinander verglichen und die allgemeinen Vor- und Nachteile von Frameworks beschrieben. Nach den Webframeworks werden in \autoref{sec:webarchitekturen} verschiedene Architekturmöglichkeiten im Webumfeld erläutert, dazu gehören unter anderem das MVC-Modell und Single-Page-Applikationen. Den Abschluss des Grundlagenkapitels bildet \autoref{sec:js}, eine Vorstellung der Websprache JavaScript und der Weiterentwicklung von ihr: TypeScript. 
 
@@ -62,6 +64,9 @@ Um das Jahr 2005 fing die Technologie AJAX (Asynchronous JavaScript and XML) an 
 Mit den bisher beschriebenen Technologien musste der Client immer eine Anfrage an den Server schicken. Bei bestimmten Anwendungsfällen ist aber eine persistente und bidirektionale Verbindung zum Server notwendig. Beispielsweise will man bei Chat-Anwendungen oder Live-Sport-Tickern immer in Echtzeit die aktuellen Informationen bereitgestellt bekommen. Die bisher gängigen HTTP-Verbindungen sehen diese Art der Verbindung jedoch nicht vor. Auf ihrer Basis müsste der Benutzer die Webseite immer manuell aktualisieren. Mittels eines Websockets kann eine solche persistente Client-Server-Verbindung geöffnet werden. Ein Websocket basiert auf einem eigenen Protokoll, dieses muss zuerst über HTTP-Anfragen verhandelt werden. Wenn Client und Server der Verbindung zugestimmt haben besteht zwischen den beiden Parteien ein dauerhafter „Tunnel“. Über diesen können Informationen mit geringer Latenz ausgetauscht werden. Im Vergleich zu einer herkömmlichen HTTP-Verbindung wird der überflüssige Header eingespart, dies führt zu weniger notwendigen Datenübertragungen. Wenn eine der beiden Parteien die dauerhafte Verbindung trennen möchte muss sie der Anderen eine „Close“-Nachricht senden.\autocites[vgl.][11\psqq]{Fink2014}
 
 \section{JavaScript}\label{sec:js}
+\vskip -1em
+\textbf{Autor: Fabio Krämer}
+
 Zur Entwicklung einer clientseitigen Anwendung wird die Skriptsprache JavaScript eingesetzt. Der Sprachstandard von JavaScript wird durch das  kontinuierlich weiterentwickelt ECMAScript spezifiziert. Durch die Verwendung der Obermenge TypeScript und der Spracherweiterung JSX kann die Entwicklung erleichtert und zudem können Funktionen, die nicht Teil des Sprachstandard von JavaScript sind, eingesetzt werden. Im Folgenden werden die mit JavaScript zusammenhängende Sprachen EcmaScript, TypeScript und JSX  näher erläutert.
 
 \subsection{Der Sprachstandard ECMAScript}\label{sec:der-sprachstandard-ecmascript}
@@ -101,8 +106,7 @@ Wenn Java-Script Module in einer Webanwendung verwendet werden, wird ein Modul-L
 
 Seit ECMAScript2017 können Dekoratoren für die Angabe von Metainformationen zu einer Klasse verwendet werden. Dies wird beispielsweise von dem in \autoref{ch:angular} vorgestellten Framwework Angular zur Kennzeichnung und Konfiguration der unterschiedlichen Bestandteile verwendet.\autocites[vgl.][30\psqq]{Woiwode.2018} 
 
-\comment{Grafik ersetzen!}
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\linewidth]{JavaScript.png}
 	\caption{Beziehung zwischen ECMAScript und TypeScript} 
