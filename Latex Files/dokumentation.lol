@@ -27,7 +27,6 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-<<<<<<< HEAD
 \contentsline {lstlisting}{\numberline {9}Beispiel f\IeC {\"u}r das Einbinden von OpenUI5}{26}{lstlisting.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {10}Beispiel OpenUI5 View}{27}{lstlisting.10}
@@ -35,13 +34,6 @@
 \contentsline {lstlisting}{\numberline {11}Beispiel OpenUI5 Controller}{28}{lstlisting.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-=======
-\contentsline {lstlisting}{\numberline {5.1}Beispiel f\IeC {\"u}r das Einbinden von OpenUI5}{27}{lstlisting.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {5.2}Beispiel OpenUI5 View}{28}{lstlisting.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {5.3}Beispiel OpenUI5 Controller}{29}{lstlisting.5.3}
->>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
