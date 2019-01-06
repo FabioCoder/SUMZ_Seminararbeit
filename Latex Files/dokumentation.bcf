@@ -95,7 +95,11 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
+<<<<<<< HEAD
       <bcf:value>1</bcf:value>
+=======
+      <bcf:value>2</bcf:value>
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -2018,7 +2022,10 @@
     <bcf:citekey order="18">Hlushko.2018</bcf:citekey>
     <bcf:citekey order="19">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="20">Woiwode.2018</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="21">Woiwode.2018</bcf:citekey>
+=======
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
     <bcf:citekey order="22">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="23">Steyer.2017</bcf:citekey>
     <bcf:citekey order="24">Zeigermann.2016</bcf:citekey>
@@ -2026,7 +2033,10 @@
     <bcf:citekey order="26">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="27">Steyer.2017</bcf:citekey>
     <bcf:citekey order="28">Zeigermann.2016</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="29">Zeigermann.2016</bcf:citekey>
+=======
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
     <bcf:citekey order="30">Zeigermann.2016</bcf:citekey>
     <bcf:citekey order="31">Stefanov.2017</bcf:citekey>
     <bcf:citekey order="32">Woiwode.2018</bcf:citekey>
@@ -2035,7 +2045,10 @@
     <bcf:citekey order="35">Steyer.2017</bcf:citekey>
     <bcf:citekey order="36">Freeman.2018</bcf:citekey>
     <bcf:citekey order="37">Freeman.2018</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="38">Freeman.2018</bcf:citekey>
+=======
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
     <bcf:citekey order="39">Steyer.2017</bcf:citekey>
     <bcf:citekey order="40">Freeman.2018</bcf:citekey>
     <bcf:citekey order="41">Woiwode.2018</bcf:citekey>
@@ -2043,13 +2056,18 @@
     <bcf:citekey order="43">Freeman.2018</bcf:citekey>
     <bcf:citekey order="44">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="45">Woiwode.2018</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="46">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="47">Steyer.2017</bcf:citekey>
     <bcf:citekey order="48">Steyer.2017</bcf:citekey>
+=======
+    <bcf:citekey order="47">Steyer.2017</bcf:citekey>
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
     <bcf:citekey order="49">Steyer.2017</bcf:citekey>
     <bcf:citekey order="50">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="51">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="52">Steyer.2017</bcf:citekey>
+<<<<<<< HEAD
     <bcf:citekey order="53">Woiwode.2018</bcf:citekey>
     <bcf:citekey order="54">Steyer.2017</bcf:citekey>
     <bcf:citekey order="55">Steyer.2017</bcf:citekey>
@@ -2122,6 +2140,75 @@
     <bcf:citekey order="122">Antolovic2014</bcf:citekey>
     <bcf:citekey order="123">Zeigermann.2016</bcf:citekey>
     <bcf:citekey order="124">UI5Doku1</bcf:citekey>
+=======
+    <bcf:citekey order="53">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="54">Woiwode.2018</bcf:citekey>
+    <bcf:citekey order="55">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="56">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="57">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="58">Google.c</bcf:citekey>
+    <bcf:citekey order="59">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="60">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="61">Google.b</bcf:citekey>
+    <bcf:citekey order="62">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="63">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="64">Google.b</bcf:citekey>
+    <bcf:citekey order="65">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="66">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="67">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="68">Google.</bcf:citekey>
+    <bcf:citekey order="69">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="70">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="71">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="72">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="73">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="74">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="75">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="76">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="77">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="78">Google.d</bcf:citekey>
+    <bcf:citekey order="79">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="80">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="82">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="83">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="84">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="85">Steyer.2017</bcf:citekey>
+    <bcf:citekey order="86">Freeman.2018</bcf:citekey>
+    <bcf:citekey order="87">Gackenheimer.2015</bcf:citekey>
+    <bcf:citekey order="88">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="89">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="90">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="91">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="93">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="95">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="96">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="97">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="98">Facebook.2019</bcf:citekey>
+    <bcf:citekey order="99">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="100">Facebook.2018</bcf:citekey>
+    <bcf:citekey order="101">Facebook.2018c</bcf:citekey>
+    <bcf:citekey order="102">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="103">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="104">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="105">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="106">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="107">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="108">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="109">Facebook.2018b</bcf:citekey>
+    <bcf:citekey order="110">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="111">Maj.2018</bcf:citekey>
+    <bcf:citekey order="113">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="114">Stefanov.2017</bcf:citekey>
+    <bcf:citekey order="115">Facebook.2018</bcf:citekey>
+    <bcf:citekey order="116">Magnucki2017</bcf:citekey>
+    <bcf:citekey order="117">SAP2013</bcf:citekey>
+    <bcf:citekey order="118">Antolovic2014</bcf:citekey>
+    <bcf:citekey order="119">Magnucki2017</bcf:citekey>
+    <bcf:citekey order="120">Antolovic2014</bcf:citekey>
+    <bcf:citekey order="121">Antolovic2014</bcf:citekey>
+    <bcf:citekey order="122">Zeigermann.2016</bcf:citekey>
+    <bcf:citekey order="123">UI5Doku1</bcf:citekey>
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

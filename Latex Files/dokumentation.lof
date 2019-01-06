@@ -13,6 +13,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Umsetzung des MVC-Musters in Angular\relax }}{10}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
+<<<<<<< HEAD
 \contentsline {figure}{\numberline {3}{\ignorespaces Screenshot Beispielanwendung\relax }}{12}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
@@ -20,6 +21,13 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Lebenszyklus einer React-Komponente\relax }}{22}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+=======
+\contentsline {figure}{\numberline {3}{\ignorespaces Screenshot Angular-Beispielanwendung\relax }}{12}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces Lebenszyklus einer React-Komponente\relax }}{23}{figure.caption.10}
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

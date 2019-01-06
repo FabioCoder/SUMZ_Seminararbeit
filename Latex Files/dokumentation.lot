@@ -9,9 +9,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+<<<<<<< HEAD
 \contentsline {table}{\numberline {1}{\ignorespaces Arten von Data-Bindings in Angular\relax }}{16}{table.caption.9}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+=======
+\contentsline {table}{\numberline {3.1}{\ignorespaces Arten von Data-Bindings\relax }}{16}{table.caption.9}
+>>>>>>> 449550af3f321f37c82d4381bbe05709b4adc083
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
