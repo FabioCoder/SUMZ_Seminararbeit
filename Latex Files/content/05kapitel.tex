@@ -63,13 +63,13 @@ Die index.html-Datei ist der erste Schritt für den Browser beim Öffnen einer W
 
 In der Component.js werden alle Datenverbindungen beschrieben. Hierzu gehören beispielsweise einfach eingebundene JSON-Dateien oder auch Verbindungen zu einem ODATA-Webservice welcher dem UI5-Frontend Daten zur Anzeige bereitstellt. Hierbei kann OpenUI5 im Standard sowohl JSON-, als auch XML-Dateien verarbeiten. Weiter wird in der Component.js festgelegt welche Art der Datenbindung zum Webservice besteht. Möglich ist hierbei das bloße Anzeigen (unidirektionale Bindung), zusätzlich aber auch das Verändern auf der Datenbank (bidirektionale Bindung).
 
-Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut um eine grafische Oberfläche mit vorgegebenen Steuerungselementen zu strukturieren. In ihr kann man nämlich verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Mittels dem im OpenUI5-Standard enthaltenen Router ist es möglich, verschiedene Views miteinander zu verbinden und somit eine Webanwendung mit mehreren Unterseiten zu schaffen. Die View in UI5 ermöglicht darüber hinaus auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller. Mit dem folgenden \autoref{lst:UI5View}, einer Produktliste, wird die große Stärke von OpenUI5 nochmals unterstrichen.
+Die View.xml ist von der Struktur eine XML-Datei. Wie ihr Name schon aussagt wird in ihr die visuelle Anzeige beschrieben. Die XML-Datei eignet sich in ihrem Aufbau sehr gut um eine grafische Oberfläche mit vorgegebenen Steuerungselementen zu strukturieren. In ihr kann man nämlich verschiedene Anzeigeelemente klar erkennen und voneinander trennen. Dazu gehören zum Beispiel Header, Footer oder einzelne Container mit verschiedenem Inhalt. Mittels dem im OpenUI5-Standard enthaltenen Router ist es möglich, verschiedene Views miteinander zu verbinden und somit eine Webanwendung mit mehreren Unterseiten zu schaffen. Die View in UI5 ermöglicht darüber hinaus auch die einfache Datenbindung zur Datenbank ohne zusätzliche Programmierung im Controller. Mit dem folgenden \autoref{lst:UI5View}, einer Produktliste, wird die große Stärke von OpenUI5 nochmals unterstrichen. Mit einem einzigen Befehl \texttt{items="{/ProductCollection}"} kann die Datenquelle angebunden werden.
 
 \begin{lstlisting}[caption=Beispiel OpenUI5 View, label=lst:UI5View, language=XML]
 <List
 id="ProductList"
-items="{/ProductCollection}
-includeItemInSelection="true"">
+items="{/ProductCollection}"
+includeItemInSelection="true">
 	<StandardListItem
 	title="{Name}"
 	description="{ProductId}"
