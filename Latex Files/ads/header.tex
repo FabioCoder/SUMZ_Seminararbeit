@@ -82,8 +82,8 @@
 % \usepackage[disable]{todonotes}
 
 % Kommentarumgebung. Einsatz mit \comment{}. Alle Kommentare ausblenden mit dem Auskommentieren der folgenden und dem aktivieren der nächsten Zeile.
-\newcommand{\comment}[1]{\par {\bfseries \color{blue} #1 \par}} %Kommentar anzeigen
-%\newcommand{\comment}[1]{} %Kommentar ausblenden
+%\newcommand{\comment}[1]{\par {\bfseries \color{blue} #1 \par}} %Kommentar anzeigen
+\newcommand{\comment}[1]{} %Kommentar ausblenden
 
 
 %%%%%% Configuration %%%%%
@@ -134,7 +134,7 @@
 	bibencoding=utf8,	% wenn .bib in utf8, sonst ascii
 	sortlocale=de_DE,
 	style=\zitierstil,
-	maxcitenames=2, 
+	maxcitenames=1, 
 	isbn=false,
 	]{biblatex}
 }
@@ -197,3 +197,4 @@
 
 
 \counterwithout{figure}{chapter} %durchgängige Nummerierung der Abbildungen
+\counterwithout{table}{chapter} %durchgängige Nummerierung der Abbildungen

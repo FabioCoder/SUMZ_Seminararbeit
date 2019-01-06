@@ -17,7 +17,7 @@ Angular ist in der Sprache TypeScript geschrieben. Angular kann mit TypeScript, 
 
 Das in \autoref{MVC} beschriebene MVC Entwurfsmuster kann in einer Angular-Anwendung umgesetzt werden. Die \autoref{fig:AngularMVC} zeigt die einzelnen Bestandteile der Anwendung. Dabei implementiert das Template die View, die Komponente den Controller und das Modell das Model. \autocite[vgl.][34\psqq]{Freeman.2018} Im weiteren Verlauf werden die Bestandteile näher beschrieben. 
 
-\begin{figure}[h]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Angular-MVC.jpg}
 	\caption{Umsetzung des MVC-Musters in Angular} 
@@ -73,7 +73,7 @@ Zur Beschreibung der Grundkonzepte wird die Beispielanwendung in \autoref{fig:An
 \begin{figure}[h]
 	\centering
 	\includegraphics{angular-anwendung.png}
-	\caption{Screenshot Angular-Beispielanwendung} 
+	\caption{Screenshot Beispielanwendung} 
 	\label{fig:AngularAnwendung}
 \end{figure}
 
@@ -96,11 +96,10 @@ Module werden im Allgemeinen durch den Dekorator \textit{@NgModule} gekennzeichn
 %% Beschreibung am Beispiel
 Das Modul \textit{AppModule} in \autoref{lst:AppModule} importiert die Module \textit{NgModule}, \textit{BrowserModule} und \textit{FormsModule} und deklariert die zugehörigen Komponenten \textit{AppComponent} und \textit{HelloComponent}. Beim Starten der Anwendung soll die Komponente \textit{AppComponent} aufgerufen werden.
 
-\begin{lstlisting}[caption=Das Root-Module in der Datei app.module.ts, label=lst:AppModule, language=Java]
+\begin{lstlisting}[caption=Beispiel Angular-Anwendung: Das Root-Module, label=lst:AppModule, language=Java]
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
@@ -124,7 +123,7 @@ Eine Komponente wird durch den Dekorator \textit{@Component} gekennzeichnet und 
 %%Beschreibung des Beispiels
 Die Beispielanwendung enthält die Komponenten \textit{AppComponent} (siehe \autoref{lst:AppComponentTs}) und \textit{HelloComponent} (siehe \autoref{lst:HelloComponentTs}).
 
-\begin{lstlisting}[caption=Die Komponente AppComponent in der Datei app.component.ts, label=lst:AppComponentTs, language=Java]
+\begin{lstlisting}[caption=Beispiel Angular-Anwendung: Die Komponente AppComponent, label=lst:AppComponentTs, language=Java]
 import { Component } from '@angular/core';
 
 @Component({
@@ -137,7 +136,7 @@ export class AppComponent  {
 }
 \end{lstlisting}
 
-\begin{lstlisting}[caption=Die Komponente HelloComponent in der Datei hello.component.ts, label=lst:HelloComponentTs, language=Java]
+\begin{lstlisting}[caption=Beispiel Angular-Anwendung: Die Komponente HelloComponent, label=lst:HelloComponentTs, language=Java]
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -186,6 +185,8 @@ Die von Angular bereitgestellten Direktiven (engl. Built-In Directives) können 
 %%Datenbindungsausdrücke
 Der Datenaustausch zwischen der Komponente und dem Template erfolgt durch Datenbindungsausdrücke. Ein Datenbindungsausdruck bindet einen JavaScript-Ausdruck an ein Ziel. Das Ziel kann entweder eine Attribut-Direktive oder eine Eigenschaft des zugehörigen HTML-Elements sein. Der JavaScript-Ausdruck ermöglicht den Zugriff auf die Eigenschaften und Methoden der Komponente. \autocites[vgl.][237\psqq]{Freeman.2018}[vgl.][52\psq]{Steyer.2017} [vgl.][]{Google.d} Es gibt insgesamt drei Arten von Data-Bindings, die anhand der Flussrichtung der Daten unterschieden werden können. 
 
+% Kommischerweise ist der Counter auf 1 gesetzt. Daher auf Null setzen.
+\setcounter{table}{0}
 \begin{table}
 \begin{tabular}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{6.5cm}|}
 	\hline
@@ -198,14 +199,14 @@ Der Datenaustausch zwischen der Komponente und dem Template erfolgt durch Datenb
 	Two-way&\lbrack (Ziel)\rbrack =\dq Ausdruck\dq&Formular\\ 
 	\hline 
 \end{tabular}
-\caption{Arten von Data-Bindings}
+\caption{Arten von Data-Bindings in Angular}
 \label{tab:DataBinding}
 \end{table}
 
 %%Pipes
 Mit Pipes können die  Daten vor der Ausgabe sortiert, formatiert oder gefiltert werden. \autocite[vgl.][83\psqq]{Steyer.2017}
 
-\begin{lstlisting}[caption=Das Template in der Datei app.component.html, label=lst:AppComponentHTML, language=HTML]
+\begin{lstlisting}[caption= Beispiel Angular-Anwendung: Das Template, label=lst:AppComponentHTML, language=HTML]
 <hello name="{{name}}"></hello>
 <label for="name">Name:</label>
 <input name="name" [(ngModel)]="name">
