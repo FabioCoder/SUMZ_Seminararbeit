@@ -1,3 +1,4 @@
+
 %!TEX root = ../dokumentation.tex
 
 %
@@ -30,6 +31,7 @@
 \usepackage{xstring}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\sloppy %für korrekten Zeilenumbruch
 
 \newcommand{\einstellung}[1]{%
   \expandafter\newcommand\csname #1\endcsname{}
@@ -53,7 +55,8 @@
 %\usepackage[margin=\seitenrand,foot=1cm]{geometry}	% Seitenränder und Abstände
 \usepackage[left = \seitenrandLinks, right = \seitenrandRechts, top = 2.5cm, bottom = 2cm, foot = 0.75cm, head = 0.75cm ]{geometry}	
 \usepackage[activate]{microtype} %Zeilenumbruch und mehr
-\usepackage[onehalfspacing]{setspace}
+\usepackage{setspace}
+\setstretch{1.5}
 \usepackage{makeidx}
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \usepackage{longtable}
@@ -126,7 +129,7 @@
 % Literaturverweise (sowohl deutsch als auch englisch)
 \iflang{de}{%
 \usepackage[
-	backend=bibtex,		% empfohlen. Falls biber Probleme macht: bibtex
+	backend=biber,		% empfohlen. Falls biber Probleme macht: bibtex
 	bibwarn=true,
 	bibencoding=utf8,	% wenn .bib in utf8, sonst ascii
 	sortlocale=de_DE,
@@ -165,7 +168,16 @@
 
 % Einige häufig verwendete Sprachen
 %%\lstloadlanguages{PHP,Python,Java,C,C++,bash}
-\lstloadlanguages{SQL, Delphi}
+\lstdefinelanguage{JavaScript}{
+	keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with},
+	morecomment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]',
+	morestring=[b]",
+	sensitive=true
+}
+
+\lstloadlanguages{SQL, JavaScript, bash}
 \listingsettings{}
 % Umbennung des Listings
 \renewcommand\lstlistingname{\langlistingname}
@@ -185,3 +197,4 @@
 
 
 \counterwithout{figure}{chapter} %durchgängige Nummerierung der Abbildungen
+\counterwithout{table}{chapter} %durchgängige Nummerierung der Abbildungen
